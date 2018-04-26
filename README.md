@@ -64,4 +64,4 @@ Notice that <template> element is not actually rendered into DOM. It is an invis
 
 ## Flux (Vuex)
 
-## Dependency in jection
+## Dependency injection

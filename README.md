@@ -35,8 +35,8 @@ Vue patterns, techniques, tips and tricks
 ```
 
 If you want to conditionally render more than one element,
-you can use directives(`v-if` / `v-else` / `v-else-if` /`v-show`) on a <template> element.
-Notice that <template> element is not actually rendered into DOM. It is an invisible wrapper.
+you can use directives(`v-if` / `v-else` / `v-else-if` /`v-show`) on a `<template>` element.
+Notice that `<template>` element is not actually rendered into DOM. It is an invisible wrapper.
 
 ```html
 <template v-if="true">

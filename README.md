@@ -48,7 +48,130 @@ Notice that `<template>` element is not actually rendered into DOM. It is an inv
 
 ### Use JSX
 
+If you use JSX in your vue application, you can apply all the techniques such as `if else` and `switch case` statement and `ternary` and `logical` operator.
+
+`if else` statement
+
+```jsx
+export default {
+  data() {
+    return {
+      isTruthy: true,
+    };
+  },
+  render(h) {
+    if (this.isTruthy) {
+      return <h1>Render value is true</h1>;
+    } else {
+      return <h1>Render value is false</h1>;
+    }
+  },
+};
+```
+
+`switch case` statement
+
+```jsx
+import Info from './Info';
+import Warning from './Warning';
+import Error from './Error';
+import Success from './Success';
+
+export default {
+  data() {
+    return {
+      type: 'error',
+    };
+  },
+  render(h) {
+    switch (this.type) {
+      case 'info':
+        return <Info text={text} />;
+      case 'warning':
+        return <Warning text={text} />;
+      case 'error':
+        return <Error text={text} />;
+      default:
+        return <Success text={text} />;
+    }
+  },
+};
+```
+
+or you can use `object` map to simplify `switch case`
+
+```jsx
+import Info from './Info';
+import Warning from './Warning';
+import Error from './Error';
+import Success from './Success';
+
+const COMPONENT_MAP = {
+  info: Info,
+  warning: Warning,
+  error: Error,
+  success: Success,
+};
+
+export default {
+  data() {
+    return {
+      type: 'error',
+    };
+  },
+  render(h) {
+    const Comp = COMPONENT_MAP[this.type || 'success'];
+
+    return <Comp />;
+  },
+};
+```
+
+`ternary` operator
+
+```jsx
+export default {
+  data() {
+    return {
+      isTruthy: true,
+    };
+  },
+  render(h) {
+    return (
+      <div>
+        {this.isTruthy ? (
+          <h1>Render value is true</h1>
+        ) : (
+          <h1>Render value is false</h1>
+        )}
+      </div>
+    );
+  },
+};
+```
+
+`logical` operator
+
+```jsx
+export default {
+  data() {
+    return {
+      isLoading: true,
+    };
+  },
+  render(h) {
+    return <div>{this.isLoading && <h1>Loading ...</h1>}</div>;
+  },
+};
+```
+
+## Dynamic Component
+
 ### Use Special Attribute (is)
+
+```html
+<component v-bind:is="currentTabComponent"></component>
+```
 
 ### Use Map
 

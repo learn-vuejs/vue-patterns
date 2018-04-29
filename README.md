@@ -167,13 +167,23 @@ export default {
 
 ## Dynamic Component
 
-### Use Special Attribute (is)
+### Use `<component>` with `is` attribute
+
+* [Example 1](https://jsfiddle.net/chrisvfritz/o3nycadu/)
+* [Example 2](https://jsfiddle.net/chrisvfritz/b2qj69o1/)
+* [Example 3](https://alligator.io/vuejs/dynamic-components/)
 
 ```html
-<component v-bind:is="currentTabComponent"></component>
+<component :is="currentTabComponent"></component>
 ```
 
-### Use Map
+With the above code example, rendered component will be destroyed if a different component is rendered in `<component>`. If you want components to keep their instances without being destroyed within `<component>` tag, you can wrap the `<component>` tag in a `<keep-alive>` tag like so:
+
+```html
+<keep-alive>
+  <component :is="currentTabComponent"></component>
+</keep-alive>
+```
 
 ## Props Passing
 

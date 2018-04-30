@@ -2,6 +2,14 @@
 
 Vue patterns, techniques, tips and tricks
 
+## Template Declaration
+
+References:
+
+* [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
+
+## Component Declaration
+
 ## Conditional Rendering
 
 ### Use Directive (`v-if` / `v-else` / `v-else-if` / `v-show`)
@@ -185,16 +193,24 @@ With the above code example, rendered component will be destroyed if a different
 </keep-alive>
 ```
 
-## Props Passing
+## Composition
+
+### Basic Composition
+
+### Extends
+
+### Mixins
+
+## Dependency injection
+
+### Provide / Inject
+
+### Use @Provide / @Inject Decorator
 
 ## Higher Order Component
 
-## Provide / Inject
-
-## Mixins
+## Passing Props
 
 ## Async
 
 ## Flux (Vuex)
-
-## Dependency injection

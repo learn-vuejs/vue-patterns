@@ -2,13 +2,118 @@
 
 Vue patterns, techniques, tips and tricks
 
-## Template Declaration
+## Component Declaration
 
-References:
+### Use Single File Component(a.k.a: SFC)
+
+```html
+<template>
+  <button class="btn-primary" @click.prevent="handleClick">
+    {{text}}
+  </button>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      text: 'Click me',
+    };
+  },
+  methods: {
+    handleClick() {
+      console.log('clicked');
+    },
+  },
+}
+</script>
+
+<style scoped>
+.btn-primary {
+  background-color: blue;
+}
+</style>
+```
+
+### Use JSX
+
+```jsx
+Vue.component('my-btn', {
+  data() {
+    return {
+      text: 'Click me',
+    };
+  },
+  methods: {
+    handleClick() {
+      console.log('clicked');
+    },
+  },
+  render() {
+    return (
+      <button class="btn-primary" onClick={this.handleClick}>
+        {{this.text}}
+      </button>
+    );
+  },
+});
+```
+
+### Use String Template
+
+```jsx
+Vue.component('my-btn', {
+  template: `
+    <button class="btn-primary" @click.prevent="handleClick">
+      {{text}}
+    </button>
+  `,
+  data() {
+    return {
+      text: 'Click me',
+    };
+  },
+  methods: {
+    handleClick() {
+      console.log('clicked');
+    },
+  },
+});
+```
+
+### Use [vue-class-component](https://github.com/vuejs/vue-class-component)
+
+```html
+<template>
+  <button class="btn-primary" @click.prevent="handleClick">
+    {{text}}
+  </button>
+</template>
+
+<script>
+import Vue from 'vue';
+import Component from 'vue-class-component';
+
+@Component
+export default MyBtn extends Vue {
+  text = 'Click me';
+
+  handleClick() {
+    console.log('clicked');
+  }
+}
+</script>
+
+<style scoped>
+.btn-primary {
+  background-color: blue;
+}
+</style>
+```
+
+#### References:
 
 * [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
-
-## Component Declaration
 
 ## Conditional Rendering
 

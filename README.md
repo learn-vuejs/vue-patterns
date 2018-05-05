@@ -117,7 +117,7 @@ export default MyBtn extends Vue {
 
 ## Conditional Rendering
 
-### Use Directive (`v-if` / `v-else` / `v-else-if` / `v-show`)
+### Use Directives (`v-if` / `v-else` / `v-else-if` / `v-show`)
 
 `v-if`
 

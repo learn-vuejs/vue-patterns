@@ -308,9 +308,95 @@ With the above code example, rendered component will be destroyed if a different
 
 ## Dependency injection
 
+Vue supports provide / inject mechanism to provide `object` into all its descendants, regardless of how deep the component hierarchy is, as long as they are in the same parent chain. Notice that `provide` and `inject` bindings are **not** reactive, unless you pass down an observed object.
+
+```html
+<parent-component>
+  <child-component>
+    <grand-child-component></grand-child-component>
+  </child-component>
+</ancestor-component>
+```
+
+With above example component hierarchy, in order to derive data from `parent-component`, you should pass down data(object) as `props` to `child-component` and `grand-child-component`. However, if `parent-component` `provide` data(object), `grand-child-component` can just define `inject` provided object from `parent-component`.
+
+References:
+
+* [Official Documentation](https://vuejs.org/v2/api/#provide-inject)
+* [Component Communication](https://alligator.io/vuejs/component-communication/#provide--inject)
+
 ### Provide / Inject
 
-### Use @Provide / @Inject Decorator
+```js
+// ParentComponent.vue
+
+export default {
+  provide: {
+    theme: {
+      primaryColor: 'blue',
+    },
+  },
+};
+```
+
+```html
+// GrandChildComponent.vue
+
+<template>
+  <button :style="{ backgroundColor: primary && theme.primaryColor }">
+    <slot></slot>
+  </button>
+</template>
+
+<script>
+export default {
+  inject: ['theme'],
+  props: {
+    primary: {
+      type: Boolean,
+      default: true,
+    },
+  },
+};
+</script>
+```
+
+### Use [@Provide / @Inject Decorator](https://github.com/kaorun343/vue-property-decorator)
+
+```js
+// ParentComponent.vue
+
+import { Component, Vue, Provide } from 'vue-property-decorator';
+
+@Component
+export class ParentComponent extends Vue {
+  @Provide
+  theme = {
+    primaryColor: 'blue',
+  };
+}
+```
+
+```html
+// GrandChildComponent.vue
+
+<template>
+  <button :style="{ backgroundColor: primary && theme.primaryColor }">
+    <slot></slot>
+  </button>
+</template>
+
+<script>
+import { Component, Vue, Inject, Prop } from 'vue-property-decorator';
+
+export class GrandChildComponent extends Vue {
+  @Inject() theme;
+
+  @Prop({ default: true })
+  primary: boolean;
+};
+</script>
+```
 
 ## Higher Order Component
 

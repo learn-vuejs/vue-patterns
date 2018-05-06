@@ -302,6 +302,24 @@ With the above code example, rendered component will be destroyed if a different
 
 ### Basic Composition
 
+```html
+<template>
+  <div class="component-b">
+    <component-a></component-a>
+  </div>
+</template>
+
+<script>
+import ComponentA from './ComponentA';
+
+export default {
+  components: {
+    ComponentA,
+  },
+};
+</script>
+```
+
 ### Extends
 
 ### Mixins

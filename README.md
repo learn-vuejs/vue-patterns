@@ -300,7 +300,7 @@ With the above code example, rendered component will be destroyed if a different
 
 ## Composition
 
-### Basic Composition
+### Use Basic Composition
 
 ```html
 <template>
@@ -320,7 +320,25 @@ export default {
 </script>
 ```
 
-### Extends
+### Use Extends
+
+When you want to extend a single vue component
+
+```html
+<template>
+  <button class="button-primary" @click.prevent="handleClick">
+    <slot></slot>
+  </button>
+</template>
+
+<script>
+import BaseButton from './BaseButton';
+
+export default {
+  extends: BaseButton,
+};
+</script>
+```
 
 ### Mixins
 

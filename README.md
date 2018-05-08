@@ -358,7 +358,8 @@ With above example component hierarchy, in order to derive data from `parent-com
 
 References:
 
-* [Official Documentation](https://vuejs.org/v2/api/#provide-inject)
+* [Official API](https://vuejs.org/v2/api/#provide-inject)
+* [Official Guide](https://vuejs.org/v2/guide/components-edge-cases.html#Dependency-Injection)
 * [Component Communication](https://alligator.io/vuejs/component-communication/#provide--inject)
 
 ### Provide / Inject

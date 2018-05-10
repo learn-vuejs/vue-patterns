@@ -115,7 +115,7 @@ export default MyBtn extends Vue {
 
 * [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
 
-## Conditional Rendering
+## Conditional
 
 ### Use Directives (`v-if` / `v-else` / `v-else-if` / `v-show`)
 
@@ -436,6 +436,10 @@ export class GrandChildComponent extends Vue {
 ```
 
 ## Higher Order Component
+
+## Render Prop
+
+## Slots (scoped slots)
 
 ## Passing Props
 

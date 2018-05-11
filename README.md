@@ -1,10 +1,10 @@
 # vue-patterns
 
-Vue patterns, techniques, tips and tricks
+Useful Vue patterns, techniques, tips and tricks
 
 ## Component Declaration
 
-### Use Single File Component(a.k.a: SFC)
+### Single File Component(a.k.a: SFC)
 
 ```html
 <template>
@@ -35,7 +35,29 @@ export default {
 </style>
 ```
 
-### Use JSX
+### String Template (or es6 Template Literal)
+
+```jsx
+Vue.component('my-btn', {
+  template: `
+    <button class="btn-primary" @click.prevent="handleClick">
+      {{text}}
+    </button>
+  `,
+  data() {
+    return {
+      text: 'Click me',
+    };
+  },
+  methods: {
+    handleClick() {
+      console.log('clicked');
+    },
+  },
+});
+```
+
+### JSX
 
 ```jsx
 Vue.component('my-btn', {
@@ -59,29 +81,7 @@ Vue.component('my-btn', {
 });
 ```
 
-### Use String Template
-
-```jsx
-Vue.component('my-btn', {
-  template: `
-    <button class="btn-primary" @click.prevent="handleClick">
-      {{text}}
-    </button>
-  `,
-  data() {
-    return {
-      text: 'Click me',
-    };
-  },
-  methods: {
-    handleClick() {
-      console.log('clicked');
-    },
-  },
-});
-```
-
-### Use [vue-class-component](https://github.com/vuejs/vue-class-component)
+### [vue-class-component](https://github.com/vuejs/vue-class-component)
 
 ```html
 <template>
@@ -115,9 +115,9 @@ export default MyBtn extends Vue {
 
 * [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
 
-## Conditional
+## Component Conditional Rendering
 
-### Use Directives (`v-if` / `v-else` / `v-else-if` / `v-show`)
+### Directives (`v-if` / `v-else` / `v-else-if` / `v-show`)
 
 `v-if`
 
@@ -159,7 +159,7 @@ Notice that `<template>` element is not actually rendered into DOM. It is an inv
 </template>
 ```
 
-### Use JSX
+### JSX
 
 If you use JSX in your vue application, you can apply all the techniques such as `if else` and `switch case` statement and `ternary` and `logical` operator.
 
@@ -280,7 +280,7 @@ export default {
 
 ## Dynamic Component
 
-### Use `<component>` with `is` attribute
+### `<component>` with `is` attribute
 
 * [Example 1](https://jsfiddle.net/chrisvfritz/o3nycadu/)
 * [Example 2](https://jsfiddle.net/chrisvfritz/b2qj69o1/)
@@ -300,7 +300,7 @@ With the above code example, rendered component will be destroyed if a different
 
 ## Composition
 
-### Use Basic Composition
+### Basic Composition
 
 ```html
 <template>
@@ -320,7 +320,7 @@ export default {
 </script>
 ```
 
-### Use Extends
+### Extends
 
 When you want to extend a single vue component
 
@@ -418,7 +418,7 @@ export default {
 </script>
 ```
 
-### Use [@Provide / @Inject Decorator](https://github.com/kaorun343/vue-property-decorator)
+### [@Provide / @Inject Decorator](https://github.com/kaorun343/vue-property-decorator)
 
 ```js
 // ParentComponent.vue

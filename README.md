@@ -342,22 +342,45 @@ export default {
 
 ### Mixins
 
+References:
+
+* [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
+
 ```html
 <template>
-
+  <div v-if="shown" class="alert alert-success" :class="'alert-' + type" role="alert">
+    <slot>Alert content</slot>
+    <i class="pull-right glyphicon glyphicon-remove" @click="hide"></i>
+  </div>
 </template>
 
 <script>
-const Mixin1 = {};
-
-const Mixin2 = {
-  created() {
-
+const closableMixin = {
+  props: {
+    isOpen: {
+      default: true
+    }
+  },
+  data: function() {
+    return {
+      shown: this.isOpen
+    }
+  },
+  methods: {
+    hide: function() {
+      this.shown = false;
+    },
+    show: function() {
+      this.shown = true;
+    },
+    toggle: function() {
+      this.shown = !this.shown;
+    }
   }
-};
-
-export default {
-  mixins: [Mixin1, Mixin2],
+}
+  
+export deafult {
+  mixins: [closableMixin]
 };
 </script>
 ```

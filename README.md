@@ -390,6 +390,50 @@ export deafult {
 </script>
 ```
 
+### Slots
+
+### Named Slots
+
+BaseLayout.vue
+
+```html
+<div class="container">
+  <header>
+    <slot name="header"></slot>
+  </header>
+  <main>
+    <slot></slot>
+  </main>
+  <footer>
+    <slot name="footer"></slot>
+  </footer>
+</div>
+```
+
+App.vue
+
+```html
+<base-layout>
+  <template slot="header">
+    <h1>Here might be a page title</h1>
+  </template>
+
+  <p>A paragraph for the main content.</p>
+  <p>And another one.</p>
+
+  <template slot="footer">
+    <p>Here's some contact info</p>
+  </template>
+</base-layout>
+```
+
+### Scoped Slots
+
+References:
+
+* [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
+
+
 ## Dependency injection
 
 Vue supports provide / inject mechanism to provide `object` into all its descendants, regardless of how deep the component hierarchy is, as long as they are in the same parent chain. Notice that `provide` and `inject` bindings are **not** reactive, unless you pass down an observed object.
@@ -486,8 +530,6 @@ export class GrandChildComponent extends Vue {
 ## Higher Order Component
 
 ## Render Prop
-
-## Slots (scoped slots)
 
 ## Passing Props
 

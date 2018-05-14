@@ -346,16 +346,9 @@ References:
 
 * [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
 
-```html
-<template>
-  <div v-if="shown" class="alert alert-success" :class="'alert-' + type" role="alert">
-    <slot>Alert content</slot>
-    <i class="pull-right glyphicon glyphicon-remove" @click="hide"></i>
-  </div>
-</template>
-
-<script>
-const closableMixin = {
+```js
+// closableMixin.js
+export default {
   props: {
     isOpen: {
       default: true
@@ -378,7 +371,19 @@ const closableMixin = {
     }
   }
 }
-  
+```
+
+```html
+<template>
+  <div v-if="shown" class="alert alert-success" :class="'alert-' + type" role="alert">
+    <slot>Alert content</slot>
+    <i class="pull-right glyphicon glyphicon-remove" @click="hide"></i>
+  </div>
+</template>
+
+<script>
+import closableMixin from './mixins/closableMixin';
+
 export deafult {
   mixins: [closableMixin]
 };

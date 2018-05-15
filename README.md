@@ -327,7 +327,7 @@ When you want to extend a single vue component
 ```html
 <template>
   <button class="button-primary" @click.prevent="handleClick">
-    <slot></slot>
+    {{buttonText}}
   </button>
 </template>
 
@@ -336,6 +336,7 @@ import BaseButton from './BaseButton';
 
 export default {
   extends: BaseButton,
+  props: ['buttonText'],
 };
 </script>
 ```
@@ -376,7 +377,7 @@ export default {
 ```html
 <template>
   <div v-if="shown" class="alert alert-success" :class="'alert-' + type" role="alert">
-    <slot>Alert content</slot>
+    {{text}}
     <i class="pull-right glyphicon glyphicon-remove" @click="hide"></i>
   </div>
 </template>
@@ -385,12 +386,18 @@ export default {
 import closableMixin from './mixins/closableMixin';
 
 export deafult {
-  mixins: [closableMixin]
+  mixins: [closableMixin],
+  props: ['text']
 };
 </script>
 ```
 
 ### Slots
+
+References:
+
+* [Understanding Component Slots with Vue.js](https://alligator.io/vuejs/component-slots/)
+
 
 ### Named Slots
 

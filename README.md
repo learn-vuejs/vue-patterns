@@ -438,7 +438,10 @@ App.vue
 
 References:
 
+* [Getting Your Head Around Vue.js Scoped Slots](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
 * [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
+* [Scoped Component Slots in Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
+
 
 
 ## Dependency injection

@@ -536,6 +536,11 @@ export class GrandChildComponent extends Vue {
 
 ## Higher Order Component
 
+References
+
+* [Higher Order Components in Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
+* [Do we need Higher Order Components in Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
+
 ## Render Prop
 
 ## Passing Props

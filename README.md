@@ -573,3 +573,5 @@ References
 * [Advanced Vue Component Design](https://adamwathan.me/advanced-vue-component-design/)
 * [Compound components](https://forum.vuejs.org/t/compound-components/30139)
 * [81: Evan You - Advanced Vue Component Design](https://player.fm/series/series-1401837/81-evan-you-advanced-vue-component-design)
+* [A pattern to handle ajax requests in Vuex](https://medium.com/@lachlanmiller_52885/a-pattern-to-handle-ajax-requests-in-vuex-2d69bc2f8984)
+* [Six random issues and their solutions in VueJS.](https://medium.com/@stijlbreuk/six-random-issues-and-their-solutions-in-vuejs-b16d470a6462)

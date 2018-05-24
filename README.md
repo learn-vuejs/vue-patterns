@@ -583,3 +583,5 @@ References
 * [Templating in Vue: Separation of Concerns or Separation of Technology or something else?](https://medium.com/@s.molinari/templating-separation-of-concerns-or-separation-of-technology-or-something-else-123a3d41f0b4)
 * [Stashing Vue components data](https://medium.com/@kelin2025/components-stash-f2e14603a874)
 * [Common mistakes to avoid while working with Vue.js](https://medium.freecodecamp.org/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b)
+* [Creating Reusable Transitions in Vue](https://vuejsdevelopers.com/2018/02/26/vue-js-reusable-transitions/)
+* [vue-advanced-workshop](https://github.com/d-levin/vue-advanced-workshop)

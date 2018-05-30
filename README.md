@@ -595,3 +595,4 @@ References
 * [Composing Custom Elements With Slots And Named Slots](https://alligator.io/web-components/composing-slots-named-slots/)
 * [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
 * [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
+* [Managing User Permissions in a Vue.js App](https://dzone.com/articles/managing-user-permissions-in-a-vuejs-app)

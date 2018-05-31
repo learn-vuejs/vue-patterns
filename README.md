@@ -600,3 +600,4 @@ References
 * [Managing User Permissions in a Vue.js App](https://dzone.com/articles/managing-user-permissions-in-a-vuejs-app)
 * [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
 * [Components and How They Interact in Vue and Vuex](https://dzone.com/articles/how-do-components-interact-in-vue-and-what-is-vuex)
+* [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)

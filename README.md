@@ -277,6 +277,8 @@ export default {
   },
 };
 ```
+#### References
+* [Difference Between v-if and v-show [With Video at End]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
 
 ## Dynamic Component
 

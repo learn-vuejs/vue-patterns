@@ -606,3 +606,4 @@ References
 * [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)
 * [Looping through Object Properties](https://codingexplained.com/coding/front-end/vue-js/looping-object-properties)
 * [Are partially applied functions in event handlers possible?](https://forum.vuejs.org/t/are-partially-applied-functions-in-event-handlers-possible/10187)
+* [Clean up your Vue modules with ES6 Arrow Functions](https://gist.github.com/JacobBennett/7b32b4914311c0ac0f28a1fdc411b9a7)

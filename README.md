@@ -550,6 +550,14 @@ References
 
 ## Passing Props
 
+```js
+<template>
+  <button v-bind="$attrs" v-on="$listeners">
+    <slot></slot>
+  </button>
+</template>
+```
+
 ## Async
 
 ## Flux (Vuex)

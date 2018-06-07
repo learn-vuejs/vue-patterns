@@ -558,6 +558,7 @@ References:
 * [Official API](https://vuejs.org/v2/api/#provide-inject)
 * [Official Guide](https://vuejs.org/v2/guide/components-edge-cases.html#Dependency-Injection)
 * [Component Communication](https://alligator.io/vuejs/component-communication/#provide--inject)
+* [Dependency Injection in Vue.js App with TypeScript](https://blog.kloud.com.au/2017/03/22/dependency-injection-in-vuejs-app-with-typescript/)
 
 ### Provide / Inject
 
@@ -684,6 +685,5 @@ export class GrandChildComponent extends Vue {
 * [Four tips for working with Vue.js](https://itnext.io/four-tips-for-working-with-vue-js-b362d97de852)
 * [Tips from a Lowly VueJS Developer](https://medium.com/@denny.headrick/tips-from-a-lowly-vuejs-developer-381b6956aece)
 * [Why VueX Is The Perfect Interface Between Frontend and API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
-* [Dependency Injection in Vue.js App with TypeScript](https://blog.kloud.com.au/2017/03/22/dependency-injection-in-vuejs-app-with-typescript/)
 * [Control DOM Outside Your Vue.js App with portal-vue](https://alligator.io/vuejs/portal-vue/)
 * [Throttling and Debouncing Events with Vue.js and lodash](https://alligator.io/vuejs/lodash-throttle-debounce/)

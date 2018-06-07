@@ -4,7 +4,7 @@ Useful Vue patterns, techniques, tips and tricks
 
 ## Component Declaration
 
-### Single File Component(a.k.a: SFC)
+### Single File Component(a.k.a: SFC) - Most Common
 
 ```html
 <template>
@@ -37,7 +37,7 @@ export default {
 
 ### String Template (or es6 Template Literal)
 
-```jsx
+```js
 Vue.component('my-btn', {
   template: `
     <button class="btn-primary" @click.prevent="handleClick">
@@ -53,6 +53,33 @@ Vue.component('my-btn', {
     handleClick() {
       console.log('clicked');
     },
+  },
+});
+```
+
+### Render Function
+
+```js
+Vue.component('my-btn', {
+  data() {
+    return {
+      text: 'Click me',
+    };
+  },
+  methods: {
+    handleClick() {
+      console.log('clicked');
+    },
+  },
+  render(h) {
+    return h('button', {
+        attrs: {
+          class: 'btn-primary'
+        },
+        on: {
+          click: this.handleClick,
+        },
+    });
   },
 });
 ```

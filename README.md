@@ -472,6 +472,13 @@ References:
 * [Scoped Component Slots in Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
 * [The Trick to Understanding Scoped Slots in Vue.js](https://adamwathan.me/the-trick-to-understanding-scoped-slots-in-vuejs/)
 
+### Render Props
+
+References:
+
+* [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
+* [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
+
 ## Passing Props
 
 Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
@@ -631,7 +638,6 @@ export class GrandChildComponent extends Vue {
 * [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
 * [Handling Errors in Vue with Error Boundaries](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
 * [Vuex getters are great, but don’t overuse them](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)
-* [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
 * [Reusable Vuex Mutation Functions](https://itnext.io/reusable-vuex-mutation-functions-9b4920aa737b)
 * [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
 * [Chris Fritz - Vue.js Anti-Patterns (and How to Avoid Them)](http://www.fullstackradio.com/87)
@@ -667,7 +673,6 @@ export class GrandChildComponent extends Vue {
 * [Managing User Permissions in a Vue.js App](https://dzone.com/articles/managing-user-permissions-in-a-vuejs-app)
 * [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
 * [Components and How They Interact in Vue and Vuex](https://dzone.com/articles/how-do-components-interact-in-vue-and-what-is-vuex)
-* [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
 * [Render Functional Components in Vue.js](https://alligator.io/vuejs/render-functional-components/)
 * [Templating in Vue: Separation of Concerns or Separation of Technology or something else?](https://medium.com/@s.molinari/templating-separation-of-concerns-or-separation-of-technology-or-something-else-123a3d41f0b4)
 * [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)

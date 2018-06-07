@@ -573,25 +573,62 @@ References
 * [Higher Order Components in Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
 * [Do we need Higher Order Components in Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
 
-## Render Prop
-
 ## Passing Props
 
-```js
+Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
+You can simply bind `$attrs` and `$listeners` to child component
+
+```html
 <template>
-  <button v-bind="$attrs" v-on="$listeners">
-    <slot></slot>
-  </button>
+  <div>
+    <h1>{{title}}</h1>
+    <child-component v-bind="$attrs" v-on="$listeners"></child-component>
+  </div>
 </template>
+
+<script>
+export default {
+  name: 'PassingPropsSample'
+  props: {
+    title: {
+      type: String,
+      default: 'Hello, Vue!'
+    }
+  }
+};
+</script>
 ```
 
-## Async
+From parent component, you can do like this:
+```html
+<template>
+  <passing-props-sample
+    title="Hello, Passing Props"
+    childPropA="This props will properly mapped to <child-component />"
+    @click="handleChildComponentClick"
+  >
+  </passing-props-sample>
+</template>
+
+<script>
+import PassingPropsSample from './PassingPropsSample';
+
+export default {
+  components: {
+    PassingPropsSample
+  },
+  methods: {
+    handleChildComponentClick() {
+      console.log('child component clicked');
+    }
+  }
+};
+</script>
+```
 
 ## Flux (Vuex)
 
-## ETC
-
-References
+## Useful Links
 
 * [Decouple Vuex modules with the Mediator pattern](https://itnext.io/decouple-vuex-actions-with-the-mediator-pattern-58a8879de1b4)
 * [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)

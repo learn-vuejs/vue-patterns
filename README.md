@@ -471,7 +471,65 @@ References:
 * [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
 * [Scoped Component Slots in Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
 
+## Passing Props
 
+Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
+You can simply bind `$attrs` and `$listeners` to child component
+
+```html
+<template>
+  <div>
+    <h1>{{title}}</h1>
+    <child-component v-bind="$attrs" v-on="$listeners"></child-component>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'PassingPropsSample'
+  props: {
+    title: {
+      type: String,
+      default: 'Hello, Vue!'
+    }
+  }
+};
+</script>
+```
+
+From parent component, you can do like this:
+```html
+<template>
+  <passing-props-sample
+    title="Hello, Passing Props"
+    childPropA="This props will properly mapped to <child-component />"
+    @click="handleChildComponentClick"
+  >
+  </passing-props-sample>
+</template>
+
+<script>
+import PassingPropsSample from './PassingPropsSample';
+
+export default {
+  components: {
+    PassingPropsSample
+  },
+  methods: {
+    handleChildComponentClick() {
+      console.log('child component clicked');
+    }
+  }
+};
+</script>
+```
+
+## Higher Order Component
+
+References
+
+* [Higher Order Components in Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
+* [Do we need Higher Order Components in Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
 
 ## Dependency injection
 
@@ -565,68 +623,6 @@ export class GrandChildComponent extends Vue {
 };
 </script>
 ```
-
-## Higher Order Component
-
-References
-
-* [Higher Order Components in Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
-* [Do we need Higher Order Components in Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
-
-## Passing Props
-
-Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
-You can simply bind `$attrs` and `$listeners` to child component
-
-```html
-<template>
-  <div>
-    <h1>{{title}}</h1>
-    <child-component v-bind="$attrs" v-on="$listeners"></child-component>
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'PassingPropsSample'
-  props: {
-    title: {
-      type: String,
-      default: 'Hello, Vue!'
-    }
-  }
-};
-</script>
-```
-
-From parent component, you can do like this:
-```html
-<template>
-  <passing-props-sample
-    title="Hello, Passing Props"
-    childPropA="This props will properly mapped to <child-component />"
-    @click="handleChildComponentClick"
-  >
-  </passing-props-sample>
-</template>
-
-<script>
-import PassingPropsSample from './PassingPropsSample';
-
-export default {
-  components: {
-    PassingPropsSample
-  },
-  methods: {
-    handleChildComponentClick() {
-      console.log('child component clicked');
-    }
-  }
-};
-</script>
-```
-
-## Flux (Vuex)
 
 ## Useful Links
 

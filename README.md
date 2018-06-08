@@ -635,6 +635,12 @@ export class GrandChildComponent extends Vue {
 
 ## Handling Errors
 
+### Examples
+
+* [Example 1](https://jsfiddle.net/Linusborg/z84wspcg/)
+
+### References
+
 * [Handling Errors in Vue with Error Boundaries](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
 
 ## Useful Links

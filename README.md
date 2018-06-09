@@ -654,8 +654,15 @@ export class GrandChildComponent extends Vue {
 * [[vuex Mutations] Single Changes vs. Single Responsibility](https://forum.vuejs.org/t/vuex-mutations-single-changes-vs-single-responsibility/16396)
 * [Components and How They Interact in Vue and Vuex](https://dzone.com/articles/how-do-components-interact-in-vue-and-what-is-vuex)
 
-* [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
+### Renderless Component
+
 * [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
+* [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
+
+
+---
+
+* [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
 * [Chris Fritz - Vue.js Anti-Patterns (and How to Avoid Them)](http://www.fullstackradio.com/87)
 * [4 AJAX Patterns For Vue.js Apps](https://medium.com/js-dojo/4-ajax-patterns-for-vue-js-apps-add915fc9168)
 * [3 Code Splitting Patterns For VueJS and Webpack](https://medium.com/js-dojo/3-code-splitting-patterns-for-vuejs-and-webpack-b8fff1ea0ba4)
@@ -685,7 +692,6 @@ export class GrandChildComponent extends Vue {
 * [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
 * [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
 * [Managing User Permissions in a Vue.js App](https://dzone.com/articles/managing-user-permissions-in-a-vuejs-app)
-* [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
 * [Render Functional Components in Vue.js](https://alligator.io/vuejs/render-functional-components/)
 * [Templating in Vue: Separation of Concerns or Separation of Technology or something else?](https://medium.com/@s.molinari/templating-separation-of-concerns-or-separation-of-technology-or-something-else-123a3d41f0b4)
 * [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)

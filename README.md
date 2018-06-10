@@ -654,6 +654,7 @@ export class GrandChildComponent extends Vue {
 * [[vuex Mutations] Single Changes vs. Single Responsibility](https://forum.vuejs.org/t/vuex-mutations-single-changes-vs-single-responsibility/16396)
 * [Components and How They Interact in Vue and Vuex](https://dzone.com/articles/how-do-components-interact-in-vue-and-what-is-vuex)
 * [Why VueX Is The Perfect Interface Between Frontend and API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
+* [Composing actions with Vuex](https://codeburst.io/composing-actions-with-vuex-b63466264a37)
 
 ### Renderless Component
 

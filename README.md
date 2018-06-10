@@ -471,6 +471,7 @@ References:
 * [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
 * [Scoped Component Slots in Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
 * [The Trick to Understanding Scoped Slots in Vue.js](https://adamwathan.me/the-trick-to-understanding-scoped-slots-in-vuejs/)
+* [The Power of Scoped Slots in Vue](https://pineco.de/power-scoped-slots-vue/)
 
 ### Render Props
 

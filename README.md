@@ -651,10 +651,12 @@ export default {
   errorCaptured (err, vm, info) {
     this.error = true;
     this.errorMessage = `${err.stack}\n\nfound in ${info} of component`;
+    
+    return false;
   },
   render (h) {
     if (this.error) {
-      return h('pre', { style: { color: 'red' }}, this.error)
+      return h('pre', { style: { color: 'red' }}, this.errorMessage);
     }
 
     return this.$slots.default[0]

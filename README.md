@@ -372,10 +372,6 @@ export default {
 
 ### Mixins
 
-References:
-
-* [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
-
 ```js
 // closableMixin.js
 export default {
@@ -421,9 +417,14 @@ export deafult {
 </script>
 ```
 
+#### References:
+
+* [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
+
+
 ### Slots
 
-References:
+#### References:
 
 * [Understanding Component Slots with Vue.js](https://alligator.io/vuejs/component-slots/)
 * [Composing Custom Elements With Slots And Named Slots](https://alligator.io/web-components/composing-slots-named-slots/)
@@ -475,7 +476,7 @@ References:
 
 ### Render Props
 
-References:
+#### References:
 
 * [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
 * [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
@@ -535,7 +536,7 @@ export default {
 
 ## Higher Order Component
 
-References
+#### References:
 
 * [Higher Order Components in Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
 * [Do we need Higher Order Components in Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
@@ -554,7 +555,7 @@ Vue supports provide / inject mechanism to provide `object` into all its descend
 
 With above example component hierarchy, in order to derive data from `parent-component`, you should pass down data(object) as `props` to `child-component` and `grand-child-component`. However, if `parent-component` `provide` data(object), `grand-child-component` can just define `inject` provided object from `parent-component`.
 
-References:
+#### References:
 
 * [Official API](https://vuejs.org/v2/api/#provide-inject)
 * [Official Guide](https://vuejs.org/v2/guide/components-edge-cases.html#Dependency-Injection)

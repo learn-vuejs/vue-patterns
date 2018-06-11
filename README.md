@@ -644,6 +644,12 @@ export class GrandChildComponent extends Vue {
 
 * [Handling Errors in Vue with Error Boundaries](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
 
+### Pass Slots
+
+```
+this.$slots
+```
+
 ## Useful Links
 
 ### Vuex
@@ -661,7 +667,6 @@ export class GrandChildComponent extends Vue {
 
 * [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
 * [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
-
 
 ---
 

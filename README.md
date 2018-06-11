@@ -637,6 +637,37 @@ export class GrandChildComponent extends Vue {
 
 ## Handling Errors
 
+### `errorCaptured` Hook
+
+```js
+export default {
+  name: 'ErrorBoundary',
+  data() {
+    return {
+      error: false,
+      errorMessage: '',
+    };
+  },
+  errorCaptured (err, vm, info) {
+    this.error = true;
+    this.errorMessage = `${err.stack}\n\nfound in ${info} of component`;
+  },
+  render (h) {
+    if (this.error) {
+      return h('pre', { style: { color: 'red' }}, this.error)
+    }
+
+    return this.$slots.default[0]
+  }
+};
+```
+
+```
+<error-boundary>
+  <another-component/>
+</error-boundary>
+```
+
 ### Examples
 
 * [Example 1](https://jsfiddle.net/Linusborg/z84wspcg/)

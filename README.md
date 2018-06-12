@@ -426,7 +426,40 @@ export deafult {
 * [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
 
 
-### Slots
+### Slots (Default)
+
+```html
+<template>
+  <button class="btn btn-primary">
+    <slot></slot>
+  </button>
+</template>
+
+<script>
+export default {
+  name: 'VBtn',
+};
+</script>
+```
+
+```html
+<template>
+  <v-btn>
+    <span class="fa fa-user"></span>
+    Login
+  </v-btn>
+</template>
+
+<script>
+import VBtn from './VBtn';
+  
+export default {
+  components: {
+    VBtn,
+  }
+};
+</script>
+```
 
 #### References:
 

@@ -370,6 +370,10 @@ export default {
 </script>
 ```
 
+#### References:
+
+* [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
+
 ### Mixins
 
 ```js
@@ -678,11 +682,12 @@ export default {
 
 * [Handling Errors in Vue with Error Boundaries](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
 
-### Pass Slots
+### Anti Patterns
 
-```
-this.$slots
-```
+#### References:
+
+* [Chris Fritz - Vue.js Anti-Patterns (and How to Avoid Them)](http://www.fullstackradio.com/87)
+* [Common mistakes to avoid while working with Vue.js](https://medium.freecodecamp.org/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b)
 
 ## Useful Links
 
@@ -704,8 +709,6 @@ this.$slots
 
 ---
 
-* [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
-* [Chris Fritz - Vue.js Anti-Patterns (and How to Avoid Them)](http://www.fullstackradio.com/87)
 * [4 AJAX Patterns For Vue.js Apps](https://medium.com/js-dojo/4-ajax-patterns-for-vue-js-apps-add915fc9168)
 * [3 Code Splitting Patterns For VueJS and Webpack](https://medium.com/js-dojo/3-code-splitting-patterns-for-vuejs-and-webpack-b8fff1ea0ba4)
 * [Refactoring Vue: Cleaning Up a List of Posts With Better Component Splitting and More ES6](https://mattstauffer.com/blog/refactoring-vue-cleaning-up-a-list-of-posts-with-better-component-splitting-and-more-es6/?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
@@ -722,7 +725,6 @@ this.$slots
 * [Understanding Vue.js Reactivity in Depth with Object.defineProperty()](https://www.timo-ernst.net/blog/2017/07/26/understanding-vue-js-reactivity-depth-object-defineproperty/)
 * [Templating in Vue: Separation of Concerns or Separation of Technology or something else?](https://medium.com/@s.molinari/templating-separation-of-concerns-or-separation-of-technology-or-something-else-123a3d41f0b4)
 * [Stashing Vue components data](https://medium.com/@kelin2025/components-stash-f2e14603a874)
-* [Common mistakes to avoid while working with Vue.js](https://medium.freecodecamp.org/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b)
 * [Creating Reusable Transitions in Vue](https://vuejsdevelopers.com/2018/02/26/vue-js-reusable-transitions/)
 * [vue-advanced-workshop](https://github.com/d-levin/vue-advanced-workshop)
 * [Vue.js — Considerations and Tricks](https://blog.webf.zone/vue-js-considerations-and-tricks-fa7e0e4bb7bb)

@@ -503,7 +503,67 @@ App.vue
 
 ### Scoped Slots
 
-References:
+```html
+<template>
+  <ul>
+    <li
+      v-for="todo in todos"
+      v-bind:key="todo.id"
+    >
+      <!-- We have a slot for each todo, passing it the -->
+      <!-- `todo` object as a slot prop.                -->
+      <slot v-bind:todo="todo">
+        {{ todo.text }}
+      </slot>
+    </li>
+  </ul>
+</template>
+
+<script>
+export default {
+  name: 'TodoList',
+  props: {
+    todos: {
+      type: Array,
+      default: () => ([]),
+    }
+  },
+};
+</script>
+```
+
+```html
+<template>
+  <todo-list v-bind:todos="todos">
+      <template slot-scope="{ todo }">
+        <span v-if="todo.isComplete">✓</span>
+        {{ todo.text }}
+      </template>
+  </todo-list>
+</template>
+
+<script>
+import TodoList from './TodoList';
+
+export default {
+  components: {
+    TodoList,
+  },
+  data() {
+    return {
+      todos: [
+        { todo: 'todo 1', isComplete: true },
+        { todo: 'todo 2', isComplete: false },
+        { todo: 'todo 3', isComplete: false },
+        { todo: 'todo 4', isComplete: true },
+      ];
+    };
+  },
+};
+</script>
+```
+
+#### References:
 
 * [Getting Your Head Around Vue.js Scoped Slots](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
 * [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)

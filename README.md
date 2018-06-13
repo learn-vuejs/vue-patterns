@@ -704,12 +704,13 @@ export default {
 </script>
 ```
 
-## Higher Order Component
+## Higher Order Component (a.k.a HOC)
 
 #### References:
 
 * [Higher Order Components in Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
 * [Do we need Higher Order Components in Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
+* [Higher-Order Components in Vue.js](https://medium.com/tldr-tech/higher-order-components-in-vue-js-38b500c6d49f)
 
 ## Dependency injection
 

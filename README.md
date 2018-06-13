@@ -573,6 +573,79 @@ export default {
 
 ### Render Props
 
+In most cases, you can use scoped slots instead of render props. But, it might be useful in some case.
+
+with `SFC`
+
+```html
+<template>
+  <div id="app">
+    <Mouse :render="__render"/>
+  </div>
+</template>
+
+<script>
+import Mouse from "./Mouse.js";
+export default {
+  name: "app",
+  components: {
+    Mouse
+  },
+  methods: {
+    __render({ x, y }) {
+      return (
+        <h1>
+          The mouse position is ({x}, {y})
+        </h1>
+      );
+    }
+  }
+};
+</script>
+<style>
+* {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+</style>
+```
+
+with `JSX`
+
+```js
+const Mouse = {
+  name: "Mouse",
+  props: {
+    render: {
+      type: Function,
+      required: true
+    }
+  },
+  data() {
+    return {
+      x: 0,
+      y: 0
+    };
+  },
+  methods: {
+    handleMouseMove(event) {
+      this.x = event.clientX;
+      this.y = event.clientY;
+    }
+  },
+  render(h) {
+    return (
+      <div style={{ height: "100%" }} onMousemove={this.handleMouseMove}>
+        {this.$props.render(this)}
+      </div>
+    );
+  }
+};
+
+export default Mouse;
+```
+
 #### References:
 
 * [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)

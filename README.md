@@ -704,6 +704,10 @@ export default {
 </script>
 ```
 
+#### References:
+
+* [Transparent Wrapper Components in Vue](https://zendev.com/2018/05/31/transparent-wrapper-components-in-vue.html)
+
 ## Higher Order Component (a.k.a HOC)
 
 #### References:

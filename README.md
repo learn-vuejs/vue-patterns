@@ -853,6 +853,30 @@ export default {
 
 * [Handling Errors in Vue with Error Boundaries](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
 
+### Productivity Tips
+
+watch on create
+
+```js
+// don't
+created() {
+  this.fetchUserList();
+},
+watch: {
+  searchText: 'fetchUserList',
+}
+```
+
+```js
+// do
+watch: {
+  searchText: {
+    handler: 'fetchUserList',
+    immediate: true,
+  }
+}
+```
+
 ### Anti Patterns
 
 #### References:

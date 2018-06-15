@@ -883,11 +883,28 @@ export default {
 * [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
 * [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
 
+### Refactoring
+
+* [Refactoring Vue: Cleaning Up a List of Posts With Better Component Splitting and More ES6](https://mattstauffer.com/blog/refactoring-vue-cleaning-up-a-list-of-posts-with-better-component-splitting-and-more-es6/?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
+* [Clean up your Vue modules with ES6 Arrow Functions](https://gist.github.com/JacobBennett/7b32b4914311c0ac0f28a1fdc411b9a7)
+* [Examples of Vue’s Clean Code](https://webdesign.tutsplus.com/tutorials/examples-of-vues-clean-code--cms-29619)
+
+### Tips & Tricks
+
+* [How To Build Vue Components Like A Pro 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)
+* [Four tips for working with Vue.js](https://itnext.io/four-tips-for-working-with-vue-js-b362d97de852)
+* [Tips from a Lowly VueJS Developer](https://medium.com/@denny.headrick/tips-from-a-lowly-vuejs-developer-381b6956aece)
+* [Throttling and Debouncing Events with Vue.js and lodash](https://alligator.io/vuejs/lodash-throttle-debounce/)
+
+* [Are partially applied functions in event handlers possible?](https://forum.vuejs.org/t/are-partially-applied-functions-in-event-handlers-possible/10187)
+
 ---
+
+### Misc
 
 * [4 AJAX Patterns For Vue.js Apps](https://medium.com/js-dojo/4-ajax-patterns-for-vue-js-apps-add915fc9168)
 * [3 Code Splitting Patterns For VueJS and Webpack](https://medium.com/js-dojo/3-code-splitting-patterns-for-vuejs-and-webpack-b8fff1ea0ba4)
-* [Refactoring Vue: Cleaning Up a List of Posts With Better Component Splitting and More ES6](https://mattstauffer.com/blog/refactoring-vue-cleaning-up-a-list-of-posts-with-better-component-splitting-and-more-es6/?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
+
 * [The easiest way to improve your Vue.js application. Part 1](https://codeburst.io/the-easiest-way-to-improve-your-vue-js-application-part-1-51f068652872)
 * [Using JSX with Vue and Why You Should Care](https://scotch.io/tutorials/using-jsx-with-vue-and-why-you-should-care?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20News)
 * [Advanced Vue Component Design](https://adamwathan.me/advanced-vue-component-design/)
@@ -895,7 +912,6 @@ export default {
 * [81: Evan You - Advanced Vue Component Design](https://player.fm/series/series-1401837/81-evan-you-advanced-vue-component-design)
 * [Six random issues and their solutions in VueJS.](https://medium.com/@stijlbreuk/six-random-issues-and-their-solutions-in-vuejs-b16d470a6462)
 * [Creating Multi-root Vue.js Components](https://zendev.com/2018/05/07/multi-root-vue-components.html)
-* [Examples of Vue’s Clean Code](https://webdesign.tutsplus.com/tutorials/examples-of-vues-clean-code--cms-29619)
 * [Composing computed properties in Vue.js](https://medium.com/@kevin_peters/composing-computed-properties-in-vue-js-87b4507af079)
 * [Understanding Vue.js Reactivity in Depth with Object.defineProperty()](https://www.timo-ernst.net/blog/2017/07/26/understanding-vue-js-reactivity-depth-object-defineproperty/)
 * [Templating in Vue: Separation of Concerns or Separation of Technology or something else?](https://medium.com/@s.molinari/templating-separation-of-concerns-or-separation-of-technology-or-something-else-123a3d41f0b4)
@@ -915,17 +931,11 @@ export default {
 * [Templating in Vue: Separation of Concerns or Separation of Technology or something else?](https://medium.com/@s.molinari/templating-separation-of-concerns-or-separation-of-technology-or-something-else-123a3d41f0b4)
 * [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)
 * [Looping through Object Properties](https://codingexplained.com/coding/front-end/vue-js/looping-object-properties)
-* [Are partially applied functions in event handlers possible?](https://forum.vuejs.org/t/are-partially-applied-functions-in-event-handlers-possible/10187)
-* [Clean up your Vue modules with ES6 Arrow Functions](https://gist.github.com/JacobBennett/7b32b4914311c0ac0f28a1fdc411b9a7)
 * [Cancelling async operations in Vue.js](https://codeburst.io/cancelling-async-operations-in-vue-js-3d0f3c2de598)
 * [Optimizing Performance with Computed Properties](https://codingexplained.com/coding/front-end/vue-js/optimizing-performance-computed-properties)
-* [Four tips for working with Vue.js](https://itnext.io/four-tips-for-working-with-vue-js-b362d97de852)
-* [Tips from a Lowly VueJS Developer](https://medium.com/@denny.headrick/tips-from-a-lowly-vuejs-developer-381b6956aece)
 * [Control DOM Outside Your Vue.js App with portal-vue](https://alligator.io/vuejs/portal-vue/)
-* [Throttling and Debouncing Events with Vue.js and lodash](https://alligator.io/vuejs/lodash-throttle-debounce/)
 * [Scoped styles with v-html](https://medium.com/@brockreece/scoped-styles-with-v-html-c0f6d2dc5d8e)
 * [Creating an Interpose Vue component from a React implementation](https://itnext.io/creating-an-interpose-vue-component-from-a-react-implementation-80d367a695c6)
 * [Pagination With Vuejs](https://medium.com/@obapelumi/pagination-with-vuejs-1f505ce8d15b)
-* [How To Build Vue Components Like A Pro 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)
 * [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
 * [What does the ‘h’ stand for in Vue’s render method?](https://css-tricks.com/what-does-the-h-stand-for-in-vues-render-method/)

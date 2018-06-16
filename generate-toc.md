@@ -1,5 +1,6 @@
 # To generate table of contents
 
+```js
 var toc = '';
 
 readme.querySelectorAll('h2, h3')
@@ -17,3 +18,4 @@ readme.querySelectorAll('h2, h3')
 });
 
 console.log(toc);
+```

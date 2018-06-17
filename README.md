@@ -28,10 +28,7 @@ Useful Vue patterns, techniques, tips and tricks and helpful curated links.
   - [@Provide / @Inject Decorator](#provide--inject-decorator)
 - [Handling Errors](#handling-errors)
   - [errorCaptured Hook](#errorcaptured-hook)
-  - [Examples](#examples)
-  - [References](#references-10)
-  - [Productivity Tips](#productivity-tips)
-  - [Anti Patterns](#anti-patterns)
+- [Productivity Tips](#productivity-tips)
 - [Useful Links](#useful-links)
   - [Component Communication](#component-communication)
   - [Refactoring](#refactoring)
@@ -39,6 +36,7 @@ Useful Vue patterns, techniques, tips and tricks and helpful curated links.
   - [Mobx](#mobx)
   - [Renderless Component](#renderless-component)
   - [Tips & Tricks](#tips--tricks)
+  - [Anti Patterns](#anti-patterns)
   - [Videos / Audios](#videos--audios)
   - [Paid](#paid)
   - [Misc](#misc)
@@ -969,8 +967,6 @@ watch: {
 * [When VueJS Can't Help You](https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/)
 
 ### Anti Patterns
-
-#### References:
 
 * [Chris Fritz - Vue.js Anti-Patterns (and How to Avoid Them)](http://www.fullstackradio.com/87)
 * [Common mistakes to avoid while working with Vue.js](https://medium.freecodecamp.org/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b)

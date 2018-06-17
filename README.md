@@ -886,15 +886,15 @@ export default {
 </error-boundary>
 ```
 
-### Examples
+#### Examples
 
 * [Example 1](https://jsfiddle.net/Linusborg/z84wspcg/)
 
-### References
+#### References
 
 * [Handling Errors in Vue with Error Boundaries](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
 
-### Productivity Tips
+## Productivity Tips
 
 watch on create
 
@@ -918,15 +918,7 @@ watch: {
 }
 ```
 
-### Anti Patterns
-
-#### References:
-
-* [Chris Fritz - Vue.js Anti-Patterns (and How to Avoid Them)](http://www.fullstackradio.com/87)
-* [Common mistakes to avoid while working with Vue.js](https://medium.freecodecamp.org/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b)
-
 ## Useful Links
-
 
 ### Component Communication
 
@@ -975,6 +967,13 @@ watch: {
 * [Vue.js — Considerations and Tricks](https://blog.webf.zone/vue-js-considerations-and-tricks-fa7e0e4bb7bb)
 * [Six random issues and their solutions in VueJS.](https://medium.com/@stijlbreuk/six-random-issues-and-their-solutions-in-vuejs-b16d470a6462)
 * [When VueJS Can't Help You](https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/)
+
+### Anti Patterns
+
+#### References:
+
+* [Chris Fritz - Vue.js Anti-Patterns (and How to Avoid Them)](http://www.fullstackradio.com/87)
+* [Common mistakes to avoid while working with Vue.js](https://medium.freecodecamp.org/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b)
 
 ### Videos / Audios
 

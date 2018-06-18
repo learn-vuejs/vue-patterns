@@ -955,6 +955,10 @@ watch: {
 * [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
 * [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
 
+### Folder Structure
+
+* [How you can improve your workflow using the JavaScript console](https://medium.freecodecamp.org/how-you-can-improve-your-workflow-using-the-javascript-console-bdd7823a9472)
+
 ### Tips & Tricks
 
 * [How To Build Vue Components Like A Pro 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)

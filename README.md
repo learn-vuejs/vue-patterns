@@ -955,6 +955,10 @@ watch: {
 * [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
 * [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
 
+#### Examples
+
+* [Renderless Calendar component](https://codesandbox.io/s/v65lx0xvy5)
+
 ### Folder Structure
 
 * [How you can improve your workflow using the JavaScript console](https://medium.freecodecamp.org/how-you-can-improve-your-workflow-using-the-javascript-console-bdd7823a9472)
@@ -1023,3 +1027,4 @@ watch: {
 * [How To Build Vue Components That Play Nice](https://vuejsdevelopers.com/2018/06/18/vue-components-play-nicely/)
 * [Making responsive Vue components with ResizeObserver](https://itnext.io/making-adaptive-vue-components-with-resizeobserver-123b5ebb20ae)
 * [An imperative guide to forms in Vue.js](https://blog.logrocket.com/an-imperative-guide-to-forms-in-vue-js-7536bfa374e0)
+* [Vue.js: the good, the meh, and the ugly](https://medium.com/@Pier/vue-js-the-good-the-meh-and-the-ugly-82800bbe6684)

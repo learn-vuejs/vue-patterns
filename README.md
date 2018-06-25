@@ -947,6 +947,7 @@ watch: {
 * [Why VueX Is The Perfect Interface Between Frontend and API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
 * [Composing actions with Vuex](https://codeburst.io/composing-actions-with-vuex-b63466264a37)
 * [How to Build Complex, Large-Scale Vue.js Apps With Vuex](https://code.tutsplus.com/tutorials/how-to-build-complex-large-scale-vuejs-applications-with-vuex--cms-30952)
+* [Should I Store This Data in Vuex?](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/)
 
 ### Mobx
 
@@ -966,6 +967,7 @@ watch: {
 * [How you can improve your workflow using the JavaScript console](https://medium.freecodecamp.org/how-you-can-improve-your-workflow-using-the-javascript-console-bdd7823a9472)
 * [How to Structure a Vue.js Project](https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb)
 * [Large-scale Vuex application structures](https://medium.com/3yourmind/large-scale-vuex-application-structures-651e44863e2f)
+* [Vue.js Application Structure and CSS Architecture](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/)
 
 ### Tips & Tricks
 

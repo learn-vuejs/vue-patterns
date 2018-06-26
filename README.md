@@ -3,8 +3,8 @@
 Useful Vue patterns, techniques, tips and tricks and helpful curated links.
 
 - [Component Declaration](#component-declaration)
-  - [Single File Component(a.k.a: SFC) - Most Common](#single-file-componentaka-sfc---most-common)
-  - [String Template (or es6 Template Literal)](#string-template-or-es6-template-literal)
+  - [Single File Component (a.k.a. SFC) - Most Common](#single-file-component-aka-sfc---most-common)
+  - [String Template (or ES6 Template Literal)](#string-template-or-es6-template-literal)
   - [Render Function](#render-function)
   - [JSX](#jsx)
   - [vue-class-component](#vue-class-component)
@@ -22,7 +22,7 @@ Useful Vue patterns, techniques, tips and tricks and helpful curated links.
   - [Scoped Slots](#scoped-slots)
   - [Render Props](#render-props)
 - [Passing Props](#passing-props)
-- [Higher Order Component (a.k.a HOC)](#higher-order-component-aka-hoc)
+- [Higher Order Component (a.k.a. HOC)](#higher-order-component-aka-hoc)
 - [Dependency injection](#dependency-injection)
   - [Provide / Inject](#provide--inject)
   - [@Provide / @Inject Decorator](#provide--inject-decorator)
@@ -45,7 +45,7 @@ Useful Vue patterns, techniques, tips and tricks and helpful curated links.
 
 ## Component Declaration
 
-### Single File Component(a.k.a: SFC) - Most Common
+### Single File Component (a.k.a. SFC) - Most Common
 
 ```html
 <template>
@@ -76,7 +76,7 @@ export default {
 </style>
 ```
 
-### String Template (or es6 Template Literal)
+### String Template (or ES6 Template Literal)
 
 ```js
 Vue.component('my-btn', {
@@ -749,7 +749,7 @@ export default {
 
 * [Transparent Wrapper Components in Vue](https://zendev.com/2018/05/31/transparent-wrapper-components-in-vue.html)
 
-## Higher Order Component (a.k.a HOC)
+## Higher Order Component (a.k.a. HOC)
 
 #### References:
 

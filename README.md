@@ -1001,6 +1001,7 @@ watch: {
 ### Paid
 
 * [Advanced Vue Component Design](https://adamwathan.me/advanced-vue-component-design/)
+* [Advanced Vue.js Features from the Ground Up](https://frontendmasters.com/courses/advanced-vue/)
 
 
 ---
@@ -1036,3 +1037,4 @@ watch: {
 * [An imperative guide to forms in Vue.js](https://blog.logrocket.com/an-imperative-guide-to-forms-in-vue-js-7536bfa374e0)
 * [Vue.js: the good, the meh, and the ugly](https://medium.com/@Pier/vue-js-the-good-the-meh-and-the-ugly-82800bbe6684)
 * [Dynamic Vue.js Layout Components](https://markus.oberlehner.net/blog/dynamic-vue-layout-components/)
+* [Advanced Vue.js concepts: mixins, custom directives, filters, transitions, and state management](https://blog.logrocket.com/advanced-vue-js-concepts-mixins-custom-directives-filters-transitions-and-state-management-ca6955905156)

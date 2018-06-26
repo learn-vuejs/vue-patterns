@@ -928,6 +928,7 @@ watch: {
 * [Control DOM Outside Your Vue.js App with portal-vue](https://alligator.io/vuejs/portal-vue/)
 * [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
 * [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)
+* [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
 
 ### Refactoring
 

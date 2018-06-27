@@ -980,6 +980,7 @@ watch: {
 * [Vue.js — Considerations and Tricks](https://blog.webf.zone/vue-js-considerations-and-tricks-fa7e0e4bb7bb)
 * [Six random issues and their solutions in VueJS.](https://medium.com/@stijlbreuk/six-random-issues-and-their-solutions-in-vuejs-b16d470a6462)
 * [When VueJS Can't Help You](https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/)
+* [Things that won’t work using Vue](https://winnercrespo.com/things-that-wont-work-using-vue/)
 
 ### Typesciprt
 

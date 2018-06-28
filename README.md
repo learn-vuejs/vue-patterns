@@ -506,6 +506,7 @@ export default {
 
 * [Understanding Component Slots with Vue.js](https://alligator.io/vuejs/component-slots/)
 * [Composing Custom Elements With Slots And Named Slots](https://alligator.io/web-components/composing-slots-named-slots/)
+* [Writing Abstract Components with Vue.js](https://alligator.io/vuejs/vue-abstract-components/)
 
 ### Named Slots
 

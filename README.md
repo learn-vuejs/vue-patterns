@@ -982,7 +982,7 @@ watch: {
 * [When VueJS Can't Help You](https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/)
 * [Things that won’t work using Vue](https://winnercrespo.com/things-that-wont-work-using-vue/)
 
-### Typesciprt
+### Typescript
 
 ### Flowtype
 

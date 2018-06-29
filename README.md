@@ -989,6 +989,9 @@ watch: {
 
 ### Router
 
+* [Navigation Guards - Official](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-guards)
+* [Vue Router Navigation Guards with Vuex](https://serversideup.net/vue-router-navigation-guards-vuex/)
+
 ### GraphQL
 
 ### Repos

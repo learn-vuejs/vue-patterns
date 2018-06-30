@@ -1052,3 +1052,4 @@ watch: {
 * [Vue.js: the good, the meh, and the ugly](https://medium.com/@Pier/vue-js-the-good-the-meh-and-the-ugly-82800bbe6684)
 * [Dynamic Vue.js Layout Components](https://markus.oberlehner.net/blog/dynamic-vue-layout-components/)
 * [Advanced Vue.js concepts: mixins, custom directives, filters, transitions, and state management](https://blog.logrocket.com/advanced-vue-js-concepts-mixins-custom-directives-filters-transitions-and-state-management-ca6955905156)
+* [Introducing the Single Element Pattern](https://medium.freecodecamp.org/introducing-the-single-element-pattern-dfbd2c295c5d)

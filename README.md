@@ -185,13 +185,49 @@ export default MyBtn extends Vue {
 
 ## Component Communication
 
+### Props and Events
+
+Basically, vue component follows one-way data flow. That is props down([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) event up.
+
+```html
+<template>
+  <button @click="$emit('click')">{{text}}</button>
+</template>
+
+<script>
+export default {
+  name: 'v-btn'
+};
+</script>
+```
+
+```html
+<template>
+  <v-btn @click="handleClick">my button text</v-btn>
+</template>
+
+<script>
+export default {
+  methods: {
+    handleClick() {
+      console.log('clicked');
+    }
+  }
+};
+</script>
+```
+
 #### References:
 
-* [Component Communication](https://alligator.io/vuejs/component-communication/#provide--inject)
 * [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
-* [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
-* [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
 * [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
+
+## Component Events Handling
+
+#### References:
+
+* [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
+* [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
 * [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)
 * [Vue.js Event Bus + Promises](https://medium.com/@jesusgalvan/vue-js-event-bus-promises-f83e73a81d72)
 

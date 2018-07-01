@@ -8,6 +8,7 @@ Useful Vue patterns, techniques, tips and tricks and helpful curated links.
   - [Render Function](#render-function)
   - [JSX](#jsx)
   - [vue-class-component](#vue-class-component)
+- [Component Communication](#component-communication)
 - [Component Conditional Rendering](#component-conditional-rendering)
   - [Directives (v-if / v-else / v-else-if / v-show)](#directives-v-if--v-else--v-else-if--v-show)
   - [JSX](#jsx-1)
@@ -30,7 +31,6 @@ Useful Vue patterns, techniques, tips and tricks and helpful curated links.
   - [errorCaptured Hook](#errorcaptured-hook)
 - [Productivity Tips](#productivity-tips)
 - [Useful Links](#useful-links)
-  - [Component Communication](#component-communication)
   - [Refactoring](#refactoring)
   - [Vuex](#vuex)
   - [Mobx](#mobx)
@@ -182,6 +182,18 @@ export default MyBtn extends Vue {
 #### References:
 
 * [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
+
+## Component Communication
+
+#### References:
+
+* [Component Communication](https://alligator.io/vuejs/component-communication/#provide--inject)
+* [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
+* [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
+* [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
+* [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
+* [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)
+* [Vue.js Event Bus + Promises](https://medium.com/@jesusgalvan/vue-js-event-bus-promises-f83e73a81d72)
 
 ## Component Conditional Rendering
 
@@ -921,16 +933,6 @@ watch: {
 
 ## Useful Links
 
-### Component Communication
-
-* [Vue.js Event Bus + Promises](https://medium.com/@jesusgalvan/vue-js-event-bus-promises-f83e73a81d72)
-* [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
-* [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
-* [Control DOM Outside Your Vue.js App with portal-vue](https://alligator.io/vuejs/portal-vue/)
-* [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
-* [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)
-* [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
-
 ### Refactoring
 
 * [Refactoring Vue: Cleaning Up a List of Posts With Better Component Splitting and More ES6](https://mattstauffer.com/blog/refactoring-vue-cleaning-up-a-list-of-posts-with-better-component-splitting-and-more-es6/?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
@@ -1054,3 +1056,4 @@ watch: {
 * [Dynamic Vue.js Layout Components](https://markus.oberlehner.net/blog/dynamic-vue-layout-components/)
 * [Advanced Vue.js concepts: mixins, custom directives, filters, transitions, and state management](https://blog.logrocket.com/advanced-vue-js-concepts-mixins-custom-directives-filters-transitions-and-state-management-ca6955905156)
 * [Introducing the Single Element Pattern](https://medium.freecodecamp.org/introducing-the-single-element-pattern-dfbd2c295c5d)
+* [Control DOM Outside Your Vue.js App with portal-vue](https://alligator.io/vuejs/portal-vue/)

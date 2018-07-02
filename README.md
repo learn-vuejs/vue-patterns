@@ -188,6 +188,9 @@ export default MyBtn extends Vue {
 ### Props and Events
 
 Basically, vue component follows one-way data flow, that is props down([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) and event up.
+Props are read-only data, so it's impossible to change props from child components.
+When props changes, child components will be rerendered automatically(props are reactive data source).
+Child components can only emit event to direct parent, so that the parent component may change `data`, mapped to the child component's `props`.
 
 ```html
 <template>
@@ -196,21 +199,31 @@ Basically, vue component follows one-way data flow, that is props down([See offi
 
 <script>
 export default {
-  name: 'v-btn'
+  name: 'v-btn',
+  props: {
+    text: String,
+  },
 };
 </script>
 ```
 
 ```html
 <template>
-  <v-btn @click="handleClick">my button text</v-btn>
+  <v-btn :text="buttonText" @click="handleClick"></v-btn>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      clickCount: 0,
+      buttonText: 'initial button text',
+    };
+  },
   methods: {
     handleClick() {
-      console.log('clicked');
+      this.buttonText = `Button clicked ${++this.clickCount}`;
+      console.log('clicked', this.buttonText);
     }
   }
 };

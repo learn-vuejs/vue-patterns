@@ -221,6 +221,7 @@ export default {
 
 * [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
 * [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
+* [Vue Sibling Component Communication](https://vegibit.com/vue-sibling-component-communication/)
 
 ## Component Events Handling
 

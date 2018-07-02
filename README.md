@@ -187,7 +187,7 @@ export default MyBtn extends Vue {
 
 ### Props and Events
 
-Basically, vue component follows one-way data flow. That is props down([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) event up.
+Basically, vue component follows one-way data flow, that is props down([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) and event up.
 
 ```html
 <template>

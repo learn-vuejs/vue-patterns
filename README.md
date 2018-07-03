@@ -431,6 +431,10 @@ With the above code example, rendered component will be destroyed if a different
 </keep-alive>
 ```
 
+#### References
+
+* [Dynamic Component Templates with Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
+
 ## Composition
 
 ### Basic Composition

@@ -437,6 +437,10 @@ With the above code example, rendered component will be destroyed if a different
 
 ## Composition
 
+#### Library
+
+* [Proppy - Functional props composition for components](https://proppyjs.com/)
+
 ### Basic Composition
 
 ```html

@@ -1071,6 +1071,7 @@ watch: {
 * [Chris Fritz - Vue.js Anti-Patterns (and How to Avoid Them)](http://www.fullstackradio.com/87)
 * [Common mistakes to avoid while working with Vue.js](https://medium.freecodecamp.org/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b)
 * [Avoid This Common Anti-Pattern In Full-Stack Vue/Laravel Apps](https://vuejsdevelopers.com/2017/08/06/vue-js-laravel-full-stack-ajax/)
+* [[Video] - VueNYC - Three Vue code smells, and what you can do about them - Matt Rothenberg (@mattrothenberg)](https://www.youtube.com/watch?v=z5UWVOeIsUQ)
 
 ### Videos / Audios
 

@@ -1049,22 +1049,11 @@ watch: {
 * [Things that won’t work using Vue](https://winnercrespo.com/things-that-wont-work-using-vue/)
 * [Tip#15 Delay execution with _.debounce](https://medium.com/vuejs-tips/tip-15-delay-execution-with-debounce-6a93b759bb06)
 
-### Typescript
-
-### Flowtype
 
 ### Router
 
 * [Navigation Guards - Official](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-guards)
 * [Vue Router Navigation Guards with Vuex](https://serversideup.net/vue-router-navigation-guards-vuex/)
-
-### GraphQL
-
-### Repos
-
-* [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
-* [7-secret-patterns](https://github.com/chrisvfritz/7-secret-patterns)
-* [Vue.js-2-Design-Patterns-and-Best-Practices](https://github.com/PacktPublishing/Vue.js-2-Design-Patterns-and-Best-Practices)
 
 ### Anti Patterns
 
@@ -1078,6 +1067,11 @@ watch: {
 * [81: Evan You - Advanced Vue Component Design](https://player.fm/series/series-1401837/81-evan-you-advanced-vue-component-design)
 * [7 Secret Patterns Vue Consultants Don’t Want You to Know](https://www.youtube.com/watch?v=7YZ5DwlLSt8)
 
+### Repos
+
+* [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
+* [7-secret-patterns](https://github.com/chrisvfritz/7-secret-patterns)
+* [Vue.js-2-Design-Patterns-and-Best-Practices](https://github.com/PacktPublishing/Vue.js-2-Design-Patterns-and-Best-Practices)
 
 ### Paid
 
@@ -1085,10 +1079,15 @@ watch: {
 * [Advanced Vue.js Features from the Ground Up](https://frontendmasters.com/courses/advanced-vue/)
 
 
+### Typescript
+
+### Flowtype
+
+### GraphQL
+
 ---
 
 ### Misc
-
 
 * [Creating an Interpose Vue component from a React implementation](https://itnext.io/creating-an-interpose-vue-component-from-a-react-implementation-80d367a695c6)
 * [Composing computed properties in Vue.js](https://medium.com/@kevin_peters/composing-computed-properties-in-vue-js-87b4507af079)

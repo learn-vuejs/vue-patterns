@@ -1088,6 +1088,9 @@ watch: {
 
 ### Typescript
 
+* [Vue + TypeScript: A Match Made in Your Code Editor](https://css-tricks.com/vue-typescript-a-match-made-in-your-code-editor/)
+* [Writing Class-Based Components with Vue.js and TypeScript](https://alligator.io/vuejs/typescript-class-components/)
+
 ### Flowtype
 
 ### GraphQL

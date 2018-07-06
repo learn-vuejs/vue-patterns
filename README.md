@@ -845,7 +845,7 @@ Vue supports provide / inject mechanism to provide `object` into all its descend
   <child-component>
     <grand-child-component></grand-child-component>
   </child-component>
-</ancestor-component>
+</parent-component>
 ```
 
 With above example component hierarchy, in order to derive data from `parent-component`, you should pass down data(object) as `props` to `child-component` and `grand-child-component`. However, if `parent-component` `provide` data(object), `grand-child-component` can just define `inject` provided object from `parent-component`.

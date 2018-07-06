@@ -999,6 +999,11 @@ watch: {
 
 ## Useful Links
 
+### Style Guide
+
+* [Official - Style Guide](https://vuejs.org/v2/style-guide/)
+* [Vue.js Component Style Guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
+
 ### Refactoring
 
 * [Refactoring Vue: Cleaning Up a List of Posts With Better Component Splitting and More ES6](https://mattstauffer.com/blog/refactoring-vue-cleaning-up-a-list-of-posts-with-better-component-splitting-and-more-es6/?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)

@@ -533,7 +533,7 @@ export default {
 <script>
 import closableMixin from './mixins/closableMixin';
 
-export deafult {
+export default {
   mixins: [closableMixin],
   props: ['text']
 };
@@ -571,7 +571,7 @@ export default {
 
 <script>
 import VBtn from './VBtn';
-  
+
 export default {
   components: {
     VBtn,
@@ -946,7 +946,7 @@ export default {
   errorCaptured (err, vm, info) {
     this.error = true;
     this.errorMessage = `${err.stack}\n\nfound in ${info} of component`;
-    
+
     return false;
   },
   render (h) {

@@ -5,8 +5,8 @@
 有用的Vue模式，技巧，提示和技巧以及有帮助的精选链接。
 
 - [组件声明](#组件声明)
-  - [单文件组件(SFC) - 最常用](#单文件组件sfc---最常用)
-  - [字符串模板(ES6模板字面值)](#字符串模板ES6模板字面值)
+  - [单文件组件 (SFC) - 最常用](#单文件组件-sfc---最常用)
+  - [字符串模板 (ES6模板字面值)](#字符串模板-es6模板字面值)
   - [渲染函数](#渲染函数)
   - [JSX](#jsx)
   - [vue-class-component](#vue-class-component)
@@ -39,14 +39,14 @@
   - [状态管理](#状态管理)
   - [Vuex](#vuex)
   - [Mobx](#mobx)
-  - [Renderless Component](#renderless-component)
-  - [Folder Structure](#folder-structure)
-  - [Tips & Tricks](#tips--tricks)
-  - [Router](#router)
+  - [无渲染组件](#无渲染组件)
+  - [文件结构](#文件结构)
+  - [提示技巧](#提示技巧)
+  - [路由](#路由)
   - [Anti Patterns](#anti-patterns)
-  - [Videos / Audios](#videos--audios)
-  - [Repos](#repos)
-  - [Paid](#paid)
+  - [视频 / 音频](#视频--音频)
+  - [仓库](#仓库)
+  - [付费](#付费)
   - [Typescript](#typescript)
   - [Flowtype](#flowtype)
   - [GraphQL](#graphql)
@@ -54,7 +54,7 @@
 
 ## 组件声明
 
-### 单文件组件(SFC) - 最常用
+### 单文件组件 (SFC) - 最常用
 
 ```html
 <template>
@@ -85,7 +85,7 @@ export default {
 </style>
 ```
 
-### 字符串模板(ES6模板字面值)
+### 字符串模板 (ES6模板字面值)
 
 ```js
 Vue.component('my-btn', {
@@ -1034,23 +1034,23 @@ watch: {
 
 * [Build A View-Framework-Free Data Layer Based on MobX — Integration With Vue (1)](https://itnext.io/build-a-view-framework-free-data-layer-based-on-mobx-integration-with-vue-1-8b524b86c7b8)
 
-### Renderless Component
+### 无渲染组件
 
 * [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
 * [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
 
-#### Examples
+#### 示例
 
 * [Renderless Calendar component](https://codesandbox.io/s/v65lx0xvy5)
 
-### Folder Structure
+### 文件结构
 
 * [How you can improve your workflow using the JavaScript console](https://medium.freecodecamp.org/how-you-can-improve-your-workflow-using-the-javascript-console-bdd7823a9472)
 * [How to Structure a Vue.js Project](https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb)
 * [Large-scale Vuex application structures](https://medium.com/3yourmind/large-scale-vuex-application-structures-651e44863e2f)
 * [Vue.js Application Structure and CSS Architecture](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/)
 
-### Tips & Tricks
+### 提示技巧
 
 * [How To Build Vue Components Like A Pro 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)
 * [Four tips for working with Vue.js](https://itnext.io/four-tips-for-working-with-vue-js-b362d97de852)
@@ -1064,7 +1064,7 @@ watch: {
 * [Tip#15 Delay execution with _.debounce](https://medium.com/vuejs-tips/tip-15-delay-execution-with-debounce-6a93b759bb06)
 
 
-### Router
+### 路由
 
 * [Navigation Guards - Official](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-guards)
 * [Vue Router Navigation Guards with Vuex](https://serversideup.net/vue-router-navigation-guards-vuex/)
@@ -1076,18 +1076,18 @@ watch: {
 * [Avoid This Common Anti-Pattern In Full-Stack Vue/Laravel Apps](https://vuejsdevelopers.com/2017/08/06/vue-js-laravel-full-stack-ajax/)
 * [[Video] - VueNYC - Three Vue code smells, and what you can do about them - Matt Rothenberg (@mattrothenberg)](https://www.youtube.com/watch?v=z5UWVOeIsUQ)
 
-### Videos / Audios
+### 视频 / 音频
 
 * [81: Evan You - Advanced Vue Component Design](https://player.fm/series/series-1401837/81-evan-you-advanced-vue-component-design)
 * [7 Secret Patterns Vue Consultants Don’t Want You to Know](https://www.youtube.com/watch?v=7YZ5DwlLSt8)
 
-### Repos
+### 仓库
 
 * [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)
 * [7-secret-patterns](https://github.com/chrisvfritz/7-secret-patterns)
 * [Vue.js-2-Design-Patterns-and-Best-Practices](https://github.com/PacktPublishing/Vue.js-2-Design-Patterns-and-Best-Practices)
 
-### Paid
+### 付费
 
 * [Advanced Vue Component Design](https://adamwathan.me/advanced-vue-component-design/)
 * [Advanced Vue.js Features from the Ground Up](https://frontendmasters.com/courses/advanced-vue/)

@@ -1,6 +1,8 @@
 # vue-patterns
 
-[English](README.md) | [中文](README-zh.md)
+_Read this in other languages:_
+[简体中文](https://github.com/ZYSzys/vue-patterns-cn),
+[繁體中文](https://github.com/yoyoys/vue-patterns-cht)
 
 Useful Vue patterns, techniques, tips and tricks and helpful curated links.
 

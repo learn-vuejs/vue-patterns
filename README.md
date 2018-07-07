@@ -1,5 +1,7 @@
 # vue-patterns
 
+[English](README.md) | [中文](README-zh.md)
+
 Useful Vue patterns, techniques, tips and tricks and helpful curated links.
 
 - [Component Declaration](#component-declaration)

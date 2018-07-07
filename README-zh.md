@@ -1,38 +1,38 @@
 # vue-patterns
 
-Useful Vue patterns, techniques, tips and tricks and helpful curated links.
+有用的Vue模式，技巧，提示和技巧以及有帮助的精选链接。
 
-- [Component Declaration](#component-declaration)
-  - [Single File Component (a.k.a. SFC) - Most Common](#single-file-component-aka-sfc---most-common)
-  - [String Template (or ES6 Template Literal)](#string-template-or-es6-template-literal)
-  - [Render Function](#render-function)
+- [组件声明](#组件声明)
+  - [单文件组件(SFC) - 最常用](#单文件组件SFC---最常用)
+  - [字符串模板(ES6 模板字面值)](#string-template-or-es6-template-literal)
+  - [渲染函数](#render-function)
   - [JSX](#jsx)
   - [vue-class-component](#vue-class-component)
-- [Component Communication](#component-communication)
-  - [Props and Events](#props-and-events)
-- [Component Events Handling](#component-events-handling)
-- [Component Conditional Rendering](#component-conditional-rendering)
-  - [Directives (v-if / v-else / v-else-if / v-show)](#directives-v-if--v-else--v-else-if--v-show)
+- [组件通信](#组件通信)
+  - [Props 和 Events](#props和events)
+- [组件事件处理](#component-events-handling)
+- [组件条件渲染](#component-conditional-rendering)
+  - [指令 (v-if / v-else / v-else-if / v-show)](#directives-v-if--v-else--v-else-if--v-show)
   - [JSX](#jsx-1)
-- [Dynamic Component](#dynamic-component)
-  - [component with is attribute](#component-with-is-attribute)
-- [Composition](#composition)
-  - [Basic Composition](#basic-composition)
-  - [Extends](#extends)
-  - [Mixins](#mixins)
-  - [Slots (Default)](#slots-default)
-  - [Named Slots](#named-slots)
-  - [Scoped Slots](#scoped-slots)
-  - [Render Props](#render-props)
-- [Passing Props](#passing-props)
-- [Higher Order Component (a.k.a. HOC)](#higher-order-component-aka-hoc)
-- [Dependency injection](#dependency-injection)
+- [动态组件](#dynamic-component)
+  - [带is属性的组件](#component-with-is-attribute)
+- [构建](#composition)
+  - [基础构建](#basic-composition)
+  - [扩展](#extends)
+  - [混入](#mixins)
+  - [插槽 (默认)](#slots-default)
+  - [Named 插槽](#named-slots)
+  - [Scoped 插槽](#scoped-slots)
+  - [渲染 Props](#render-props)
+- [传递 Props](#passing-props)
+- [高阶组件 (HOC)](#higher-order-component-aka-hoc)
+- [依赖注入](#dependency-injection)
   - [Provide / Inject](#provide--inject)
   - [@Provide / @Inject Decorator](#provide--inject-decorator)
-- [Handling Errors](#handling-errors)
-  - [errorCaptured Hook](#errorcaptured-hook)
-- [Productivity Tips](#productivity-tips)
-- [Useful Links](#useful-links)
+- [错误处理](#handling-errors)
+  - [错误捕获钩子](#errorcaptured-hook)
+- [高效提示](#productivity-tips)
+- [有帮助的链接](#useful-links)
   - [Refactoring](#refactoring)
   - [State Management](#state-management)
   - [Vuex](#vuex)
@@ -50,9 +50,9 @@ Useful Vue patterns, techniques, tips and tricks and helpful curated links.
   - [GraphQL](#graphql)
   - [Misc](#misc)
 
-## Component Declaration
+## 组件声明
 
-### Single File Component (a.k.a. SFC) - Most Common
+### 单文件组件(SFC) - 最常用
 
 ```html
 <template>
@@ -186,18 +186,18 @@ export default MyBtn extends Vue {
 </style>
 ```
 
-#### References:
+#### 参考:
 
 * [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
 
-## Component Communication
+## 组件通信
 
-### Props and Events
+### Props和Events
 
-Basically, vue component follows one-way data flow, that is props down([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) and event up.
-Props are read-only data, so it's impossible to change props from child components.
-When props changes, child components will be rerendered automatically(props are reactive data source).
-Child components can only emit event to direct parent, so that the parent component may change `data`, mapped to the child component's `props`.
+基本上，vue组件遵循单向数据流，即props向下（[参见官方指南](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow) 和 event向上。
+props是只读数据，因此无法从子组件更改props。
+当props更改时，子组件将自动重新渲染（props是响应性数据源）。
+子组件只能将event事件直接发送到父组件，因此父组件可以更改`data`，映射到子组件的`props`。
 
 ```html
 <template>
@@ -237,7 +237,7 @@ export default {
 </script>
 ```
 
-#### References:
+#### 参考:
 
 * [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
 * [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
@@ -246,7 +246,7 @@ export default {
 
 ## Component Events Handling
 
-#### References:
+#### 参考:
 
 * [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
 * [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
@@ -415,7 +415,7 @@ export default {
   },
 };
 ```
-#### References
+#### 参考
 * [Difference Between v-if and v-show [With Video at End]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
 
 ## Dynamic Component
@@ -438,7 +438,7 @@ With the above code example, rendered component will be destroyed if a different
 </keep-alive>
 ```
 
-#### References
+#### 参考
 
 * [Dynamic Component Templates with Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
 
@@ -489,7 +489,7 @@ export default {
 </script>
 ```
 
-#### References:
+#### 参考:
 
 * [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
 
@@ -540,7 +540,7 @@ export default {
 </script>
 ```
 
-#### References:
+#### 参考:
 
 * [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
 
@@ -580,7 +580,7 @@ export default {
 </script>
 ```
 
-#### References:
+#### 参考:
 
 * [Understanding Component Slots with Vue.js](https://alligator.io/vuejs/component-slots/)
 * [Composing Custom Elements With Slots And Named Slots](https://alligator.io/web-components/composing-slots-named-slots/)
@@ -683,7 +683,7 @@ export default {
 </script>
 ```
 
-#### References:
+#### 参考:
 
 * [Getting Your Head Around Vue.js Scoped Slots](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
 * [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
@@ -766,7 +766,7 @@ const Mouse = {
 export default Mouse;
 ```
 
-#### References:
+#### 参考:
 
 * [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
 * [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
@@ -824,13 +824,13 @@ export default {
 </script>
 ```
 
-#### References:
+#### 参考:
 
 * [Transparent Wrapper Components in Vue](https://zendev.com/2018/05/31/transparent-wrapper-components-in-vue.html)
 
 ## Higher Order Component (a.k.a. HOC)
 
-#### References:
+#### 参考:
 
 * [Higher Order Components in Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
 * [Do we need Higher Order Components in Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
@@ -850,7 +850,7 @@ Vue supports provide / inject mechanism to provide `object` into all its descend
 
 With above example component hierarchy, in order to derive data from `parent-component`, you should pass down data(object) as `props` to `child-component` and `grand-child-component`. However, if `parent-component` `provide` data(object), `grand-child-component` can just define `inject` provided object from `parent-component`.
 
-#### References:
+#### 参考:
 
 * [Official API](https://vuejs.org/v2/api/#provide-inject)
 * [Official Guide](https://vuejs.org/v2/guide/components-edge-cases.html#Dependency-Injection)
@@ -969,7 +969,7 @@ export default {
 
 * [Example 1](https://jsfiddle.net/Linusborg/z84wspcg/)
 
-#### References
+#### 参考
 
 * [Handling Errors in Vue with Error Boundaries](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
 

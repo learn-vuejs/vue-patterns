@@ -792,7 +792,7 @@ export default Mouse;
 ## Passing Props
 
 Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
-You can simply bind `$attrs` and `$listeners` to child component
+You can bind `$attrs` and `$listeners` in child component and set [`inheritAttrs` to `false`](https://vuejs.org/v2/api/#inheritAttrs) (otherwise both, `div` and `child-component` will receive the attributes)
 
 ```html
 <template>
@@ -805,6 +805,7 @@ You can simply bind `$attrs` and `$listeners` to child component
 <script>
 export default {
   name: 'PassingPropsSample'
+  inheritAttrs: false,
   props: {
     title: {
       type: String,

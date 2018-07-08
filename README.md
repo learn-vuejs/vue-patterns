@@ -426,6 +426,8 @@ export default {
 };
 ```
 #### References
+
+* [Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
 * [Difference Between v-if and v-show [With Video at End]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
 
 ## Dynamic Component
@@ -478,6 +480,10 @@ export default {
 </script>
 ```
 
+#### References
+
+* [Official - Composing with Components](https://vuejs.org/v2/guide/#Composing-with-Components)
+
 ### Extends
 
 When you want to extend a single vue component
@@ -501,6 +507,7 @@ export default {
 
 #### References:
 
+* [Official - extends](https://vuejs.org/v2/api/#extends)
 * [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
 
 ### Mixins
@@ -552,6 +559,7 @@ export default {
 
 #### References:
 
+* [Official - mixins](https://vuejs.org/v2/guide/mixins.html)
 * [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
 
 

@@ -247,6 +247,7 @@ export default {
 
 #### References:
 
+* [Official - Props](https://vuejs.org/v2/guide/components-props.html)
 * [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
 * [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
 * [Vue Sibling Component Communication](https://vegibit.com/vue-sibling-component-communication/)
@@ -256,6 +257,7 @@ export default {
 
 #### References:
 
+* [Official - Custom Events](https://vuejs.org/v2/guide/components-custom-events.html)
 * [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
 * [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
 * [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)

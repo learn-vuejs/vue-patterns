@@ -1,6 +1,14 @@
 # vue-patterns
 
-Useful Vue patterns, techniques, tips and tricks and helpful curated links.
+> Useful Vue patterns, techniques, tips and tricks and helpful curated links.
+
+## Translations
+
+* [🇨🇳 简体中文](https://github.com/ZYSzys/vue-patterns-cn)
+* [🇨🇳 繁體中文](https://github.com/yoyoys/vue-patterns-cht)
+
+
+## Table of Contents
 
 - [Component Declaration](#component-declaration)
   - [Single File Component (a.k.a. SFC) - Most Common](#single-file-component-aka-sfc---most-common)
@@ -15,7 +23,7 @@ Useful Vue patterns, techniques, tips and tricks and helpful curated links.
   - [Directives (v-if / v-else / v-else-if / v-show)](#directives-v-if--v-else--v-else-if--v-show)
   - [JSX](#jsx-1)
 - [Dynamic Component](#dynamic-component)
-  - [<component> with is attribute](#component-with-is-attribute)
+  - [component with is attribute](#component-with-is-attribute)
 - [Composition](#composition)
   - [Basic Composition](#basic-composition)
   - [Extends](#extends)

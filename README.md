@@ -1,10 +1,14 @@
 # vue-patterns
 
-_Read this in other languages:_
-[简体中文](https://github.com/ZYSzys/vue-patterns-cn),
-[繁體中文](https://github.com/yoyoys/vue-patterns-cht)
+> Useful Vue patterns, techniques, tips and tricks and helpful curated links.
 
-Useful Vue patterns, techniques, tips and tricks and helpful curated links.
+## Translations
+
+* [🇨🇳 简体中文](https://github.com/ZYSzys/vue-patterns-cn)
+* [🇨🇳 繁體中文](https://github.com/yoyoys/vue-patterns-cht)
+
+
+## Table of Contents
 
 - [Component Declaration](#component-declaration)
   - [Single File Component (a.k.a. SFC) - Most Common](#single-file-component-aka-sfc---most-common)

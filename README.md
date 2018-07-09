@@ -4,8 +4,8 @@
 
 ## Translations
 
-* [🇨🇳 简体中文](https://github.com/ZYSzys/vue-patterns-cn)
-* [🇨🇳 繁體中文](https://github.com/yoyoys/vue-patterns-cht)
+* [简体中文](https://github.com/ZYSzys/vue-patterns-cn)
+* [繁體中文](https://github.com/yoyoys/vue-patterns-cht)
 
 
 ## Table of Contents

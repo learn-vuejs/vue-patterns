@@ -602,6 +602,7 @@ export default {
 
 #### References:
 
+* [Official - Slot Content](https://vuejs.org/v2/guide/components-slots.html#Slot-Content)
 * [Understanding Component Slots with Vue.js](https://alligator.io/vuejs/component-slots/)
 * [Composing Custom Elements With Slots And Named Slots](https://alligator.io/web-components/composing-slots-named-slots/)
 * [Writing Abstract Components with Vue.js](https://alligator.io/vuejs/vue-abstract-components/)
@@ -640,6 +641,10 @@ App.vue
   </template>
 </base-layout>
 ```
+
+#### References
+
+* [Official - Named Slots](https://vuejs.org/v2/guide/components-slots.html#Named-Slots)
 
 ### Scoped Slots
 
@@ -705,6 +710,7 @@ export default {
 
 #### References:
 
+* [Official - Scoped Slots](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots)
 * [Getting Your Head Around Vue.js Scoped Slots](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
 * [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
 * [Scoped Component Slots in Vue.js](https://alligator.io/vuejs/scoped-component-slots/)

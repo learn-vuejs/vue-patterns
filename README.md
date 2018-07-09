@@ -427,7 +427,7 @@ export default {
 ```
 #### References
 
-* [Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
+* [Official - Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
 * [Difference Between v-if and v-show [With Video at End]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
 
 ## Dynamic Component
@@ -452,6 +452,8 @@ With the above code example, rendered component will be destroyed if a different
 
 #### References
 
+* [Official - Dynamic Components](https://vuejs.org/v2/guide/components.html#Dynamic-Components)
+* [Official - Dynamic & Async Components](https://vuejs.org/v2/guide/components-dynamic-async.html)
 * [Dynamic Component Templates with Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
 
 ## Composition

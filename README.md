@@ -1163,3 +1163,7 @@ watch: {
 * [Introducing the Single Element Pattern](https://medium.freecodecamp.org/introducing-the-single-element-pattern-dfbd2c295c5d)
 * [Control DOM Outside Your Vue.js App with portal-vue](https://alligator.io/vuejs/portal-vue/)
 * [Add i18n and manage translations of a Vue.js powered website](https://medium.com/hypefactors/add-i18n-and-manage-translations-of-a-vue-js-powered-website-73b4511ca69c)
+
+## Fullstack Vue Book
+
+[![Fullstack Vue Book](https://www.fullstack.io/assets/images/vue-github.png)](https://gumroad.com/a/462206067)

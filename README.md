@@ -41,6 +41,7 @@
   - [errorCaptured Hook](#errorcaptured-hook)
 - [Productivity Tips](#productivity-tips)
 - [Useful Links](#useful-links)
+  - [Style Guide](#style-guide)
   - [Refactoring](#refactoring)
   - [State Management](#state-management)
   - [Vuex](#vuex)
@@ -57,6 +58,7 @@
   - [Flowtype](#flowtype)
   - [GraphQL](#graphql)
   - [Misc](#misc)
+- [Fullstack Vue Book](#fullstack-vue-book)
 
 ## Component Declaration
 

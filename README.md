@@ -62,7 +62,7 @@
 
 ## Component Declaration
 
-### Single File Component (a.k.a. SFC) - Most Common
+### [Single File Component (a.k.a. SFC)](https://vuejs.org/v2/guide/single-file-components.html) - Most Common
 
 ```html
 <template>
@@ -115,7 +115,7 @@ Vue.component('my-btn', {
 });
 ```
 
-### Render Function
+### [Render Function](https://vuejs.org/v2/guide/render-function.html)
 
 ```js
 Vue.component('my-btn', {
@@ -142,7 +142,7 @@ Vue.component('my-btn', {
 });
 ```
 
-### JSX
+### [JSX](https://vuejs.org/v2/guide/render-function.html#JSX)
 
 ```jsx
 Vue.component('my-btn', {
@@ -198,6 +198,8 @@ export default MyBtn extends Vue {
 
 #### References:
 
+* [Official - Single File Component](https://vuejs.org/v2/guide/single-file-components.html)
+* [Official - Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
 * [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
 
 ## Component Communication

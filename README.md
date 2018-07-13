@@ -256,6 +256,7 @@ export default {
 * [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
 * [Vue Sibling Component Communication](https://vegibit.com/vue-sibling-component-communication/)
 * [Managing State in Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
+* [Vue.js communication part 2: parent-child components](https://gambardella.info/2017/09/13/vue-js-communication-part-2-parent-child-components/)
 
 ## Component Events Handling
 

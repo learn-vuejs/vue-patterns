@@ -1044,6 +1044,7 @@ watch: {
 * [Clean up your Vue modules with ES6 Arrow Functions](https://gist.github.com/JacobBennett/7b32b4914311c0ac0f28a1fdc411b9a7)
 * [Examples of Vue’s Clean Code](https://webdesign.tutsplus.com/tutorials/examples-of-vues-clean-code--cms-29619)
 * [Optimizing Performance with Computed Properties](https://codingexplained.com/coding/front-end/vue-js/optimizing-performance-computed-properties)
+* [Simplify Your Components with Computed Setters](https://tahazsh.com/vuebyte-computed-setters)
 
 ### State Management
 

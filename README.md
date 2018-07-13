@@ -1,5 +1,7 @@
 # vue-patterns
 
+> This is a fork of https://github.com/learn-vuejs/vue-patterns
+
 > Useful Vue patterns, techniques, tips and tricks and helpful curated links.
 
 ## Translations

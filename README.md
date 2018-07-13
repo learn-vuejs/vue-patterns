@@ -1061,6 +1061,8 @@ watch: {
 * [Composing actions with Vuex](https://codeburst.io/composing-actions-with-vuex-b63466264a37)
 * [How to Build Complex, Large-Scale Vue.js Apps With Vuex](https://code.tutsplus.com/tutorials/how-to-build-complex-large-scale-vuejs-applications-with-vuex--cms-30952)
 * [Should I Store This Data in Vuex?](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/)
+* [Anyway, this is how to use v-model with Vuex. Computed setter in action.](https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976)
+* [Vuex getters are great, but don’t overuse them](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)
 
 ### Mobx
 

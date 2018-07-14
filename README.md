@@ -1064,6 +1064,7 @@ watch: {
 * [Should I Store This Data in Vuex?](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/)
 * [Anyway, this is how to use v-model with Vuex. Computed setter in action.](https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976)
 * [Vuex getters are great, but don’t overuse them](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)
+* [5 Vuex Plugins For Your Next VueJS Project](https://medium.com/js-dojo/5-vuex-plugins-for-your-next-vuejs-project-df9902a70de2)
 
 ### Mobx
 

@@ -1097,6 +1097,8 @@ watch: {
 * [When VueJS Can't Help You](https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/)
 * [Things that won’t work using Vue](https://winnercrespo.com/things-that-wont-work-using-vue/)
 * [Tip#15 Delay execution with _.debounce](https://medium.com/vuejs-tips/tip-15-delay-execution-with-debounce-6a93b759bb06)
+* [Handling API calls in Vue](https://medium.com/@imanhodjaev/handling-api-calls-in-vue-cf39747656ba)
+* [Slide - Vue & REST API Patterns](https://speakerdeck.com/imanhodjaev/vue-and-rest-api-patterns)
 
 
 ### Router

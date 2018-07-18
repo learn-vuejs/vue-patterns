@@ -137,7 +137,7 @@ Vue.component('my-btn', {
         on: {
           click: this.handleClick,
         },
-    });
+    }, this.text);
   },
 });
 ```

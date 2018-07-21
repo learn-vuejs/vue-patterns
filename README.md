@@ -1074,6 +1074,7 @@ watch: {
 
 * [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
 * [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
+* [Building “Renderless” Vue Components](https://css-tricks.com/building-renderless-vue-components/)
 
 #### Examples
 

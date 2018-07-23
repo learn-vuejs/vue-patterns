@@ -3,7 +3,7 @@
 ```js
 var toc = '';
 
-readme.querySelectorAll('h2, h3')
+document.getElementById('readme').querySelectorAll('h2, h3:not(.Box-title)')
 .forEach((elem) => {
   const { tagName, innerText } = elem;
   const anchor = elem.querySelector('a').getAttribute('href');

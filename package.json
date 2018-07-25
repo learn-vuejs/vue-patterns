@@ -1,0 +1,17 @@
+{
+  "name": "vue-patterns",
+  "version": "1.0.0",
+  "description": "vue-patterns",
+  "main": "",
+  "repository": "https://github.com/learn-vuejs/vue-patterns.git",
+  "author": "ilkwon sim <simsim0709@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^0.12.0"
+  }
+}

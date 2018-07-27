@@ -19,7 +19,7 @@ export default {
       console.log('clicked');
     },
   },
-}
+};
 </script>
 
 <style scoped>

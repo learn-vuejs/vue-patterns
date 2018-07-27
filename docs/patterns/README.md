@@ -31,7 +31,7 @@ export default {
       console.log('clicked');
     },
   },
-}
+};
 </script>
 
 <style scoped>
@@ -961,6 +961,10 @@ export default {
   <another-component/>
 </error-boundary>
 ```
+
+<ErrorBoundary>
+  <ThrowError></ThrowError>
+</ErrorBoundary>
 
 #### Examples
 

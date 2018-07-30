@@ -9,7 +9,7 @@
 
 ### [Single File Component (a.k.a. SFC)](https://vuejs.org/v2/guide/single-file-components.html) - Most Common
 
-```html
+```vue
 <template>
   <p class="demo">
     <button class="btn-primary" @click.prevent="handleClick">
@@ -130,7 +130,7 @@ Vue.component('my-btn', {
 
 ### [vue-class-component](https://github.com/vuejs/vue-class-component)
 
-```html
+```vue
 <template>
   <button class="btn-primary" @click.prevent="handleClick">
     {{text}}
@@ -173,7 +173,7 @@ Props are read-only data, so it's impossible to change props from child componen
 When props changes, child components will be rerendered automatically(props are reactive data source).
 Child components can only emit event to direct parent, so that the parent component may change `data`, mapped to the child component's `props`.
 
-```html
+```vue
 <template>
   <button @click="$emit('click')">{{text}}</button>
 </template>
@@ -188,7 +188,7 @@ export default {
 </script>
 ```
 
-```html
+```vue
 <template>
   <v-btn :text="buttonText" @click="handleClick"></v-btn>
 </template>
@@ -205,8 +205,8 @@ export default {
     handleClick() {
       this.buttonText = `Button clicked ${++this.clickCount}`;
       console.log('clicked', this.buttonText);
-    }
-  }
+    },
+  },
 };
 </script>
 ```
@@ -236,20 +236,20 @@ export default {
 
 `v-if`
 
-```html
+```vue
 <h1 v-if="true">Render only if v-if condition is true</h1>
 ```
 
 `v-if` and `v-else`
 
-```html
+```vue
 <h1 v-if="true">Render only if v-if condition is true</h1>
 <h1 v-else>Render only if v-if condition is false</h1>
 ```
 
 `v-else-if`
 
-```html
+```vue
 <div v-if="type === 'A'">Render only if `type` is equal to `A`</div>
 <div v-else-if="type === 'B'">Render only if `type` is equal to `B`</div>
 <div v-else-if="type === 'C'">Render only if `type` is equal to `C`</div>
@@ -258,7 +258,7 @@ export default {
 
 `v-show`
 
-```html
+```vue
 <h1 v-show="true">Always rendered, but it should be visible only if `v-show` conditions is true</h1>
 ```
 
@@ -266,7 +266,7 @@ If you want to conditionally render more than one element,
 you can use directives(`v-if` / `v-else` / `v-else-if` /`v-show`) on a `<template>` element.
 Notice that `<template>` element is not actually rendered into DOM. It is an invisible wrapper.
 
-```html
+```vue
 <template v-if="true">
   <h1>All the elements</h1>
   <p>will be rendered into DOM</p>
@@ -406,13 +406,13 @@ export default {
 - [Example 2](https://jsfiddle.net/chrisvfritz/b2qj69o1/)
 - [Example 3](https://alligator.io/vuejs/dynamic-components/)
 
-```html
+```vue
 <component :is="currentTabComponent"></component>
 ```
 
 With the above code example, rendered component will be destroyed if a different component is rendered in `<component>`. If you want components to keep their instances without being destroyed within `<component>` tag, you can wrap the `<component>` tag in a `<keep-alive>` tag like so:
 
-```html
+```vue
 <keep-alive>
   <component :is="currentTabComponent"></component>
 </keep-alive>
@@ -432,7 +432,7 @@ With the above code example, rendered component will be destroyed if a different
 
 ### Basic Composition
 
-```html
+```vue
 <template>
   <div class="component-b">
     <component-a></component-a>
@@ -458,7 +458,7 @@ export default {
 
 When you want to extend a single vue component
 
-```html
+```vue
 <template>
   <button class="button-primary" @click.prevent="handleClick">
     {{buttonText}}
@@ -509,7 +509,7 @@ export default {
 };
 ```
 
-```html
+```vue
 <template>
   <div v-if="shown" class="alert alert-success" :class="'alert-' + type" role="alert">
     {{text}}
@@ -522,7 +522,7 @@ import closableMixin from './mixins/closableMixin';
 
 export default {
   mixins: [closableMixin],
-  props: ['text']
+  props: ['text'],
 };
 </script>
 ```
@@ -534,7 +534,7 @@ export default {
 
 ### Slots (Default)
 
-```html
+```vue
 <template>
   <button class="btn btn-primary">
     <slot></slot>
@@ -548,7 +548,7 @@ export default {
 </script>
 ```
 
-```html
+```vue
 <template>
   <v-btn>
     <span class="fa fa-user"></span>
@@ -562,7 +562,7 @@ import VBtn from './VBtn';
 export default {
   components: {
     VBtn,
-  }
+  },
 };
 </script>
 ```
@@ -578,7 +578,7 @@ export default {
 
 BaseLayout.vue
 
-```html
+```vue
 <div class="container">
   <header>
     <slot name="header"></slot>
@@ -594,7 +594,7 @@ BaseLayout.vue
 
 App.vue
 
-```html
+```vue
 <base-layout>
   <template slot="header">
     <h1>Here might be a page title</h1>
@@ -615,7 +615,7 @@ App.vue
 
 ### Scoped Slots
 
-```html
+```vue
 <template>
   <ul>
     <li
@@ -637,14 +637,14 @@ export default {
   props: {
     todos: {
       type: Array,
-      default: () => ([]),
-    }
+      default: () => [],
+    },
   },
 };
 </script>
 ```
 
-```html
+```vue
 <template>
   <todo-list v-bind:todos="todos">
       <template slot-scope="{ todo }">
@@ -691,7 +691,7 @@ In most cases, you can use scoped slots instead of render props. But, it might b
 
 with `SFC`
 
-```html
+```vue
 <template>
   <div id="app">
     <Mouse :render="__render"/>
@@ -699,11 +699,11 @@ with `SFC`
 </template>
 
 <script>
-import Mouse from "./Mouse.js";
+import Mouse from './Mouse.js';
 export default {
-  name: "app",
+  name: 'app',
   components: {
-    Mouse
+    Mouse,
   },
   methods: {
     __render({ x, y }) {
@@ -712,8 +712,8 @@ export default {
           The mouse position is ({x}, {y})
         </h1>
       );
-    }
-  }
+    },
+  },
 };
 </script>
 <style>
@@ -771,55 +771,70 @@ export default Mouse;
 Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
 You can bind `$attrs` and `$listeners` in child component and set [`inheritAttrs` to `false`](https://vuejs.org/v2/api/#inheritAttrs) (otherwise both, `div` and `child-component` will receive the attributes)
 
-```html
+```vue
+// PassingProps
+
 <template>
   <div>
     <h1>{{title}}</h1>
-    <child-component v-bind="$attrs" v-on="$listeners"></child-component>
+    <passing-props-child v-bind="$attrs" v-on="$listeners"></passing-props-child>
   </div>
 </template>
 
 <script>
+import PassingPropsChild from './PassingPropsChild';
+
 export default {
-  name: 'PassingPropsSample'
+  components: {
+    PassingPropsChild,
+  },
   inheritAttrs: false,
   props: {
     title: {
       type: String,
-      default: 'Hello, Vue!'
-    }
-  }
+      default: 'Hello, Vue!',
+    },
+  },
 };
 </script>
 ```
 
 From parent component, you can do like this:
 
-```html
+```vue
+// PassedProps.vue
+
 <template>
-  <passing-props-sample
-    title="Hello, Passing Props"
-    childPropA="This props will properly mapped to <child-component />"
-    @click="handleChildComponentClick"
-  >
-  </passing-props-sample>
+  <p class="demo">
+    <passing-props
+      title="This is from <passing-props />"
+      childPropA="This is from <passing-props-child />"
+      @click="handleClickPassingPropsChildComponent"
+    >
+    </passing-props>
+  </p>
 </template>
 
 <script>
-import PassingPropsSample from './PassingPropsSample';
+import PassingProps from './PassingProps';
 
 export default {
   components: {
-    PassingPropsSample
+    PassingProps,
   },
   methods: {
-    handleChildComponentClick() {
-      console.log('child component clicked');
-    }
-  }
+    handleClickPassingPropsChildComponent() {
+      console.log('This event comes from `<passing-props-child />`');
+      alert('This event comes from `<passing-props-child />`');
+    },
+  },
 };
 </script>
 ```
+
+#### Working Example:
+
+<PassedProps></PassedProps>
 
 #### References:
 
@@ -837,7 +852,7 @@ export default {
 
 Vue supports provide / inject mechanism to provide `object` into all its descendants, regardless of how deep the component hierarchy is, as long as they are in the same parent chain. Notice that `provide` and `inject` bindings are **not** reactive, unless you pass down an observed object.
 
-```html
+```vue
 <parent-component>
   <child-component>
     <grand-child-component></grand-child-component>
@@ -926,7 +941,7 @@ export class ParentComponent extends Vue {
 }
 ```
 
-```html
+```vue
 // GrandChildComponent.vue
 
 <template>
@@ -943,7 +958,7 @@ export class GrandChildComponent extends Vue {
 
   @Prop({ default: true })
   primary: boolean;
-};
+}
 </script>
 ```
 

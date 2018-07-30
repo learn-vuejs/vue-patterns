@@ -766,7 +766,7 @@ export default Mouse;
 - [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
 - [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
 
-## Passing Props
+## Passing Props & Listeners
 
 Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
 You can bind `$attrs` and `$listeners` in child component and set [`inheritAttrs` to `false`](https://vuejs.org/v2/api/#inheritAttrs) (otherwise both, `div` and `child-component` will receive the attributes)
@@ -857,29 +857,37 @@ With above example component hierarchy, in order to derive data from `parent-com
 ### Provide / Inject
 
 ```js
-// ParentComponent.vue
+// ThemeProvider
 
 export default {
   provide: {
     theme: {
-      primaryColor: 'blue',
+      primaryColor: '#3eaf7c',
     },
   },
 };
 ```
 
-```html
-// GrandChildComponent.vue
+```vue
+// ThemeButton.vue
 
 <template>
-  <button :style="{ backgroundColor: primary && theme.primaryColor }">
-    <slot></slot>
-  </button>
+  <p class="demo">
+    <button class="btn" :style="{ color: '#fff', backgroundColor: primary && theme.primaryColor }">
+      <slot></slot>
+    </button>
+  </p>
 </template>
 
 <script>
 export default {
-  inject: ['theme'],
+  inject: {
+    theme: {
+      default: {
+        primaryColor: 'darkseagreen',
+      },
+    },
+  },
   props: {
     primary: {
       type: Boolean,
@@ -889,6 +897,18 @@ export default {
 };
 </script>
 ```
+
+```vue
+<theme-provider>
+  <theme-button>Themed Button</theme-button>
+</theme-provider>
+```
+
+#### Working Example:
+
+<ThemeProvider>
+  <ThemeButton>Themed Button</ThemeButton>
+</ThemeProvider>
 
 ### [@Provide / @Inject Decorator](https://github.com/kaorun343/vue-property-decorator)
 
@@ -932,6 +952,7 @@ export class GrandChildComponent extends Vue {
 ### `errorCaptured` Hook
 
 ```js
+// ErrorBoundary.vue
 export default {
   name: 'ErrorBoundary',
   data() {
@@ -942,13 +963,13 @@ export default {
   },
   errorCaptured(err, vm, info) {
     this.error = true;
-    this.errorMessage = `${err.stack}\n\nfound in ${info} of component`;
+    this.errorMessage = `Sorry, error occured in ${info}`;
 
     return false;
   },
   render(h) {
     if (this.error) {
-      return h('pre', { style: { color: 'red' } }, this.errorMessage);
+      return h('p', { class: 'demo bg-danger' }, this.errorMessage);
     }
 
     return this.$slots.default[0];
@@ -956,23 +977,52 @@ export default {
 };
 ```
 
+```vue
+// ThrowError.vue
+
+<template>
+  <p class="demo">
+    <button class="btn btn-danger" @click.prevent="throwError()">Error Thrown Button ({{count}})</button>
+  </p>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  watch: {
+    count() {
+      throw new Error('error');
+    },
+  },
+  methods: {
+    throwError() {
+      this.count++;
+    },
+  },
+};
+</script>
 ```
+
+```vue
 <error-boundary>
-  <another-component/>
+  <throw-error></throw-error>
 </error-boundary>
 ```
+
+#### Working Example:
 
 <ErrorBoundary>
   <ThrowError></ThrowError>
 </ErrorBoundary>
 
-#### Examples
-
-- [Example 1](https://jsfiddle.net/Linusborg/z84wspcg/)
-
 #### References
 
 - [Handling Errors in Vue with Error Boundaries](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
+- [Example 1](https://jsfiddle.net/Linusborg/z84wspcg/)
 
 ## Productivity Tips
 

@@ -3,6 +3,7 @@ export default {
   provide: {
     theme: {
       primaryColor: '#3eaf7c',
+      secondaryColor: '#1FA2FF'
     },
   },
   render(h) {

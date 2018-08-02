@@ -1,6 +1,6 @@
 <template>
   <p class="demo">
-    <button class="btn" :style="{ color: '#fff', backgroundColor: primary && theme.primaryColor }">
+    <button class="btn" :style="{ color: '#fff', backgroundColor: (primary && theme.primaryColor) || (secondary && theme.secondaryColor)  }">
       <slot></slot>
     </button>
   </p>
@@ -10,15 +10,17 @@
 export default {
   inject: {
     theme: {
-      default: {
-        primaryColor: 'darkseagreen',
-      },
+      default: {},
     },
   },
   props: {
     primary: {
       type: Boolean,
-      default: true,
+      default: false,
+    },
+    secondary: {
+      type: Boolean,
+      default: false,
     },
   },
 };

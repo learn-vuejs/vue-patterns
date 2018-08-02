@@ -878,7 +878,11 @@ export default {
   provide: {
     theme: {
       primaryColor: '#3eaf7c',
+      secondaryColor: '#1FA2FF'
     },
+  },
+  render(h) {
+    return this.$slots.default[0];
   },
 };
 ```
@@ -888,7 +892,7 @@ export default {
 
 <template>
   <p class="demo">
-    <button class="btn" :style="{ color: '#fff', backgroundColor: primary && theme.primaryColor }">
+    <button class="btn" :style="{ color: '#fff', backgroundColor: (primary && theme.primaryColor) || (secondary && theme.secondaryColor)  }">
       <slot></slot>
     </button>
   </p>
@@ -898,15 +902,17 @@ export default {
 export default {
   inject: {
     theme: {
-      default: {
-        primaryColor: 'darkseagreen',
-      },
+      default: {},
     },
   },
   props: {
     primary: {
       type: Boolean,
-      default: true,
+      default: false,
+    },
+    secondary: {
+      type: Boolean,
+      default: false,
     },
   },
 };
@@ -915,14 +921,14 @@ export default {
 
 ```vue
 <theme-provider>
-  <theme-button>Themed Button</theme-button>
+  <theme-button secondary>Themed Button</theme-button>
 </theme-provider>
 ```
 
 #### Working Example:
 
 <ThemeProvider>
-  <ThemeButton>Themed Button</ThemeButton>
+  <ThemeButton secondary>Themed Button</ThemeButton>
 </ThemeProvider>
 
 ### [@Provide / @Inject Decorator](https://github.com/kaorun343/vue-property-decorator)

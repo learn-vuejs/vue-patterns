@@ -871,6 +871,10 @@ With above example component hierarchy, in order to derive data from `parent-com
 
 ### Provide / Inject
 
+::: tip
+You can also use [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator)'s `@Provide`, `@Inject`
+:::
+
 ```js
 // ThemeProvider
 
@@ -930,43 +934,6 @@ export default {
 <ThemeProvider>
   <ThemeButton secondary>Themed Button</ThemeButton>
 </ThemeProvider>
-
-### [@Provide / @Inject Decorator](https://github.com/kaorun343/vue-property-decorator)
-
-```js
-// ParentComponent.vue
-
-import { Component, Vue, Provide } from 'vue-property-decorator';
-
-@Component
-export class ParentComponent extends Vue {
-  @Provide
-  theme = {
-    primaryColor: 'blue',
-  };
-}
-```
-
-```vue
-// GrandChildComponent.vue
-
-<template>
-  <button :style="{ backgroundColor: primary && theme.primaryColor }">
-    <slot></slot>
-  </button>
-</template>
-
-<script>
-import { Component, Vue, Inject, Prop } from 'vue-property-decorator';
-
-export class GrandChildComponent extends Vue {
-  @Inject() theme;
-
-  @Prop({ default: true })
-  primary: boolean;
-}
-</script>
-```
 
 ## Handling Errors
 

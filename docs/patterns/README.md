@@ -248,9 +248,9 @@ Notice that `<template>` element is not actually rendered into DOM. It is an inv
 </template>
 ```
 
-### JSX
+### Render Function or JSX
 
-If you use JSX in your vue application, you can apply all the techniques such as `if else` and `switch case` statement and `ternary` and `logical` operator.
+If you use render function or JSX in your vue application, you can apply all the techniques such as `if else` and `switch case` statement and `ternary` and `logical` operator.
 
 `if else` statement
 
@@ -849,53 +849,12 @@ With above example component hierarchy, in order to derive data from `parent-com
 You can also use [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator)'s `@Provide`, `@Inject`
 :::
 
-```js
-// ThemeProvider
+#### ThemeProvider.vue
 
-export default {
-  provide: {
-    theme: {
-      primaryColor: '#3eaf7c',
-      secondaryColor: '#1FA2FF'
-    },
-  },
-  render(h) {
-    return this.$slots.default[0];
-  },
-};
-```
+<<< @/docs/.vuepress/components/ThemeProvider.vue
 
-```vue
-// ThemeButton.vue
-
-<template>
-  <p class="demo">
-    <button class="btn" :style="{ color: '#fff', backgroundColor: (primary && theme.primaryColor) || (secondary && theme.secondaryColor)  }">
-      <slot></slot>
-    </button>
-  </p>
-</template>
-
-<script>
-export default {
-  inject: {
-    theme: {
-      default: {},
-    },
-  },
-  props: {
-    primary: {
-      type: Boolean,
-      default: false,
-    },
-    secondary: {
-      type: Boolean,
-      default: false,
-    },
-  },
-};
-</script>
-```
+#### ThemeButton.vue
+<<< @/docs/.vuepress/components/ThemeButton.vue
 
 ```vue
 <theme-provider>
@@ -913,61 +872,13 @@ export default {
 
 ### `errorCaptured` Hook
 
-```js
-// ErrorBoundary.vue
-export default {
-  name: 'ErrorBoundary',
-  data() {
-    return {
-      error: false,
-      errorMessage: '',
-    };
-  },
-  errorCaptured(err, vm, info) {
-    this.error = true;
-    this.errorMessage = `Sorry, error occured in ${info}`;
+#### ErrorBoundary.vue
 
-    return false;
-  },
-  render(h) {
-    if (this.error) {
-      return h('p', { class: 'demo bg-danger' }, this.errorMessage);
-    }
+<<< @/docs/.vuepress/components/ErrorBoundary.vue
 
-    return this.$slots.default[0];
-  },
-};
-```
+#### ThrowError.vue
 
-```vue
-// ThrowError.vue
-
-<template>
-  <p class="demo">
-    <button class="btn btn-danger" @click.prevent="throwError()">Error Thrown Button ({{count}})</button>
-  </p>
-</template>
-
-<script>
-export default {
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  watch: {
-    count() {
-      throw new Error('error');
-    },
-  },
-  methods: {
-    throwError() {
-      this.count++;
-    },
-  },
-};
-</script>
-```
+<<< @/docs/.vuepress/components/ThrowError.vue
 
 ```vue
 <error-boundary>

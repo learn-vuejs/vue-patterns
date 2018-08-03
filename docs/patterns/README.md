@@ -9,45 +9,7 @@
 
 ### [Single File Component (a.k.a. SFC)](https://vuejs.org/v2/guide/single-file-components.html) - Most Common
 
-```vue
-<template>
-  <p class="demo">
-    <button class="btn-primary" @click.prevent="handleClick">
-      <slot></slot>(clicked - {{count}})
-    </button>
-  </p>
-</template>
-
-<script>
-export default {
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  methods: {
-    handleClick() {
-      this.count++;
-      console.log('clicked');
-    },
-  },
-};
-</script>
-
-<style scoped>
-.btn-primary {
-  display: inline-block;
-  font-size: 1.2rem;
-  color: #fff;
-  background-color: #3eaf7c;
-  padding: 0.8rem 1.6rem;
-  border-radius: 4px;
-  transition: background-color 0.1s ease;
-  box-sizing: border-box;
-  border-bottom: 1px solid #389d70;
-}
-</style>
-```
+<<< @/docs/.vuepress/components/SFCButton.vue
 
 <SFCButton>SFC</SFCButton>
 
@@ -57,7 +19,7 @@ export default {
 Vue.component('my-btn', {
   template: `
     <button class="btn-primary" @click.prevent="handleClick">
-      {{text}}
+      <slot></slot>(clicked - {{count}})
     </button>
   `,
   data() {
@@ -66,8 +28,16 @@ Vue.component('my-btn', {
     };
   },
   methods: {
-    handleClick() {
-      console.log('clicked');
+    data() {
+      return {
+        count: 0,
+      };
+    },
+    methods: {
+      handleClick() {
+        this.count++;
+        console.log('clicked', this.count);
+      },
     },
   },
 });
@@ -77,14 +47,17 @@ Vue.component('my-btn', {
 
 ```js
 Vue.component('my-btn', {
-  data() {
-    return {
-      text: 'Click me',
-    };
-  },
   methods: {
-    handleClick() {
-      console.log('clicked');
+    data() {
+      return {
+        count: 0,
+      };
+    },
+    methods: {
+      handleClick() {
+        this.count++;
+        console.log('clicked', this.count);
+      },
     },
   },
   render(h) {
@@ -98,7 +71,7 @@ Vue.component('my-btn', {
           click: this.handleClick,
         },
       },
-      this.text
+      this.$slots.default
     );
   },
 });
@@ -120,8 +93,8 @@ Vue.component('my-btn', {
   },
   render() {
     return (
-      <button class="btn-primary" onClick={this.handleClick}>
-        {{this.text}}
+      <button class="btn-primary" @click.prevent="handleClick">
+        {this.$slots.default}(clicked - {{count}})
       </button>
     );
   },
@@ -133,7 +106,7 @@ Vue.component('my-btn', {
 ```vue
 <template>
   <button class="btn-primary" @click.prevent="handleClick">
-    {{text}}
+    <slot></slot>(clicked - {{count}})
   </button>
 </template>
 
@@ -143,10 +116,11 @@ import Component from 'vue-class-component';
 
 @Component
 export default MyBtn extends Vue {
-  text = 'Click me';
+  count = 0;
 
   handleClick() {
-    console.log('clicked');
+    this.count++;
+    console.log('clicked', this.count);
   }
 }
 </script>

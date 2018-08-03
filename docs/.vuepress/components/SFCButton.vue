@@ -16,7 +16,7 @@ export default {
   methods: {
     handleClick() {
       this.count++;
-      console.log('clicked');
+      console.log('clicked', this.count);
     },
   },
 };

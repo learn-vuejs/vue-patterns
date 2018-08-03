@@ -738,66 +738,15 @@ export default Mouse;
 Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
 You can bind `$attrs` and `$listeners` in child component and set [`inheritAttrs` to `false`](https://vuejs.org/v2/api/#inheritAttrs) (otherwise both, `div` and `child-component` will receive the attributes)
 
-```vue
-// PassingProps
+#### PassingProps.vue
 
-<template>
-  <div>
-    <h1>{{title}}</h1>
-    <passing-props-child v-bind="$attrs" v-on="$listeners"></passing-props-child>
-  </div>
-</template>
-
-<script>
-import PassingPropsChild from './PassingPropsChild';
-
-export default {
-  components: {
-    PassingPropsChild,
-  },
-  inheritAttrs: false,
-  props: {
-    title: {
-      type: String,
-      default: 'Hello, Vue!',
-    },
-  },
-};
-</script>
-```
+<<< @/docs/.vuepress/components/PassingProps.vue
 
 From parent component, you can do like this:
 
-```vue
-// PassedProps.vue
+#### PassedProps.vue
 
-<template>
-  <p class="demo">
-    <passing-props
-      title="This is from <passing-props />"
-      childPropA="This is from <passing-props-child />"
-      @click="handleClickPassingPropsChildComponent"
-    >
-    </passing-props>
-  </p>
-</template>
-
-<script>
-import PassingProps from './PassingProps';
-
-export default {
-  components: {
-    PassingProps,
-  },
-  methods: {
-    handleClickPassingPropsChildComponent() {
-      console.log('This event comes from `<passing-props-child />`');
-      alert('This event comes from `<passing-props-child />`');
-    },
-  },
-};
-</script>
-```
+<<< @/docs/.vuepress/components/PassedProps.vue
 
 #### Working Example:
 

@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Vue Patterns',
   description:
-    'Useful Vue patterns, techniques, tips and tricks and helpful curated links.',
+    'Useful Vue patterns, techniques, tips and tricks and curated helpful links.',
   serviceWorker: true,
   themeConfig: {
     displayAllHeaders: true,
@@ -28,6 +28,7 @@ module.exports = {
     sidebar: [
       ['/patterns/', 'Patterns'],
       ['/useful-links/', 'Useful Links'],
+      ['/sponsors/', 'Fullstack Vue Book'],
       ['/translations/', 'Translations'],
     ],
   },

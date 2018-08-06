@@ -9,9 +9,11 @@
   "private": false,
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "gh-pages -d dosc:build"
   },
   "devDependencies": {
+    "gh-pages": "^1.2.0",
     "vuepress": "^0.13.1"
   }
 }

@@ -11,7 +11,7 @@ script:
   - npm run docs:build
 
 after_success:
-  - npm run deploy
+  - npm run docs:deploy
 
 deploy:
   provider: pages

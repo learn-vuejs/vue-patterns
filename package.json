@@ -10,7 +10,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:deploy": "gh-pages -d docs:build"
+    "docs:deploy": "gh-pages -d docs/.vuepress/dist"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",

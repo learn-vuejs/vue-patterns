@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/vue-patterns/',
   title: 'Vue Patterns',
   description:
     'Useful Vue patterns, techniques, tips and tricks and curated helpful links.',

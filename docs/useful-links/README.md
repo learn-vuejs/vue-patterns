@@ -107,6 +107,10 @@
 
 - [Basics of GraphQL with Vue.js](https://medium.com/@lachlanmiller_52885/graphql-basics-and-practical-examples-with-vue-6b649b9685e0)
 
+### Test
+
+- [Testing Vuex Actions Correctly with Jest](https://medium.com/js-dojo/testing-vuex-actions-correctly-with-jest-444c277be4fe)
+
 ---
 
 ### Misc

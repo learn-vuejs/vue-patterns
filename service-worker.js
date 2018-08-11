@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "05b9dbf282e0234b2c8887b54e85b919"
+    "revision": "a078bb9a21f3eb6c50043bcceca21769"
   },
   {
     "url": "assets/css/0.styles.a3e46cac.css",
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "revision": "3ca0423cab3972e089e126b06f89a050"
   },
   {
-    "url": "assets/js/17.03fd8bf0.js",
-    "revision": "a74323bababf23fc43edfd67b83e88e9"
+    "url": "assets/js/17.341447b9.js",
+    "revision": "c2b99d63f41bf5257605aa39373e537c"
   },
   {
     "url": "assets/js/2.178aa6c2.js",
@@ -96,8 +96,8 @@ self.__precacheManifest = [
     "revision": "f28a38c977363cf35e4c20e652db9997"
   },
   {
-    "url": "assets/js/app.59f98339.js",
-    "revision": "ddad2490ef95e5e4207765cbec302535"
+    "url": "assets/js/app.c17f77f3.js",
+    "revision": "0cb74eaf48604c80625c04c8ce1a23ec"
   },
   {
     "url": "icons/android-icon-144x144.png",
@@ -197,7 +197,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "90f58f963f5ab4c37d8367d7c2ef7b6a"
+    "revision": "34823c5c17461f0ee38fb7f47e9c446f"
   },
   {
     "url": "learn-vue-logo.png",
@@ -205,19 +205,19 @@ self.__precacheManifest = [
   },
   {
     "url": "patterns/index.html",
-    "revision": "7813a976b1061b8b38a22cc1be6f13c6"
+    "revision": "48fc8ca5ac9303e66a4cc742bdaf7ac4"
   },
   {
     "url": "sponsors/index.html",
-    "revision": "f9541f0f726c88b5361574504ba58dd3"
+    "revision": "7759ee89e9662b3083530177c303eb37"
   },
   {
     "url": "translations/index.html",
-    "revision": "c01d2d9b7c9752149682e13ef33ac93d"
+    "revision": "51534756131cfbafbfc3d649eb11a23d"
   },
   {
     "url": "useful-links/index.html",
-    "revision": "7b3c0e27be1f62477614073b5e2285b2"
+    "revision": "63201098e043e22df655bd1c5310dac2"
   },
   {
     "url": "vue-patterns-hero.png",

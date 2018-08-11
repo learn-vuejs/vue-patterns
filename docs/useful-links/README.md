@@ -144,3 +144,6 @@
 - [Add i18n and manage translations of a Vue.js powered website](https://medium.com/hypefactors/add-i18n-and-manage-translations-of-a-vue-js-powered-website-73b4511ca69c)
 - [Managing Complex Waiting Experiences on Web UIs](https://medium.com/@fkadev/managing-complex-waiting-experiences-on-web-uis-29534d2d92a8)
 - [Vue.js — Forms, components and considerations](https://blog.webf.zone/vue-js-forms-components-and-considerations-d81b3ffe9efb)
+- [Reusing Logic in Vue Components](https://vueschool.io/articles/vuejs-tutorials/reusing-logic-in-vue-components/)
+- [Recursion for Nested, Tree-Structure Components in Vue](https://itnext.io/recursion-for-nested-tree-structure-components-in-vue-1cb600005475)
+

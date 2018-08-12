@@ -2,37 +2,37 @@
 
 > This is a fork of https://github.com/learn-vuejs/vue-patterns
 
-> Useful Vue patterns, techniques, tips and tricks and helpful curated links.
+> Полезные паттерны, методы, советы и рекомендации, а также тщательно подобранный список ссылок по Vue.
 
-## Translations
+## Переводы
 
 * [简体中文](https://github.com/ZYSzys/vue-patterns-cn)
 * [繁體中文](https://github.com/yoyoys/vue-patterns-cht)
 
 
-## Table of Contents
+## Оглавление
 
-- [Component Declaration](#component-declaration)
-  - [Single File Component (a.k.a. SFC) - Most Common](#single-file-component-aka-sfc---most-common)
-  - [String Template (or ES6 Template Literal)](#string-template-or-es6-template-literal)
-  - [Render Function](#render-function)
+- [Объявление компонента](#component-declaration)
+  - [Однофайловый компонент (сокращенно — SFC) — наиболее распространённый](#single-file-component-aka-sfc---most-common)
+  - [Шаблонные строки (или литералы шаблонов в ES6)](#string-template-or-es6-template-literal)
+  - [Функция отрисовки](#render-function)
   - [JSX](#jsx)
   - [vue-class-component](#vue-class-component)
-- [Component Communication](#component-communication)
-  - [Props and Events](#props-and-events)
-- [Component Events Handling](#component-events-handling)
-- [Component Conditional Rendering](#component-conditional-rendering)
-  - [Directives (v-if / v-else / v-else-if / v-show)](#directives-v-if--v-else--v-else-if--v-show)
+- [Взаимодействие компонентов](#component-communication)
+  - [Входные параметры и события](#props-and-events)
+- [Обработка событий компонента](#component-events-handling)
+- [Условный рендеринг компонента](#component-conditional-rendering)
+  - [Директивы (v-if / v-else / v-else-if / v-show)](#directives-v-if--v-else--v-else-if--v-show)
   - [JSX](#jsx-1)
-- [Dynamic Component](#dynamic-component)
-  - [component with is attribute](#component-with-is-attribute)
-- [Composition](#composition)
-  - [Basic Composition](#basic-composition)
-  - [Extends](#extends)
-  - [Mixins](#mixins)
-  - [Slots (Default)](#slots-default)
-  - [Named Slots](#named-slots)
-  - [Scoped Slots](#scoped-slots)
+- [Динамический компонент](#dynamic-component)
+  - [компонент с атрибутом](#component-with-is-attribute)
+- [Композиция](#composition)
+  - [Основная композиция](#basic-composition)
+  - [Расширения](#extends)
+  - [Примеси](#mixins)
+  - [Слоты (по умолчанию)](#slots-default)
+  - [Именованные слоты](#named-slots)
+  - [Слоты с ограниченной областью видимости](#scoped-slots)
   - [Render Props](#render-props)
 - [Passing Props](#passing-props)
 - [Higher Order Component (a.k.a. HOC)](#higher-order-component-aka-hoc)
@@ -42,14 +42,14 @@
 - [Handling Errors](#handling-errors)
   - [errorCaptured Hook](#errorcaptured-hook)
 - [Productivity Tips](#productivity-tips)
-- [Useful Links](#useful-links)
-  - [Style Guide](#style-guide)
-  - [Refactoring](#refactoring)
-  - [State Management](#state-management)
+- [Полезные ссылки](#useful-links)
+  - [Рекомендации](#style-guide)
+  - [Рефакторинг](#refactoring)
+  - [Управление состоянием](#state-management)
   - [Vuex](#vuex)
   - [Mobx](#mobx)
-  - [Renderless Component](#renderless-component)
-  - [Folder Structure](#folder-structure)
+  - [Компоненты ](#renderless-component)
+  - [Структура каталогов](#folder-structure)
   - [Tips & Tricks](#tips--tricks)
   - [Router](#router)
   - [Anti Patterns](#anti-patterns)
@@ -59,12 +59,12 @@
   - [Typescript](#typescript)
   - [Flowtype](#flowtype)
   - [GraphQL](#graphql)
-  - [Misc](#misc)
+  - [Разное](#misc)
 - [Fullstack Vue Book](#fullstack-vue-book)
 
-## Component Declaration
+## Объявление компонентов
 
-### [Single File Component (a.k.a. SFC)](https://vuejs.org/v2/guide/single-file-components.html) - Most Common
+### [Однофайловый компонент (сокращенно — SFC)](https://ru.vuejs.org/v2/guide/single-file-components.html) — наиболее распространенный
 
 ```html
 <template>
@@ -77,12 +77,12 @@
 export default {
   data() {
     return {
-      text: 'Click me',
+      text: 'Нажми на меня',
     };
   },
   methods: {
     handleClick() {
-      console.log('clicked');
+      console.log('Клик по кнопке');
     },
   },
 }
@@ -95,7 +95,7 @@ export default {
 </style>
 ```
 
-### String Template (or ES6 Template Literal)
+### Шаблонные строки (или литералы шаблонов в ES6)
 
 ```js
 Vue.component('my-btn', {
@@ -106,29 +106,29 @@ Vue.component('my-btn', {
   `,
   data() {
     return {
-      text: 'Click me',
+      text: 'Нажми на меня',
     };
   },
   methods: {
     handleClick() {
-      console.log('clicked');
+      console.log('Клик по кнопке');
     },
   },
 });
 ```
 
-### [Render Function](https://vuejs.org/v2/guide/render-function.html)
+### [Render-функция](https://ru.vuejs.org/v2/guide/render-function.html)
 
 ```js
 Vue.component('my-btn', {
   data() {
     return {
-      text: 'Click me',
+      text: 'Нажми на меня',
     };
   },
   methods: {
     handleClick() {
-      console.log('clicked');
+      console.log('Клик по кнопке');
     },
   },
   render(h) {
@@ -144,18 +144,18 @@ Vue.component('my-btn', {
 });
 ```
 
-### [JSX](https://vuejs.org/v2/guide/render-function.html#JSX)
+### [JSX](https://ru.vuejs.org/v2/guide/render-function.html#JSX)
 
 ```jsx
 Vue.component('my-btn', {
   data() {
     return {
-      text: 'Click me',
+      text: 'Нажми на меня',
     };
   },
   methods: {
     handleClick() {
-      console.log('clicked');
+      console.log('Клик по кнопке');
     },
   },
   render() {
@@ -183,10 +183,10 @@ import Component from 'vue-class-component';
 
 @Component
 export default MyBtn extends Vue {
-  text = 'Click me';
+  text = 'Нажми на меня';
 
   handleClick() {
-    console.log('clicked');
+    console.log('Клик по кнопке');
   }
 }
 </script>
@@ -200,8 +200,8 @@ export default MyBtn extends Vue {
 
 #### References:
 
-* [Official - Single File Component](https://vuejs.org/v2/guide/single-file-components.html)
-* [Official - Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
+* [Официальная документация — Single File Component](https://vuejs.org/v2/guide/single-file-components.html)
+* [Официальная документация — Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
 * [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
 
 ## Component Communication
@@ -243,8 +243,8 @@ export default {
   },
   methods: {
     handleClick() {
-      this.buttonText = `Button clicked ${++this.clickCount}`;
-      console.log('clicked', this.buttonText);
+      this.buttonText = `Button Клик по кнопке ${++this.clickCount}`;
+      console.log('Клик по кнопке', this.buttonText);
     }
   }
 };
@@ -253,7 +253,7 @@ export default {
 
 #### References:
 
-* [Official - Props](https://vuejs.org/v2/guide/components-props.html)
+* [Официальная документация — Props](https://vuejs.org/v2/guide/components-props.html)
 * [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
 * [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
 * [Vue Sibling Component Communication](https://vegibit.com/vue-sibling-component-communication/)
@@ -264,7 +264,7 @@ export default {
 
 #### References:
 
-* [Official - Custom Events](https://vuejs.org/v2/guide/components-custom-events.html)
+* [Официальная документация — Custom Events](https://vuejs.org/v2/guide/components-custom-events.html)
 * [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
 * [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
 * [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)
@@ -434,7 +434,7 @@ export default {
 ```
 #### References
 
-* [Official - Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
+* [Официальная документация — Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
 * [Difference Between v-if and v-show [With Video at End]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
 
 ## Dynamic Component
@@ -459,8 +459,8 @@ With the above code example, rendered component will be destroyed if a different
 
 #### References
 
-* [Official - Dynamic Components](https://vuejs.org/v2/guide/components.html#Dynamic-Components)
-* [Official - Dynamic & Async Components](https://vuejs.org/v2/guide/components-dynamic-async.html)
+* [Официальная документация — Dynamic Components](https://vuejs.org/v2/guide/components.html#Dynamic-Components)
+* [Официальная документация — Dynamic & Async Components](https://vuejs.org/v2/guide/components-dynamic-async.html)
 * [Dynamic Component Templates with Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
 
 ## Composition
@@ -491,7 +491,7 @@ export default {
 
 #### References
 
-* [Official - Composing with Components](https://vuejs.org/v2/guide/#Composing-with-Components)
+* [Официальная документация — Composing with Components](https://vuejs.org/v2/guide/#Composing-with-Components)
 
 ### Extends
 
@@ -516,7 +516,7 @@ export default {
 
 #### References:
 
-* [Official - extends](https://vuejs.org/v2/api/#extends)
+* [Официальная документация — extends](https://vuejs.org/v2/api/#extends)
 * [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
 
 ### Mixins
@@ -568,7 +568,7 @@ export default {
 
 #### References:
 
-* [Official - mixins](https://vuejs.org/v2/guide/mixins.html)
+* [Официальная документация — mixins](https://vuejs.org/v2/guide/mixins.html)
 * [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
 
 
@@ -609,7 +609,7 @@ export default {
 
 #### References:
 
-* [Official - Slot Content](https://vuejs.org/v2/guide/components-slots.html#Slot-Content)
+* [Официальная документация — Slot Content](https://vuejs.org/v2/guide/components-slots.html#Slot-Content)
 * [Understanding Component Slots with Vue.js](https://alligator.io/vuejs/component-slots/)
 * [Composing Custom Elements With Slots And Named Slots](https://alligator.io/web-components/composing-slots-named-slots/)
 * [Writing Abstract Components with Vue.js](https://alligator.io/vuejs/vue-abstract-components/)
@@ -651,7 +651,7 @@ App.vue
 
 #### References
 
-* [Official - Named Slots](https://vuejs.org/v2/guide/components-slots.html#Named-Slots)
+* [Официальная документация — Named Slots](https://vuejs.org/v2/guide/components-slots.html#Named-Slots)
 
 ### Scoped Slots
 
@@ -717,7 +717,7 @@ export default {
 
 #### References:
 
-* [Official - Scoped Slots](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots)
+* [Официальная документация — Scoped Slots](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots)
 * [Getting Your Head Around Vue.js Scoped Slots](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
 * [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
 * [Scoped Component Slots in Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
@@ -802,7 +802,7 @@ export default Mouse;
 
 #### References:
 
-* [Official - Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
+* [Официальная документация — Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
 * [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
 * [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
 
@@ -853,7 +853,7 @@ export default {
   },
   methods: {
     handleChildComponentClick() {
-      console.log('child component clicked');
+      console.log('child component Клик по кнопке');
     }
   }
 };
@@ -1037,7 +1037,7 @@ watch: {
 
 ### Style Guide
 
-* [Official - Style Guide](https://vuejs.org/v2/style-guide/)
+* [Официальная документация — Style Guide](https://vuejs.org/v2/style-guide/)
 * [Vue.js Component Style Guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
 
 ### Refactoring

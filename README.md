@@ -200,8 +200,8 @@ export default MyBtn extends Vue {
 
 #### References:
 
-* [Официальная документация — Однофайловые компоненты](https://ru.vuejs.org/v2/guide/single-file-components.html)
-* [Официальная документация — Render Functions & JSX](https://ru.vuejs.org/v2/guide/render-function.html)
+* [🇷🇺 Официальная документация — Однофайловые компоненты](https://ru.vuejs.org/v2/guide/single-file-components.html)
+* [🇷🇺 Официальная документация — Render Functions & JSX](https://ru.vuejs.org/v2/guide/render-function.html)
 * [🇺🇸 7 способов определения шаблона компонента в VueJS ](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
 
 ## Взаимодействие компонента
@@ -253,7 +253,7 @@ export default {
 
 #### Ссылки:
 
-* [Официальная документация — Входные параметры](https://vuejs.org/v2/guide/components-props.html)
+* [🇷🇺 Официальная документация — Входные параметры](https://vuejs.org/v2/guide/components-props.html)
 * [🇺🇸 Паттерны взаимодействия компонента Vue.js](https://alligator.io/vuejs/component-communication/)
 * [🇺🇸 Создание пользовательских полей ввода с помощью Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
 * [🇺🇸 Взаимодействие дочерних компонентов Vue](https://vegibit.com/vue-sibling-component-communication/)
@@ -264,7 +264,7 @@ export default {
 
 #### References:
 
-* [Официальная документация — Пользовательские события](https://ru.vuejs.org/v2/guide/components-custom-events.html)
+* [🇷🇺 Официальная документация — Пользовательские события](https://ru.vuejs.org/v2/guide/components-custom-events.html)
 * [🇺🇸 Использование событий Vue для сокращения объявлений входных параметров](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
 * [🇺🇸 Хуки компонента Vue.js как события](https://alligator.io/vuejs/component-event-hooks/)
 * [🇺🇸 Создание глобальной шины событий с помощью Vue.js](https://alligator.io/vuejs/global-event-bus/)
@@ -442,7 +442,7 @@ export default {
 ```
 #### Ссылки
 
-* [Официальная документация — Условный рендеринг](https://vuejs.org/v2/guide/conditional.html)
+* [🇷🇺 Официальная документация — Условный рендеринг](https://vuejs.org/v2/guide/conditional.html)
 * [🇺🇸 Разница между v-if и v-show [с видео в конце]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
 
 ## Динамический компонент
@@ -467,17 +467,17 @@ export default {
 
 #### Ссылки
 
-* [Официальная документация — Динамические компоненты](https://vuejs.org/v2/guide/components.html#Dynamic-Components)
-* [Официальная документация — Динамические и асинхронные компоненты](https://vuejs.org/v2/guide/components-dynamic-async.html)
+* [🇷🇺 Официальная документация — Динамические компоненты](https://vuejs.org/v2/guide/components.html#Dynamic-Components)
+* [🇷🇺 Официальная документация — Динамические и асинхронные компоненты](https://vuejs.org/v2/guide/components-dynamic-async.html)
 * [🇺🇸 Шаблоны динамических компонентов с Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
 
-## Composition
+## Композиция
 
-#### Library
+#### Библиотека
 
 * [Proppy - Functional props composition for components](https://proppyjs.com/)
 
-### Basic Composition
+### Простой пример композиции
 
 ```html
 <template>
@@ -497,13 +497,13 @@ export default {
 </script>
 ```
 
-#### References
+#### Ссылки
 
-* [Официальная документация — Composing with Components](https://vuejs.org/v2/guide/#Composing-with-Components)
+* [🇷🇺 Официальная документация — Разбиение приложения на компоненты](https://ru.vuejs.org/v2/guide/index.html#%D0%A0%D0%B0%D0%B7%D0%B1%D0%B8%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B)
 
-### Extends
+### Расширение компонента
 
-When you want to extend a single vue component
+Если вы хотите расширить один Vue-компонент, можно поступить следующим образом:
 
 ```html
 <template>
@@ -522,12 +522,12 @@ export default {
 </script>
 ```
 
-#### References:
+#### Ссылки:
 
-* [Официальная документация — extends](https://vuejs.org/v2/api/#extends)
-* [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
+* [🇷🇺 Официальная документация — extends](https://ru.vuejs.org/v2/api/#extends)
+* [🇺🇸 Расширение компонентов VueJS](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
 
-### Mixins
+### Примеси
 
 ```js
 // closableMixin.js
@@ -574,13 +574,13 @@ export default {
 </script>
 ```
 
-#### References:
+#### Ссылки:
 
-* [Официальная документация — mixins](https://vuejs.org/v2/guide/mixins.html)
-* [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
+* [🇷🇺 Официальная документация — mixins](https://ru.vuejs.org/v2/guide/mixins.html)
+* [🇺🇸 Практическое использование компонентов и примисей в Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
 
 
-### Slots (Default)
+### Слоты (по умолчанию)
 
 ```html
 <template>
@@ -600,7 +600,7 @@ export default {
 <template>
   <v-btn>
     <span class="fa fa-user"></span>
-    Login
+    Логин
   </v-btn>
 </template>
 
@@ -615,14 +615,15 @@ export default {
 </script>
 ```
 
-#### References:
+#### Ссылки:
 
-* [Официальная документация — Slot Content](https://vuejs.org/v2/guide/components-slots.html#Slot-Content)
-* [Understanding Component Slots with Vue.js](https://alligator.io/vuejs/component-slots/)
-* [Composing Custom Elements With Slots And Named Slots](https://alligator.io/web-components/composing-slots-named-slots/)
-* [Writing Abstract Components with Vue.js](https://alligator.io/vuejs/vue-abstract-components/)
+* [🇷🇺 Официальная документация — Содержимое слотов](https://ru.vuejs.org/v2/guide/components-slots.html#%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B5-%D1%81%D0%BB%D0%BE%D1%82%D0%BE%D0%B2)
+* [🇺🇸 Понимание слотов компонентов с помощью Vue.js](https://alligator.io/vuejs/component-slots/)
+* [🇺🇸 Составление пользовательских элементов с помощью слотов и именованными слотами](https://alligator.io/web-components/composing-slots-named-slots/)
+* [🇺🇸 Написание абстрактных компонентов во Vue.js](https://alligator.io/vuejs/vue-abstract-components/)
+([🇷🇺 перевод](https://medium.com/devschacht/vue-abstract-components-bc4bc2b89baf))
 
-### Named Slots
+### Именованные слоты
 
 BaseLayout.vue
 
@@ -645,21 +646,21 @@ App.vue
 ```html
 <base-layout>
   <template slot="header">
-    <h1>Here might be a page title</h1>
+    <h1>Здесь может быть заголовок страницы</h1>
   </template>
 
-  <p>A paragraph for the main content.</p>
-  <p>And another one.</p>
+  <p>Абзац для основного контента.</p>
+  <p>И еще один.</p>
 
   <template slot="footer">
-    <p>Here's some contact info</p>
+    <p>Здесь некоторые контактные данные</p>
   </template>
 </base-layout>
 ```
 
-#### References
+#### Ссылки
 
-* [Официальная документация — Named Slots](https://vuejs.org/v2/guide/components-slots.html#Named-Slots)
+* [🇷🇺 Официальная документация — Именованные слоты](https://ru.vuejs.org/v2/guide/components-slots.html#%D0%98%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D0%BB%D0%BE%D1%82%D1%8B)
 
 ### Scoped Slots
 
@@ -670,8 +671,8 @@ App.vue
       v-for="todo in todos"
       v-bind:key="todo.id"
     >
-      <!-- We have a slot for each todo, passing it the -->
-      <!-- `todo` object as a slot prop.                -->
+      <!-- У нас есть слот для каждого todo, передавая его -->
+      <!-- в объект `todo` в виде входного параметра для слота. -->
       <slot v-bind:todo="todo">
         {{ todo.text }}
       </slot>
@@ -723,15 +724,15 @@ export default {
 </script>
 ```
 
-#### References:
+#### Ссылки:
 
-* [Официальная документация — Scoped Slots](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots)
-* [Getting Your Head Around Vue.js Scoped Slots](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
-* [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
-* [Scoped Component Slots in Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
-* [The Trick to Understanding Scoped Slots in Vue.js](https://adamwathan.me/the-trick-to-understanding-scoped-slots-in-vuejs/)
-* [The Power of Scoped Slots in Vue](https://pineco.de/power-scoped-slots-vue/)
-* [Building a list keyboard control component with Vue.js and scoped slots](https://medium.com/@tkwebdev/building-a-list-keyboard-control-component-with-vue-js-and-scoped-slots-c74db4fcf84f)
+* [🇷🇺 Официальная документация — Слоты с ограниченной областью видимости](https://ru.vuejs.org/v2/guide/components-slots.html#%D0%A1%D0%BB%D0%BE%D1%82%D1%8B-%D1%81-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%D1%8E-%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8)
+* [🇺🇸 Getting Your Head Around Vue.js Scoped Slots](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
+* [🇺🇸 Понимание слотов с ограниченной областью видимости во Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
+* [🇺🇸 Слоты с ограниченной областью видимости компонента во Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
+* [🇺🇸 Трюк к пониманию слотов с ограниченной областью видимости во Vue.js](https://adamwathan.me/the-trick-to-understanding-scoped-slots-in-vuejs/)
+* [🇺🇸 Мощность слотов в Vue](https://pineco.de/power-scoped-slots-vue/)
+* [🇺🇸 Создание компонента, управляемого с клавиатуры, списка с помощью Vue.js и слотов с ограниченной областью видимости](https://medium.com/@tkwebdev/building-a-list-keyboard-control-component-with-vue-js-and-scoped-slots-c74db4fcf84f)
 
 ### Render Props
 
@@ -810,7 +811,7 @@ export default Mouse;
 
 #### References:
 
-* [Официальная документация — Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
+* [🇷🇺 Официальная документация — Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
 * [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
 * [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
 
@@ -1045,7 +1046,7 @@ watch: {
 
 ### Style Guide
 
-* [Официальная документация — Style Guide](https://vuejs.org/v2/style-guide/)
+* [🇷🇺 Официальная документация — Style Guide](https://vuejs.org/v2/style-guide/)
 * [Vue.js Component Style Guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
 
 ### Refactoring

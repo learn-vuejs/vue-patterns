@@ -34,13 +34,13 @@
   - [Именованные слоты](#named-slots)
   - [Слоты с ограниченной областью видимости](#scoped-slots)
   - [Render Props](#render-props)
-- [Passing Props](#passing-props)
-- [Higher Order Component (a.k.a. HOC)](#higher-order-component-aka-hoc)
-- [Dependency injection](#dependency-injection)
+- [Передача входных параметров](#passing-props)
+- [Компоненты высшего порядка (они же HOC)](#higher-order-component-aka-hoc)
+- [Внедрение зависимостей](#dependency-injection)
   - [Provide / Inject](#provide--inject)
-  - [@Provide / @Inject Decorator](#provide--inject-decorator)
-- [Handling Errors](#handling-errors)
-  - [errorCaptured Hook](#errorcaptured-hook)
+  - [Декоратор @Provide / @Inject](#provide--inject-decorator)
+- [Обработка ошибок](#handling-errors)
+  - [Хук errorCaptured](#errorcaptured-hook)
 - [Productivity Tips](#productivity-tips)
 - [Полезные ссылки](#useful-links)
   - [Рекомендации](#style-guide)
@@ -52,15 +52,15 @@
   - [Структура каталогов](#folder-structure)
   - [Tips & Tricks](#tips--tricks)
   - [Router](#router)
-  - [Anti Patterns](#anti-patterns)
-  - [Videos / Audios](#videos--audios)
-  - [Repos](#repos)
-  - [Paid](#paid)
-  - [Typescript](#typescript)
+  - [Антипаттерны](#anti-patterns)
+  - [Видео / Аудио](#videos--audios)
+  - [Репозитории](#repos)
+  - [Платное](#paid)
+  - [TypeScript](#typescript)
   - [Flowtype](#flowtype)
   - [GraphQL](#graphql)
   - [Разное](#misc)
-- [Fullstack Vue Book](#fullstack-vue-book)
+- [Книга Fullstack Vue](#fullstack-vue-book)
 
 ## Объявление компонентов
 
@@ -200,18 +200,18 @@ export default MyBtn extends Vue {
 
 #### References:
 
-* [Официальная документация — Single File Component](https://vuejs.org/v2/guide/single-file-components.html)
-* [Официальная документация — Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
-* [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
+* [Официальная документация — Однофайловые компоненты](https://ru.vuejs.org/v2/guide/single-file-components.html)
+* [Официальная документация — Render Functions & JSX](https://ru.vuejs.org/v2/guide/render-function.html)
+* [🇺🇸 7 способов определения шаблона компонента в VueJS ](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
 
-## Component Communication
+## Взаимодействие компонента
 
-### Props and Events
+### Входные параметры и события
 
-Basically, vue component follows one-way data flow, that is props down([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) and event up.
-Props are read-only data, so it's impossible to change props from child components.
-When props changes, child components will be rerendered automatically(props are reactive data source).
-Child components can only emit event to direct parent, so that the parent component may change `data`, mapped to the child component's `props`.
+В целом, компонент Vue следует однонаправленному потоку данных, то есть входные параметры передаются вниз ([см. официальное руководство] (https://ru.vuejs.org/v2/guide/components-props.html#%D0%9E%D0%B4%D0%BD%D0%BE%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)), а события — вверх.
+Входные параметры — это данные только для чтения, поэтому невозможно изменить входные параметры дочерних компонентов.
+При изменении входных параметров, дочерние компоненты будут автоматически повторно отрендерены (входные параметры являются реактивными источниками данных).
+Дочерние компоненты могут генерировать событие только к непосредственному родительскому компоненту, так что он может изменять `data`, сопоставляемые с `props` дочернего компонента.
 
 ```html
 <template>
@@ -238,12 +238,12 @@ export default {
   data() {
     return {
       clickCount: 0,
-      buttonText: 'initial button text',
+      buttonText: 'Стандартное название кнопки',
     };
   },
   methods: {
     handleClick() {
-      this.buttonText = `Button Клик по кнопке ${++this.clickCount}`;
+      this.buttonText = `Кнопка нажата ${++this.clickCount}`;
       console.log('Клик по кнопке', this.buttonText);
     }
   }
@@ -251,66 +251,71 @@ export default {
 </script>
 ```
 
+#### Ссылки:
+
+* [Официальная документация — Входные параметры](https://vuejs.org/v2/guide/components-props.html)
+* [🇺🇸 Паттерны взаимодействия компонента Vue.js](https://alligator.io/vuejs/component-communication/)
+* [🇺🇸 Создание пользовательских полей ввода с помощью Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
+* [🇺🇸 Взаимодействие дочерних компонентов Vue](https://vegibit.com/vue-sibling-component-communication/)
+* [🇺🇸 Управление состоянием во Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
+* [🇺🇸 Взаимодействие во Vue.js, часть 2: родительский и дочерний компоненты](https://gambardella.info/2017/09/13/vue-js-communication-part-2-parent-child-components/)
+
+## Обработка событий компонента
+
 #### References:
 
-* [Официальная документация — Props](https://vuejs.org/v2/guide/components-props.html)
-* [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
-* [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
-* [Vue Sibling Component Communication](https://vegibit.com/vue-sibling-component-communication/)
-* [Managing State in Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
-* [Vue.js communication part 2: parent-child components](https://gambardella.info/2017/09/13/vue-js-communication-part-2-parent-child-components/)
+* [Официальная документация — Пользовательские события](https://ru.vuejs.org/v2/guide/components-custom-events.html)
+* [🇺🇸 Использование событий Vue для сокращения объявлений входных параметров](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
+* [🇺🇸 Хуки компонента Vue.js как события](https://alligator.io/vuejs/component-event-hooks/)
+* [🇺🇸 Создание глобальной шины событий с помощью Vue.js](https://alligator.io/vuejs/global-event-bus/)
+* [🇺🇸 Шина событий Vue.js + Промисы](https://medium.com/@jesusgalvan/vue-js-event-bus-promises-f83e73a81d72)
 
-## Component Events Handling
+## Условный рендеринг компонента
 
-#### References:
-
-* [Официальная документация — Custom Events](https://vuejs.org/v2/guide/components-custom-events.html)
-* [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
-* [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
-* [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)
-* [Vue.js Event Bus + Promises](https://medium.com/@jesusgalvan/vue-js-event-bus-promises-f83e73a81d72)
-
-## Component Conditional Rendering
-
-### Directives (`v-if` / `v-else` / `v-else-if` / `v-show`)
+### Директивы (`v-if` / `v-else` / `v-else-if` / `v-show`)
 
 `v-if`
 
 ```html
-<h1 v-if="true">Render only if v-if condition is true</h1>
+<h1 v-if="true">Рендеринг только, если условие v-if равняется true</h1>
 ```
 
-`v-if` and `v-else`
+Использование `v-if` и `v-else`
 
 ```html
-<h1 v-if="true">Render only if v-if condition is true</h1>
-<h1 v-else>Render only if v-if condition is false</h1>
+<h1 v-if="true">Рендеринг только, если условие v-if равняется true</h1>
+<h1 v-else>Рендеринг только, если условие v-if равняется false</h1>
 ```
 
-`v-else-if`
+Использование `v-else-if`
 
 ```html
-<div v-if="type === 'A'">Render only if `type` is equal to `A`</div>
-<div v-else-if="type === 'B'">Render only if `type` is equal to `B`</div>
-<div v-else-if="type === 'C'">Render only if `type` is equal to `C`</div>
-<div v-else>Render if `type` is not `A` or `B` or `C`</div>
+<div v-if="type === 'A'">Рендеринг только, если `type` равняется `A`</div>
+<div v-else-if="type === 'B'">Рендеринг только, если `type` равняется `B`</div>
+<div v-else-if="type === 'C'">Рендеринг только, если `type` равняется `C`</div>
+<div v-else>Рендеринг если `type` не равен ни `A`, ни `B`, ни `C`</div>
 ```
 
-`v-show`
+Использование `v-show`
 
 ```html
-<h1 v-show="true">Always rendered, but it should be visible only if `v-show` conditions is true</h1>
+<h1 v-show="true">Всегда рендерится, но виден только в том случае, если условия `v-show` равняются true</h1>
 ```
 
 If you want to conditionally render more than one element,
 you can use directives(`v-if` / `v-else` / `v-else-if` /`v-show`) on a `<template>` element.
 Notice that `<template>` element is not actually rendered into DOM. It is an invisible wrapper.
 
+
+Если вы хотите условно отрендерить более одного элемента,
+вы можете использовать директивы (`v-if` /` v-else` / `v-else-if` / `v-show`) в элементе `<template>`.
+Обратите внимание, что элемент `<template>` фактически не отображается в DOM. Это невидимая обёртка.
+
 ```html
 <template v-if="true">
-  <h1>All the elements</h1>
-  <p>will be rendered into DOM</p>
-  <p>except `template` element</p>
+  <h1>Все элменты</h1>
+  <p>будут отрендерены в DOM,</p>
+  <p>за исключением элемента `template`</p>
 </template>
 ```
 
@@ -318,7 +323,10 @@ Notice that `<template>` element is not actually rendered into DOM. It is an inv
 
 If you use JSX in your vue application, you can apply all the techniques such as `if else` and `switch case` statement and `ternary` and `logical` operator.
 
-`if else` statement
+Если вы используете JSX в своем Vue-приложении, то можете применить все техники, например выражение `if else` и `switch case`, а также оператор `ternary` и `logical`.
+
+
+Использование выражения `if else`
 
 ```jsx
 export default {
@@ -329,15 +337,15 @@ export default {
   },
   render(h) {
     if (this.isTruthy) {
-      return <h1>Render value is true</h1>;
+      return <h1>Рендеринг, если значение равно true</h1>;
     } else {
-      return <h1>Render value is false</h1>;
+      return <h1>Рендеринг, если значение равно false</h1>;
     }
   },
 };
 ```
 
-`switch case` statement
+Использование выражения `switch case`
 
 ```jsx
 import Info from './Info';
@@ -366,7 +374,7 @@ export default {
 };
 ```
 
-or you can use `object` map to simplify `switch case`
+Или вы можете использовать сопоставление в виде `object` для упрощения выражений `switch case`
 
 ```jsx
 import Info from './Info';
@@ -395,7 +403,7 @@ export default {
 };
 ```
 
-`ternary` operator
+Использовани тернарного оператора
 
 ```jsx
 export default {
@@ -408,9 +416,9 @@ export default {
     return (
       <div>
         {this.isTruthy ? (
-          <h1>Render value is true</h1>
+          <h1>Рендеринг, если значение равно true</h1>
         ) : (
-          <h1>Render value is false</h1>
+          <h1>Рендеринг, если значение равно false</h1>
         )}
       </div>
     );
@@ -418,7 +426,7 @@ export default {
 };
 ```
 
-`logical` operator
+Использование логического оператора
 
 ```jsx
 export default {
@@ -428,28 +436,28 @@ export default {
     };
   },
   render(h) {
-    return <div>{this.isLoading && <h1>Loading ...</h1>}</div>;
+    return <div>{this.isLoading && <h1>Загрузка ...</h1>}</div>;
   },
 };
 ```
-#### References
+#### Ссылки
 
-* [Официальная документация — Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
-* [Difference Between v-if and v-show [With Video at End]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
+* [Официальная документация — Условный рендеринг](https://vuejs.org/v2/guide/conditional.html)
+* [🇺🇸 Разница между v-if и v-show [с видео в конце]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
 
-## Dynamic Component
+## Динамический компонент
 
-### `<component>` with `is` attribute
+### `<component>` с атрибутом `is`
 
-* [Example 1](https://jsfiddle.net/chrisvfritz/o3nycadu/)
-* [Example 2](https://jsfiddle.net/chrisvfritz/b2qj69o1/)
-* [Example 3](https://alligator.io/vuejs/dynamic-components/)
+* [Пример 1](https://jsfiddle.net/chrisvfritz/o3nycadu/)
+* [Пример 2](https://jsfiddle.net/chrisvfritz/b2qj69o1/)
+* [Пример 3](https://alligator.io/vuejs/dynamic-components/)
 
 ```html
 <component :is="currentTabComponent"></component>
 ```
 
-With the above code example, rendered component will be destroyed if a different component is rendered in `<component>`. If you want components to keep their instances without being destroyed within `<component>` tag, you can wrap the `<component>` tag in a `<keep-alive>` tag like so:
+С приведенным выше примером кода отрендеренный компонент будет уничтожен, если другой компонент рендерится в `<component>`. Если вы хотите, чтобы компоненты сохраняли свои экземпляры без их уничтожения в теге `<component>`, вы можете обернуть `<component>` в тег `<keep-alive>` следующим образом:
 
 ```html
 <keep-alive>
@@ -457,11 +465,11 @@ With the above code example, rendered component will be destroyed if a different
 </keep-alive>
 ```
 
-#### References
+#### Ссылки
 
-* [Официальная документация — Dynamic Components](https://vuejs.org/v2/guide/components.html#Dynamic-Components)
-* [Официальная документация — Dynamic & Async Components](https://vuejs.org/v2/guide/components-dynamic-async.html)
-* [Dynamic Component Templates with Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
+* [Официальная документация — Динамические компоненты](https://vuejs.org/v2/guide/components.html#Dynamic-Components)
+* [Официальная документация — Динамические и асинхронные компоненты](https://vuejs.org/v2/guide/components-dynamic-async.html)
+* [🇺🇸 Шаблоны динамических компонентов с Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
 
 ## Composition
 

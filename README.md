@@ -736,14 +736,14 @@ export default {
 
 ### Render Props
 
-In most cases, you can use scoped slots instead of render props. But, it might be useful in some case.
+В большинстве случаев вы можете использовать слоты с ограниченной областью видимости вместо рендеринга входных параметров. Но в некоторых случаях это может быть полезно.
 
-with `SFC`
+С однофайловым компонентом `SFC`
 
 ```html
 <template>
   <div id="app">
-    <Mouse :render="__render"/>
+    <Mouse :render="__render" />
   </div>
 </template>
 
@@ -758,7 +758,7 @@ export default {
     __render({ x, y }) {
       return (
         <h1>
-          The mouse position is ({x}, {y})
+          Позиция мыши ({x}, {y})
         </h1>
       );
     }
@@ -774,7 +774,7 @@ export default {
 </style>
 ```
 
-with `JSX`
+С использованием `JSX`
 
 ```js
 const Mouse = {
@@ -809,16 +809,16 @@ const Mouse = {
 export default Mouse;
 ```
 
-#### References:
+#### Ссылки:
 
 * [🇷🇺 Официальная документация — Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
-* [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
-* [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
+* [🇺🇸 Использование рендеринга входных параметров в Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
+* [🇺🇸 Использование рендеринга входных параметров Vue.js!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
 
-## Passing Props
+## Передача входных параметров
 
-Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
-You can bind `$attrs` and `$listeners` in child component and set [`inheritAttrs` to `false`](https://vuejs.org/v2/api/#inheritAttrs) (otherwise both, `div` and `child-component` will receive the attributes)
+Иногда вам может понадобиться передать входные параметры и обработчики дочернему компоненту, не объявляя всех входных параметров дочернего компонента.
+Вы можете привязать `$attrs` и `$listeners` в дочернем компоненте и установить [`inheritAttrs` на `false`](https://ru.vuejs.org/v2/api/#inheritAttrs) (в противном случае `div` и `child-component` получат атрибуты).
 
 ```html
 <template>
@@ -835,19 +835,20 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Hello, Vue!'
+      default: 'Привет, Vue!'
     }
   }
 };
 </script>
 ```
 
-From parent component, you can do like this:
+Из родительского компонента вы можете сделать следующее:
+
 ```html
 <template>
   <passing-props-sample
-    title="Hello, Passing Props"
-    childPropA="This props will properly mapped to <child-component />"
+    title="Привет, передача входных параметров"
+    childPropA="Эти реквизиты будут правильно сопоставлены c <child-component />"
     @click="handleChildComponentClick"
   >
   </passing-props-sample>
@@ -862,28 +863,28 @@ export default {
   },
   methods: {
     handleChildComponentClick() {
-      console.log('child component Клик по кнопке');
+      console.log('Клик по кнопке в дочернем компоненте');
     }
   }
 };
 </script>
 ```
 
-#### References:
+#### Ссылки:
 
-* [Transparent Wrapper Components in Vue](https://zendev.com/2018/05/31/transparent-wrapper-components-in-vue.html)
+* [🇺🇸 Прозрачные компоненты-обёртки во Vue](https://zendev.com/2018/05/31/transparent-wrapper-components-in-vue.html)
 
-## Higher Order Component (a.k.a. HOC)
+## Компоненты высшего порядка (они же HOC)
 
-#### References:
+#### Ссылки:
 
-* [Higher Order Components in Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
-* [Do we need Higher Order Components in Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
-* [Higher-Order Components in Vue.js](https://medium.com/tldr-tech/higher-order-components-in-vue-js-38b500c6d49f)
+* [🇺🇸 Компоненты высшего порядка Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
+* [🇺🇸 Нужны ли нам компоненты более высокого порядка в Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
+* [🇺🇸 Компоненты высшего порядка во Vue.js](https://medium.com/tldr-tech/higher-order-components-in-vue-js-38b500c6d49f)
 
-## Dependency injection
+## Внедрение зависимостей
 
-Vue supports provide / inject mechanism to provide `object` into all its descendants, regardless of how deep the component hierarchy is, as long as they are in the same parent chain. Notice that `provide` and `inject` bindings are **not** reactive, unless you pass down an observed object.
+Vue поддерживает механизм предоставления и внедрения объекта во всех потомки, независимо от глубины иерархии компонентов, при условии, что компоненты находятся в одной и той же цепочке родителей. Обратите внимание, что привязки `provide` и `inject` **не являются** реактивными, пока вы не передадите наблюдаемый объект.
 
 ```html
 <parent-component>
@@ -893,14 +894,14 @@ Vue supports provide / inject mechanism to provide `object` into all its descend
 </parent-component>
 ```
 
-With above example component hierarchy, in order to derive data from `parent-component`, you should pass down data(object) as `props` to `child-component` and `grand-child-component`. However, if `parent-component` `provide` data(object), `grand-child-component` can just define `inject` provided object from `parent-component`.
+С приведенной выше иерархией компонентов в качестве примера для получения данных из `parent-component` вам нужно передавать данные (объект) в качестве `props` компоненту `child-component` и компоненту `grand-child-component`. Однако, если `parent-component` предоставляет (`provide`) данные (объект), `grand-child-component` может просто определить свойство `inject` для получения объекта, предоставляемого `parent-component`.
 
-#### References:
+#### Ссылки:
 
-* [Official API](https://vuejs.org/v2/api/#provide-inject)
-* [Official Guide](https://vuejs.org/v2/guide/components-edge-cases.html#Dependency-Injection)
-* [Component Communication](https://alligator.io/vuejs/component-communication/#provide--inject)
-* [Dependency Injection in Vue.js App with TypeScript](https://blog.kloud.com.au/2017/03/22/dependency-injection-in-vuejs-app-with-typescript/)
+* [🇷🇺 Официальный API](https://vuejs.org/v2/api/#provide-inject)
+* [🇷🇺 Официальное руководство](https://ru.vuejs.org/v2/guide/components-edge-cases.html#%D0%92%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B5%D0%B9)
+* [🇺🇸 Взаимодействие компонента](https://alligator.io/vuejs/component-communication/#provide--inject)
+* [🇺🇸 Внедрение зависимостей в приложении Vue.js с TypeScript](https://blog.kloud.com.au/2017/03/22/dependency-injection-in-vuejs-app-with-typescript/)
 
 ### Provide / Inject
 
@@ -938,7 +939,7 @@ export default {
 </script>
 ```
 
-### [@Provide / @Inject Decorator](https://github.com/kaorun343/vue-property-decorator)
+### [Декоратор @Provide / @Inject](https://github.com/kaorun343/vue-property-decorator)
 
 ```js
 // ParentComponent.vue

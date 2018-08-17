@@ -976,9 +976,9 @@ export class GrandChildComponent extends Vue {
 </script>
 ```
 
-## Handling Errors
+## Обработка ошибок
 
-### `errorCaptured` Hook
+### Хук `errorCaptured`
 
 ```js
 export default {
@@ -991,7 +991,7 @@ export default {
   },
   errorCaptured (err, vm, info) {
     this.error = true;
-    this.errorMessage = `${err.stack}\n\nfound in ${info} of component`;
+    this.errorMessage = `${err.stack}\n\nобнаружена в методе ${info} компонента`;
 
     return false;
   },
@@ -1011,20 +1011,20 @@ export default {
 </error-boundary>
 ```
 
-#### Examples
+#### Примеры
 
-* [Example 1](https://jsfiddle.net/Linusborg/z84wspcg/)
+* [Пример 1](https://jsfiddle.net/Linusborg/z84wspcg/)
 
-#### References
+#### Ссылки
 
-* [Handling Errors in Vue with Error Boundaries](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
+* [Обработка ошибок в Vue с границами ошибок](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
 
-## Productivity Tips
+## Полезные советы по продуктивности
 
-watch on create
+Наблюдение при создании
 
 ```js
-// don't
+// Не делайте так
 created() {
   this.fetchUserList();
 },
@@ -1034,7 +1034,7 @@ watch: {
 ```
 
 ```js
-// do
+// Делайте так
 watch: {
   searchText: {
     handler: 'fetchUserList',
@@ -1043,87 +1043,86 @@ watch: {
 }
 ```
 
-## Useful Links
+## Полезные ссылки
 
-### Style Guide
+### Руководство по стилю
 
-* [🇷🇺 Официальная документация — Style Guide](https://vuejs.org/v2/style-guide/)
-* [Vue.js Component Style Guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
+* [🇷🇺 Официальная документация — Рекомендации](https://ru.vuejs.org/v2/style-guide/)
+* [🇷🇺 Руководство по разработке компонентов Vue.js](https://github.com/pablohpsilva/vuejs-component-style-guide/blob/master/README-RU.md)
 
-### Refactoring
+### Рефакторинг
 
-* [Refactoring Vue: Cleaning Up a List of Posts With Better Component Splitting and More ES6](https://mattstauffer.com/blog/refactoring-vue-cleaning-up-a-list-of-posts-with-better-component-splitting-and-more-es6/?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
-* [Clean up your Vue modules with ES6 Arrow Functions](https://gist.github.com/JacobBennett/7b32b4914311c0ac0f28a1fdc411b9a7)
-* [Examples of Vue’s Clean Code](https://webdesign.tutsplus.com/tutorials/examples-of-vues-clean-code--cms-29619)
-* [Optimizing Performance with Computed Properties](https://codingexplained.com/coding/front-end/vue-js/optimizing-performance-computed-properties)
-* [Simplify Your Components with Computed Setters](https://tahazsh.com/vuebyte-computed-setters)
+* [Рефакторинг Vue: очистка списка сообщений с лучшим разделением компонентов и с большим количеством ES6](https://mattstauffer.com/blog/refactoring-vue-cleaning-up-a-list-of-posts-with-better-component-splitting-and-more-es6/)
+* [Очистка модулей Vue с помощью стрелочных функций ES6](https://gist.github.com/JacobBennett/7b32b4914311c0ac0f28a1fdc411b9a7)
+* [Примеры чистого кода Vue](https://webdesign.tutsplus.com/tutorials/examples-of-vues-clean-code--cms-29619)
+* [Оптимизация производительности с помощью вычисляемых свойств](https://codingexplained.com/coding/front-end/vue-js/optimizing-performance-computed-properties)
+* [Упрощение компонентов с помощью вычисляемых сеттеров](https://tahazsh.com/vuebyte-computed-setters)
 
-### State Management
+### Управление состоянием
 
-* [Managing State in Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
+* [Управление состоянием во Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
 
 ### Vuex
 
-* [Decouple Vuex modules with the Mediator pattern](https://itnext.io/decouple-vuex-actions-with-the-mediator-pattern-58a8879de1b4)
-* [Vuex getters are great, but don’t overuse them](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)
-* [Reusable Vuex Mutation Functions](https://itnext.io/reusable-vuex-mutation-functions-9b4920aa737b)
-* [A pattern to handle ajax requests in Vuex](https://medium.com/@lachlanmiller_52885/a-pattern-to-handle-ajax-requests-in-vuex-2d69bc2f8984)
-* [[vuex Mutations] Single Changes vs. Single Responsibility](https://forum.vuejs.org/t/vuex-mutations-single-changes-vs-single-responsibility/16396)
-* [Components and How They Interact in Vue and Vuex](https://dzone.com/articles/how-do-components-interact-in-vue-and-what-is-vuex)
-* [Why VueX Is The Perfect Interface Between Frontend and API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
-* [Composing actions with Vuex](https://codeburst.io/composing-actions-with-vuex-b63466264a37)
-* [How to Build Complex, Large-Scale Vue.js Apps With Vuex](https://code.tutsplus.com/tutorials/how-to-build-complex-large-scale-vuejs-applications-with-vuex--cms-30952)
-* [Should I Store This Data in Vuex?](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/)
-* [Anyway, this is how to use v-model with Vuex. Computed setter in action.](https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976)
-* [Vuex getters are great, but don’t overuse them](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)
+* [Разделение модулей Vuex с паттерном «Посредник»](https://itnext.io/decouple-vuex-actions-with-the-mediator-pattern-58a8879de1b4)
+* [Геттеры Vuex великолепны, но не злоупотребляйте ими](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)
+* [Повторное использование функций-мутаций Vuex](https://itnext.io/reusable-vuex-mutation-functions-9b4920aa737b)
+* [Паттерн для обработки AJAX-запросов в Vuex](https://medium.com/@lachlanmiller_52885/a-pattern-to-handle-ajax-requests-in-vuex-2d69bc2f8984)
+* [Одиночные изменения мутацией Vuex vs. принципа единственной ответственности](https://forum.vuejs.org/t/vuex-mutations-single-changes-vs-single-responsibility/16396)
+* [Компоненты и способы взаимодействия в Vue и Vuex](https://dzone.com/articles/how-do-components-interact-in-vue-and-what-is-vuex)
+* [Почему VueX — идеальный интерфейс между фронтендом и API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
+* [Композиция действий с Vuex](https://codeburst.io/composing-actions-with-vuex-b63466264a37)
+* [Как создавать сложные, крупномасштабные приложения Vue.js с Vuex](https://code.tutsplus.com/tutorials/how-to-build-complex-large-scale-vuejs-applications-with-vuex--cms-30952)
+* [Должен ли я хранить данные в Vuex?](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/)
+* [В общем, это как использовать v-model с Vuex. Вычисляемый сеттер в действии.](https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976)
 
-### Mobx
+### MobX
 
-* [Build A View-Framework-Free Data Layer Based on MobX — Integration With Vue (1)](https://itnext.io/build-a-view-framework-free-data-layer-based-on-mobx-integration-with-vue-1-8b524b86c7b8)
+* [Создайте уровень данных представления без фреймворка на основе MobX — интеграция с Vue (1)](https://itnext.io/build-a-view-framework-free-data-layer-based-on-mobx-integration-with-vue-1-8b524b86c7b8)
 
-### Renderless Component
+### Компоненты без рендеринга
 
-* [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
-* [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
+* [Компоненты без рендеринга во Vue.js](https://adamwathan.me/renderless-components-in-vuejs/) ([перевод](https://webformyself.com/renderless-components-rabota-s-komponentami-vo-vue-js/))
+* [Создание компонентов без рендеринга для обработки CRUD-операций во Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
 
-#### Examples
+#### Примеры
 
-* [Renderless Calendar component](https://codesandbox.io/s/v65lx0xvy5)
+* [Компонент календаря без рендеринга](https://codesandbox.io/s/v65lx0xvy5)
 
-### Folder Structure
+### Структура каталогов
 
-* [How you can improve your workflow using the JavaScript console](https://medium.freecodecamp.org/how-you-can-improve-your-workflow-using-the-javascript-console-bdd7823a9472)
-* [How to Structure a Vue.js Project](https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb)
-* [Large-scale Vuex application structures](https://medium.com/3yourmind/large-scale-vuex-application-structures-651e44863e2f)
-* [Vue.js Application Structure and CSS Architecture](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/)
+* [Как улучшить рабочий процесс с помощью консоли JavaScript](https://medium.freecodecamp.org/how-you-can-improve-your-workflow-using-the-javascript-console-bdd7823a9472) ([перевод](https://habr.com/company/ruvds/blog/414375/))
+* [Как структурировать проект Vue.js](https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb)
+* [Крупномасштабная структура приложения Vuex](https://medium.com/3yourmind/large-scale-vuex-application-structures-651e44863e2f)
+* [Структура приложения Vue.js и архитектура CSS](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/)
 
 ### Tips & Tricks
 
-* [How To Build Vue Components Like A Pro 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)
-* [Four tips for working with Vue.js](https://itnext.io/four-tips-for-working-with-vue-js-b362d97de852)
-* [Tips from a Lowly VueJS Developer](https://medium.com/@denny.headrick/tips-from-a-lowly-vuejs-developer-381b6956aece)
+* [Как создать Vue-компоненты, как и профессионал 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)
+* [4 совета по работе с Vue.js(https://itnext.io/four-tips-for-working-with-vue-js-b362d97de852) ([перевод](https://habr.com/post/352540/))
+* [Советы для непритязательного разработчика VueJS](https://medium.com/@denny.headrick/tips-from-a-lowly-vuejs-developer-381b6956aece)
 * [Throttling and Debouncing Events with Vue.js and lodash](https://alligator.io/vuejs/lodash-throttle-debounce/)
-* [Are partially applied functions in event handlers possible?](https://forum.vuejs.org/t/are-partially-applied-functions-in-event-handlers-possible/10187)
-* [Vue.js — Considerations and Tricks](https://blog.webf.zone/vue-js-considerations-and-tricks-fa7e0e4bb7bb)
-* [Six random issues and their solutions in VueJS.](https://medium.com/@stijlbreuk/six-random-issues-and-their-solutions-in-vuejs-b16d470a6462)
-* [When VueJS Can't Help You](https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/)
-* [Things that won’t work using Vue](https://winnercrespo.com/things-that-wont-work-using-vue/)
-* [Tip#15 Delay execution with _.debounce](https://medium.com/vuejs-tips/tip-15-delay-execution-with-debounce-6a93b759bb06)
+* [Возможны ли частично применимые функции в обработчиках событий?](https://forum.vuejs.org/t/are-partially-applied-functions-in-event-handlers-possible/10187)
+* [Vue.js — соображения и трюки](https://blog.webf.zone/vue-js-considerations-and-tricks-fa7e0e4bb7bb) ([перевод](https://medium.com/devschacht/vue-js-considerations-and-tricks-58ec768ac237
+))
+* [Шесть случайных пробел и их решения в VueJS](https://medium.com/@stijlbreuk/six-random-issues-and-their-solutions-in-vuejs-b16d470a6462)
+* [Когда VueJS не может помочь вам](https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/)
+* [То, что не будет работать с использованием Vue](https://winnercrespo.com/things-that-wont-work-using-vue/)
+* [Трюк#15 Отложение выполнение с _.debounce](https://medium.com/vuejs-tips/tip-15-delay-execution-with-debounce-6a93b759bb06)
 
+### Маршрутизатор
 
-### Router
+* [Навигационные хуки - Официальная документация](https://router.vuejs.org/ru/guide/advanced/navigation-guards.html#%D0%B3n%D0%BE%D0%B1%D0%B0n%D1%8C%D0%BD%D1%8B%D0%B5-%D1%85%D1%83%D0%BA%D0%B8)
+* [Навигационные хуки Vue-маршрутизатора с Vuex](https://serversideup.net/vue-router-navigation-guards-vuex/)
 
-* [Navigation Guards - Official](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-guards)
-* [Vue Router Navigation Guards with Vuex](https://serversideup.net/vue-router-navigation-guards-vuex/)
+### Антипаттерны
 
-### Anti Patterns
-
-* [Chris Fritz - Vue.js Anti-Patterns (and How to Avoid Them)](http://www.fullstackradio.com/87)
-* [Common mistakes to avoid while working with Vue.js](https://medium.freecodecamp.org/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b)
-* [Avoid This Common Anti-Pattern In Full-Stack Vue/Laravel Apps](https://vuejsdevelopers.com/2017/08/06/vue-js-laravel-full-stack-ajax/)
+* [Chris Fritz - Антипаттерны Vue.js (и как их избежать)](http://www.fullstackradio.com/87)
+* [Распространённые ошибки, которые следует избегать при работе с Vue.js](https://medium.freecodecamp.org/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b)
+* [Избегайте этого распространнённого антипаттерна в приложениях с полным стеком Vue / Laravel](https://vuejsdevelopers.com/2017/08/06/vue-js-laravel-full-stack-ajax/)
 * [[Video] - VueNYC - Three Vue code smells, and what you can do about them - Matt Rothenberg (@mattrothenberg)](https://www.youtube.com/watch?v=z5UWVOeIsUQ)
 
-### Videos / Audios
+### Видео / Аудио
 
 * [81: Evan You - Advanced Vue Component Design](https://player.fm/series/series-1401837/81-evan-you-advanced-vue-component-design)
 * [7 Secret Patterns Vue Consultants Don’t Want You to Know](https://www.youtube.com/watch?v=7YZ5DwlLSt8)
@@ -1134,16 +1133,16 @@ watch: {
 * [7-secret-patterns](https://github.com/chrisvfritz/7-secret-patterns)
 * [Vue.js-2-Design-Patterns-and-Best-Practices](https://github.com/PacktPublishing/Vue.js-2-Design-Patterns-and-Best-Practices)
 
-### Paid
+### Платное
 
-* [Advanced Vue Component Design](https://adamwathan.me/advanced-vue-component-design/)
-* [Advanced Vue.js Features from the Ground Up](https://frontendmasters.com/courses/advanced-vue/)
+* [Продвинутый дизайн Vue-компонентов](https://adamwathan.me/advanced-vue-component-design/)
+* [Продвинутые возможности Vue.js с нуля](https://frontendmasters.com/courses/advanced-vue/)
 
 
-### Typescript
+### TypeScript
 
 * [Vue + TypeScript: A Match Made in Your Code Editor](https://css-tricks.com/vue-typescript-a-match-made-in-your-code-editor/)
-* [Writing Class-Based Components with Vue.js and TypeScript](https://alligator.io/vuejs/typescript-class-components/)
+* [Написание компонентов на основе классов с помощью Vue.js и TypeScript](https://alligator.io/vuejs/typescript-class-components/)
 
 ### Flowtype
 

@@ -200,7 +200,7 @@ export default MyBtn extends Vue {
 #### Ссылки:
 
 * [🇷🇺 Официальная документация — Однофайловые компоненты](https://ru.vuejs.org/v2/guide/single-file-components.html)
-* [🇷🇺 Официальная документация — Render Functions & JSX](https://ru.vuejs.org/v2/guide/render-function.html)
+* [🇷🇺 Официальная документация — Render-функции и JSX](https://ru.vuejs.org/v2/guide/render-function.html)
 * [🇺🇸 7 способов определения шаблона компонента в VueJS ](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
 
 ## Взаимодействие компонента
@@ -713,7 +713,7 @@ export default {
 #### Ссылки:
 
 * [🇷🇺 Официальная документация — Слоты с ограниченной областью видимости](https://ru.vuejs.org/v2/guide/components-slots.html#%D0%A1%D0%BB%D0%BE%D1%82%D1%8B-%D1%81-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%D1%8E-%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8)
-* [🇺🇸 Getting Your Head Around Vue.js Scoped Slots](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
+* [🇺🇸 Разбираемся со слотами с ограниченной областью видимости](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
 * [🇺🇸 Понимание слотов с ограниченной областью видимости во Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
 * [🇺🇸 Слоты с ограниченной областью видимости компонента во Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
 * [🇺🇸 Трюк к пониманию слотов с ограниченной областью видимости во Vue.js](https://adamwathan.me/the-trick-to-understanding-scoped-slots-in-vuejs/)
@@ -864,7 +864,7 @@ export default {
 #### Ссылки:
 
 * [🇺🇸 Компоненты высшего порядка Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
-* [🇺🇸 Нужны ли нам компоненты более высокого порядка в Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
+* [🇺🇸 Нужны ли нам компоненты высшего порядка порядка во Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
 * [🇺🇸 Компоненты высшего порядка во Vue.js](https://medium.com/tldr-tech/higher-order-components-in-vue-js-38b500c6d49f)
 
 ## Внедрение зависимостей
@@ -1086,14 +1086,14 @@ watch: {
 * [🇺🇸 Как создать Vue-компоненты, как и профессионал 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)
 * [🇺🇸 4 совета по работе с Vue.js(https://itnext.io/four-tips-for-working-with-vue-js-b362d97de852) ([перевод](https://habr.com/post/352540/))
 * [🇺🇸 Советы для непритязательного разработчика VueJS](https://medium.com/@denny.headrick/tips-from-a-lowly-vuejs-developer-381b6956aece)
-* [🇺🇸 Throttling and Debouncing Events with Vue.js and lodash](https://alligator.io/vuejs/lodash-throttle-debounce/)
+* [🇺🇸 Throttle и debounce событий с помощью Vue и lodash](https://alligator.io/vuejs/lodash-throttle-debounce/)
 * [🇺🇸 Возможны ли частично применимые функции в обработчиках событий?](https://forum.vuejs.org/t/are-partially-applied-functions-in-event-handlers-possible/10187)
 * [🇺🇸 Vue.js — соображения и трюки](https://blog.webf.zone/vue-js-considerations-and-tricks-fa7e0e4bb7bb) ([перевод](https://medium.com/devschacht/vue-js-considerations-and-tricks-58ec768ac237
 ))
 * [🇺🇸 Шесть случайных пробел и их решения в VueJS](https://medium.com/@stijlbreuk/six-random-issues-and-their-solutions-in-vuejs-b16d470a6462)
 * [🇺🇸 Когда VueJS не может помочь вам](https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/)
 * [🇺🇸 То, что не будет работать с использованием Vue](https://winnercrespo.com/things-that-wont-work-using-vue/)
-* [🇺🇸 Трюк#15 Отложение выполнение с _.debounce](https://medium.com/vuejs-tips/tip-15-delay-execution-with-debounce-6a93b759bb06)
+* [🇺🇸 Трюк#15 Отложенное выполнение с _.debounce](https://medium.com/vuejs-tips/tip-15-delay-execution-with-debounce-6a93b759bb06)
 
 ### Маршрутизатор
 
@@ -1102,7 +1102,7 @@ watch: {
 
 ### Антипаттерны
 
-* [🇺🇸 Chris Fritz - Антипаттерны Vue.js (и как их избежать)](http://www.fullstackradio.com/87)
+* [🇺🇸 Крис Фриц (Chris Fritz) - Антипаттерны Vue.js (и как их избежать)](http://www.fullstackradio.com/87)
 * [🇺🇸 Распространённые ошибки, которые следует избегать при работе с Vue.js](https://medium.freecodecamp.org/common-mistakes-to-avoid-while-working-with-vue-js-10e0b130925b)
 * [🇺🇸 Избегайте этого распространённого антипаттерна в приложениях с полным стеком Vue / Laravel](https://vuejsdevelopers.com/2017/08/06/vue-js-laravel-full-stack-ajax/)
 * [🇺🇸 [Видео] - VueNYC - Три запаха кода Vue, и что вы можете с ними поделать- Matt Rothenberg (@mattrothenberg)](https://www.youtube.com/watch?v=z5UWVOeIsUQ)
@@ -1137,10 +1137,10 @@ watch: {
 
 ### Разное
 
-* [🇺🇸 Creating an Interpose Vue component from a React implementation](https://itnext.io/creating-an-interpose-vue-component-from-a-react-implementation-80d367a695c6)
+* [🇺🇸 Создание Vue-компонента Interpose на основе реализации из React](https://itnext.io/creating-an-interpose-vue-component-from-a-react-implementation-80d367a695c6)
 * [🇺🇸 Составление вычисляемых свойств в Vue.js](https://medium.com/@kevin_peters/composing-computed-properties-in-vue-js-87b4507af079)
 * [🇺🇸 4 AJAX-паттерна для приложений Vue.js](https://medium.com/js-dojo/4-ajax-patterns-for-vue-js-apps-add915fc9168)
-* [🇺🇸 3 шаблона разделения кода для VueJS и Webpack](https://medium.com/js-dojo/3-code-splitting-patterns-for-vuejs-and-webpack-b8fff1ea0ba4)
+* [🇺🇸 3 паттерна разделения кода для VueJS и Webpack](https://medium.com/js-dojo/3-code-splitting-patterns-for-vuejs-and-webpack-b8fff1ea0ba4)
 * [🇺🇸 Самый простой способ улучшить ваше приложение Vue.js. Часть 1](https://codeburst.io/the-easiest-way-to-improve-your-vue-js-application-part-1-51f068652872)
 * [🇺🇸 Использование JSX с Vue и почему вам должно быть не всё равно](https://scotch.io/tutorials/using-jsx-with-vue-and-why-you-should-care?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20News)
 * [🇺🇸 Составные компоненты](https://forum.vuejs.org/t/compound-components/30139)

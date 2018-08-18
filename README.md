@@ -69,7 +69,7 @@
 ```html
 <template>
   <button class="btn-primary" @click.prevent="handleClick">
-    {{text}}
+    {{ text }}
   </button>
 </template>
 
@@ -101,7 +101,7 @@ export default {
 Vue.component('my-btn', {
   template: `
     <button class="btn-primary" @click.prevent="handleClick">
-      {{text}}
+      {{ text }}
     </button>
   `,
   data() {
@@ -173,7 +173,7 @@ Vue.component('my-btn', {
 ```html
 <template>
   <button class="btn-primary" @click.prevent="handleClick">
-    {{text}}
+    {{ text }}
   </button>
 </template>
 
@@ -208,14 +208,14 @@ export default MyBtn extends Vue {
 
 ### Входные параметры и события
 
-В целом, компонент Vue следует однонаправленному потоку данных, то есть входные параметры передаются вниз ([см. официальное руководство] (https://ru.vuejs.org/v2/guide/components-props.html#%D0%9E%D0%B4%D0%BD%D0%BE%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)), а события — вверх.
+В целом, компонент Vue следует однонаправленному потоку данных, то есть входные параметры передаются вниз ([см. официальное руководство](https://ru.vuejs.org/v2/guide/components-props.html#%D0%9E%D0%B4%D0%BD%D0%BE%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BF%D0%BE%D1%82%D0%BE%D0%BA-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)), а события — вверх.
 Входные параметры — это данные только для чтения, поэтому невозможно изменить входные параметры дочерних компонентов.
 При изменении входных параметров, дочерние компоненты будут автоматически повторно отрендерены (входные параметры являются реактивными источниками данных).
 Дочерние компоненты могут генерировать событие только к непосредственному родительскому компоненту, так что он может изменять `data`, сопоставляемые с `props` дочернего компонента.
 
 ```html
 <template>
-  <button @click="$emit('click')">{{text}}</button>
+  <button @click="$emit('click')">{{ text }}</button>
 </template>
 
 <script>
@@ -313,7 +313,7 @@ Notice that `<template>` element is not actually rendered into DOM. It is an inv
 
 ```html
 <template v-if="true">
-  <h1>Все элменты</h1>
+  <h1>Все элементы</h1>
   <p>будут отрендерены в DOM,</p>
   <p>за исключением элемента `template`</p>
 </template>
@@ -321,10 +321,7 @@ Notice that `<template>` element is not actually rendered into DOM. It is an inv
 
 ### JSX
 
-If you use JSX in your vue application, you can apply all the techniques such as `if else` and `switch case` statement and `ternary` and `logical` operator.
-
-Если вы используете JSX в своем Vue-приложении, то можете применить все техники, например выражение `if else` и `switch case`, а также оператор `ternary` и `logical`.
-
+Если вы используете JSX в своем Vue-приложении, то можете применять все техники, например использования выражения `if else` и `switch case`, а также тернарные и логические операторы.
 
 Использование выражения `if else`
 
@@ -559,7 +556,7 @@ export default {
 ```html
 <template>
   <div v-if="shown" class="alert alert-success" :class="'alert-' + type" role="alert">
-    {{text}}
+    {{ text }}
     <i class="pull-right glyphicon glyphicon-remove" @click="hide"></i>
   </div>
 </template>

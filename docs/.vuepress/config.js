@@ -167,7 +167,7 @@ module.exports = {
         lastUpdated: 'Последнее обновление',
         editLinkText: 'Изменить эту страницу на GitHub',
         nav: [
-          { text: 'Главная', link: '/ru' },
+          { text: 'Главная', link: '/ru/' },
           { text: 'Документация', link: '/ru/patterns/' },
           {
             text: 'Внешние переводы',
@@ -184,10 +184,10 @@ module.exports = {
           },
         ],
         sidebar: [
-          ['ru/patterns/', 'Паттерны'],
-          ['ru/useful-links/', 'Полезные ссылки'],
-          ['ru/sponsors/', 'Книга Fullstack Vue'],
-          ['ru/translations/', 'Переводы'],
+          ['/ru/patterns/', 'Паттерны'],
+          ['/ru/useful-links/', 'Полезные ссылки'],
+          ['/ru/sponsors/', 'Книга Fullstack Vue'],
+          ['/ru/translations/', 'Переводы'],
         ],
       },
     },

@@ -1,8 +1,18 @@
 module.exports = {
   base: '/vue-patterns/',
-  title: 'Vue Patterns',
-  description:
-    'Useful Vue patterns, techniques, tips and tricks and curated helpful links.',
+  locales: {
+    '/': {
+      lang: 'en-US',
+      title: 'Vue Patterns',
+      description:
+        'Useful Vue patterns, techniques, tips and tricks and curated helpful links.',
+    },
+    '/ru/': {
+      lang: 'ru',
+      title: 'Паттерны Vue',
+      description: 'Полезные паттерны, методы, советы и рекомендации, а также тщательно подобранный список ссылок по Vue'
+    }
+  },
   serviceWorker: true,
   head: [
     [
@@ -124,28 +134,62 @@ module.exports = {
     lastUpdated: 'Last Updated',
     repo: 'learn-vuejs/vue-patterns',
     editLinks: true,
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Docs', link: '/patterns/' },
-      {
-        text: 'Translations',
-        items: [
+    locales: {
+      '/': {
+        lastUpdated: 'Last Updated',
+        nav: [
+          { text: 'Home', link: '/' },
+          { text: 'Docs', link: '/patterns/' },
           {
-            text: '简体中文',
-            link: 'https://github.com/ZYSzys/vue-patterns-cn',
-          },
-          {
-            text: '繁體中文',
-            link: 'https://github.com/yoyoys/vue-patterns-cht',
+            text: 'Translations',
+            items: [
+              {
+                text: '简体中文',
+                link: 'https://github.com/ZYSzys/vue-patterns-cn',
+              },
+              {
+                text: '繁體中文',
+                link: 'https://github.com/yoyoys/vue-patterns-cht',
+              },
+            ],
           },
         ],
+        sidebar: [
+          ['/patterns/', 'Patterns'],
+          ['/useful-links/', 'Useful Links'],
+          ['/sponsors/', 'Fullstack Vue Book'],
+          ['/translations/', 'Translations'],
+        ],
       },
-    ],
-    sidebar: [
-      ['/patterns/', 'Patterns'],
-      ['/useful-links/', 'Useful Links'],
-      ['/sponsors/', 'Fullstack Vue Book'],
-      ['/translations/', 'Translations'],
-    ],
+      '/ru/': {
+        label: 'Русский',
+        selectText: 'Переводы',
+        lastUpdated: 'Последнее обновление',
+        editLinkText: 'Изменить эту страницу на GitHub',
+        nav: [
+          { text: 'Главная', link: '/ru/' },
+          { text: 'Документация', link: '/ru/patterns/' },
+          {
+            text: 'Внешние переводы',
+            items: [
+              {
+                text: '简体中文',
+                link: 'https://github.com/ZYSzys/vue-patterns-cn',
+              },
+              {
+                text: '繁體中文',
+                link: 'https://github.com/yoyoys/vue-patterns-cht',
+              },
+            ],
+          },
+        ],
+        sidebar: [
+          ['/ru/patterns/', 'Паттерны'],
+          ['/ru/useful-links/', 'Полезные ссылки'],
+          ['/ru/sponsors/', 'Книга Fullstack Vue'],
+          ['/ru/translations/', 'Переводы'],
+        ],
+      },
+    },
   },
 };

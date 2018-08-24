@@ -49,6 +49,7 @@
 - [🇺🇸 Как структурировать проект Vue.js](https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb)
 - [🇺🇸 Крупномасштабная структура приложения Vuex](https://medium.com/3yourmind/large-scale-vuex-application-structures-651e44863e2f)
 - [🇺🇸 Структура приложения Vue.js и архитектура CSS](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/)
+- [🇺🇸 Создание структуры Vue-компонентов](https://vueschool.io/articles/vuejs-tutorials/structuring-vue-components/)
 
 ### Советы и хитрости
 

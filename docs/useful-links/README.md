@@ -151,4 +151,4 @@
 - [Vue.js — Forms, components and considerations](https://blog.webf.zone/vue-js-forms-components-and-considerations-d81b3ffe9efb)
 - [Reusing Logic in Vue Components](https://vueschool.io/articles/vuejs-tutorials/reusing-logic-in-vue-components/)
 - [Recursion for Nested, Tree-Structure Components in Vue](https://itnext.io/recursion-for-nested-tree-structure-components-in-vue-1cb600005475)
-
+- [Checklist for Writing Highly Reusable Components in React and Vue](https://hackernoon.com/checklist-for-writing-highly-reusable-components-in-react-and-vue-531f963864bd)

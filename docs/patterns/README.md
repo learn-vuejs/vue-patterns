@@ -135,9 +135,9 @@ export default MyBtn extends Vue {
 
 ### Props and Events
 
-Basically, vue component follows one-way data flow, that is props down([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) and event up.
+Basically, vue component follows one-way data flow, that is props down ([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) and event up.
 Props are read-only data, so it's impossible to change props from child components.
-When props changes, child components will be rerendered automatically(props are reactive data source).
+When props changes, child components will be rerendered automatically (props are reactive data source).
 Child components can only emit event to direct parent, so that the parent component may change `data`, mapped to the child component's `props`.
 
 ```vue

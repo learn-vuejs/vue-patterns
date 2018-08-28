@@ -17,20 +17,13 @@ Vue.component('my-btn', {
   `,
   data() {
     return {
-      text: 'Click me',
+      count: 0,
     };
   },
   methods: {
-    data() {
-      return {
-        count: 0,
-      };
-    },
-    methods: {
-      handleClick() {
-        this.count++;
-        console.log('clicked', this.count);
-      },
+    handleClick() {
+      this.count++;
+      console.log('clicked', this.count);
     },
   },
 });

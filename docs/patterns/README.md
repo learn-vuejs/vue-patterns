@@ -33,17 +33,15 @@ Vue.component('my-btn', {
 
 ```js
 Vue.component('my-btn', {
+  data() {
+    return {
+      count: 0,
+    };
+  },
   methods: {
-    data() {
-      return {
-        count: 0,
-      };
-    },
-    methods: {
-      handleClick() {
-        this.count++;
-        console.log('clicked', this.count);
-      },
+    handleClick() {
+      this.count++;
+      console.log('clicked', this.count);
     },
   },
   render(h) {

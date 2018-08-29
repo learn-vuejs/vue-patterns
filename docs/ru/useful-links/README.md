@@ -60,7 +60,7 @@
 - [🇺🇸 Возможны ли частично применимые функции в обработчиках событий?](https://forum.vuejs.org/t/are-partially-applied-functions-in-event-handlers-possible/10187)
 - [🇺🇸 Vue.js — соображения и трюки](https://blog.webf.zone/vue-js-considerations-and-tricks-fa7e0e4bb7bb) ([🇷🇺 перевод](https://medium.com/devschacht/vue-js-considerations-and-tricks-58ec768ac237
 ))
-- [🇺🇸 Шесть случайных пробел и их решения в VueJS](https://medium.com/@stijlbreuk/six-random-issues-and-their-solutions-in-vuejs-b16d470a6462)
+- [🇺🇸 Шесть случайных проблем и их решения в VueJS](https://medium.com/@stijlbreuk/six-random-issues-and-their-solutions-in-vuejs-b16d470a6462)
 - [🇺🇸 Когда VueJS не может помочь вам](https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/)
 - [🇺🇸 То, что не будет работать с использованием Vue](https://winnercrespo.com/things-that-wont-work-using-vue/)
 - [🇺🇸 Трюк#15 Отложенное выполнение с _.debounce](https://medium.com/vuejs-tips/tip-15-delay-execution-with-debounce-6a93b759bb06)
@@ -69,8 +69,9 @@
 
 ### Маршрутизатор
 
-- [🇺🇸 Навигационные хуки - Официальная документация](https://router.vuejs.org/ru/guide/advanced/navigation-guards.html#%D0%B3n%D0%BE%D0%B1%D0%B0n%D1%8C%D0%BD%D1%8B%D0%B5-%D1%85%D1%83%D0%BA%D0%B8)
+- [🇷🇺 Навигационные хуки - Официальная документация](https://router.vuejs.org/ru/guide/advanced/navigation-guards.html#%D0%B3n%D0%BE%D0%B1%D0%B0n%D1%8C%D0%BD%D1%8B%D0%B5-%D1%85%D1%83%D0%BA%D0%B8)
 - [🇺🇸 Навигационные хуки Vue-маршрутизатора с Vuex](https://serversideup.net/vue-router-navigation-guards-vuex/)
+- [🇺🇸 Реализация простого мидлвара с Vue Router](https://markus.oberlehner.net/blog/implementing-a-simple-middleware-with-vue-router/)
 
 ### Антипаттерны
 
@@ -150,4 +151,4 @@
 - [🇺🇸 Vue.js — Формы, компоненты и соображения](https://blog.webf.zone/vue-js-forms-components-and-considerations-d81b3ffe9efb)
 - [🇺🇸 Повторно используемая логика во Vue-компонентах](https://vueschool.io/articles/vuejs-tutorials/reusing-logic-in-vue-components/)
 - [🇺🇸 Рекурсия вложенных с древовидной структурой компонентов во Vue](https://itnext.io/recursion-for-nested-tree-structure-components-in-vue-1cb600005475)
-
+- [🇺🇸 Чек-лист для написания повторно используемых компонентов в React и во Vue](https://hackernoon.com/checklist-for-writing-highly-reusable-components-in-react-and-vue-531f963864bd)

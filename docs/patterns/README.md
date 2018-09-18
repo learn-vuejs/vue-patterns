@@ -570,6 +570,7 @@ App.vue
 #### References
 
 - [Official - Named Slots](https://vuejs.org/v2/guide/components-slots.html#Named-Slots)
+- [Vue.js Component Composition with Slots](https://medium.com/@fdietz/vue-js-component-composition-with-slots-eda311579218)
 
 ### Scoped Slots
 

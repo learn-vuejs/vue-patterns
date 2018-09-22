@@ -155,3 +155,4 @@
 - [Checklist for Writing Highly Reusable Components in React and Vue](https://hackernoon.com/checklist-for-writing-highly-reusable-components-in-react-and-vue-531f963864bd)
 - [Build a Vue.js SEO-Friendly SPA with Prerender & Other Tips](https://snipcart.com/blog/vue-js-seo-prerender-example)
 - [Vue.js (and Vuex) bug squasher cheatsheet](https://blog.usejournal.com/vue-js-and-vuex-bug-squasher-cheatsheet-50d4cccd8f79)
+- [Universal application code structure in Nuxt.js](https://medium.com/@krutie/universal-application-code-structure-in-nuxt-js-4cd014cc0baa)

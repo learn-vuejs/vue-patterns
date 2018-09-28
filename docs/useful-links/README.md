@@ -157,3 +157,4 @@
 - [Build a Vue.js SEO-Friendly SPA with Prerender & Other Tips](https://snipcart.com/blog/vue-js-seo-prerender-example)
 - [Vue.js (and Vuex) bug squasher cheatsheet](https://blog.usejournal.com/vue-js-and-vuex-bug-squasher-cheatsheet-50d4cccd8f79)
 - [Universal application code structure in Nuxt.js](https://medium.com/@krutie/universal-application-code-structure-in-nuxt-js-4cd014cc0baa)
+- [7 Frontend Architecture Lessons From Nuxt.js](https://zendev.com/2018/09/17/frontend-architecture-lessons-from-nuxt-js.html)

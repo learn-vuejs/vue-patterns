@@ -121,6 +121,7 @@ export default MyBtn extends Vue {
 - [Official - Single File Component](https://vuejs.org/v2/guide/single-file-components.html)
 - [Official - Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
 - [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
+- [Writing multiple Vue components in a single file](https://codewithhugo.com/writing-multiple-vue-components-in-a-single-file/)
 
 ## Component Communication
 

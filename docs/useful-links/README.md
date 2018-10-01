@@ -74,6 +74,7 @@
 - [Navigation Guards - Official](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-guards)
 - [Vue Router Navigation Guards with Vuex](https://serversideup.net/vue-router-navigation-guards-vuex/)
 - [Implementing a Simple Middleware with Vue Router](https://markus.oberlehner.net/blog/implementing-a-simple-middleware-with-vue-router/)
+- [Vue Router — The Missing Manual](https://blog.webf.zone/vue-router-the-missing-manual-ce51c21430b0)
 
 ### Anti Patterns
 

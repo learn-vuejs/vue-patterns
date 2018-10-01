@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "59d0a0bd266d00d2f888c56acc42814c"
+    "revision": "7f8714423bcd20950bd5cff505c137da"
   },
   {
     "url": "assets/css/0.styles.a3e46cac.css",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "revision": "b238aaf84478ce4733e2a1b40493f5c4"
   },
   {
-    "url": "assets/js/22.43a5f5e7.js",
-    "revision": "6d098b1f14ecfc7f39a7f2ddc0f3bf98"
+    "url": "assets/js/22.39c96f92.js",
+    "revision": "1691bceabb3df82207f057b6bd1aba84"
   },
   {
     "url": "assets/js/3.733b4fc2.js",
@@ -100,12 +100,12 @@ self.__precacheManifest = [
     "revision": "52f587d3083b65bea6d3187fd1929a66"
   },
   {
-    "url": "assets/js/6.e58f208e.js",
-    "revision": "782e34c4416b02c25a819738f35462a9"
+    "url": "assets/js/6.d8d8d1d2.js",
+    "revision": "1e07b267f2b90e68ceceba1dd50569d1"
   },
   {
-    "url": "assets/js/7.6eb5d3b4.js",
-    "revision": "e78f7d642192aa492d8caa8677ebdf85"
+    "url": "assets/js/7.f5a3d41b.js",
+    "revision": "118574825d28d0bafc3109e266500e0b"
   },
   {
     "url": "assets/js/8.0e1f05c7.js",
@@ -116,8 +116,8 @@ self.__precacheManifest = [
     "revision": "b20ea851a91da325b77b2e2660719d9c"
   },
   {
-    "url": "assets/js/app.57cc7220.js",
-    "revision": "d47b673cb174b6b8f6e75c73f6308025"
+    "url": "assets/js/app.8865af64.js",
+    "revision": "fc18fc19e587dd99559e928184106fe7"
   },
   {
     "url": "icons/android-icon-144x144.png",
@@ -217,7 +217,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "4da50d286f2e83c76526c216b75f4e81"
+    "revision": "ed6a18690e277f127e4eaa568325d567"
   },
   {
     "url": "learn-vue-logo.png",
@@ -225,39 +225,39 @@ self.__precacheManifest = [
   },
   {
     "url": "patterns/index.html",
-    "revision": "a4e91e90f9934bf3d28ab9add22dfc25"
+    "revision": "52fcbcf291bbdf41a5b9c6c9a6178e2b"
   },
   {
     "url": "ru/index.html",
-    "revision": "fa8df080518f168936d24e8f367f78f1"
+    "revision": "8fc8b27b268eb321fdf47b5d1917169c"
   },
   {
     "url": "ru/patterns/index.html",
-    "revision": "075732292322bc41ff2af89281e4aa9f"
+    "revision": "e51f1c684e05e88a0f6e58d2c629c4e2"
   },
   {
     "url": "ru/sponsors/index.html",
-    "revision": "c9e2cc5354fc60a1f85b7fee1477a5fb"
+    "revision": "bae3e829448128b2552f61d09162a52c"
   },
   {
     "url": "ru/translations/index.html",
-    "revision": "64f55682b7e05f6589d5e22d5b3555ef"
+    "revision": "88e91279f006f64215131319dfc88912"
   },
   {
     "url": "ru/useful-links/index.html",
-    "revision": "ccd2d0224f8908803ed35711780af3aa"
+    "revision": "1a78e285b973932b2f28dd55e9fce778"
   },
   {
     "url": "sponsors/index.html",
-    "revision": "b942aea6257a5359ceb85e4ed93f0757"
+    "revision": "56847a9529de1b3f350b3cb9e3f31b82"
   },
   {
     "url": "translations/index.html",
-    "revision": "57d7670486ea8c4eb252decb0a04f891"
+    "revision": "5d6bc69bb7a807466ab11ca32b1656f7"
   },
   {
     "url": "useful-links/index.html",
-    "revision": "78497d29f08862a0056fdecafa78afb1"
+    "revision": "dddce6227478629c27f5a1ffdd0517ea"
   },
   {
     "url": "vue-patterns-hero.png",

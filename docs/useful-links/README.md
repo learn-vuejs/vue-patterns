@@ -98,6 +98,8 @@
 
 - [Advanced Vue Component Design](https://adamwathan.me/advanced-vue-component-design/)
 - [Advanced Vue.js Features from the Ground Up](https://frontendmasters.com/courses/advanced-vue/)
+- [Vue Mastery](https://www.vuemastery.com/)
+
 
 ### Typescript
 

@@ -129,7 +129,7 @@ export default MyBtn extends Vue {
 
 Basically, vue component follows one-way data flow, that is props down ([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) and event up.
 Props are read-only data, so it's impossible to change props from child components.
-When props changes, child components will be rerendered automatically (props are reactive data source).
+When props change, child components will be rerendered automatically (`props` are reactive data source).
 Child components can only emit event to direct parent, so that the parent component may change `data`, mapped to the child component's `props`.
 
 ```vue
@@ -728,8 +728,8 @@ export default Mouse;
 
 ## Passing Props & Listeners
 
-Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
-You can bind `$attrs` and `$listeners` in child component and set [`inheritAttrs` to `false`](https://vuejs.org/v2/api/#inheritAttrs) (otherwise both, `div` and `child-component` will receive the attributes)
+Sometimes, you may want to pass props and listeners to a child component without having to declare all props for the child component.
+You can bind `$attrs` and `$listeners` in the child component and set [`inheritAttrs` to `false`](https://vuejs.org/v2/api/#inheritAttrs) (otherwise both, `div` and `child-component` will receive the attributes)
 
 #### PassingProps.vue
 

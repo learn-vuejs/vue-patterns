@@ -13,7 +13,7 @@
     "docs:deploy": "gh-pages -d docs/.vuepress/dist"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0",
-    "vuepress": "^0.13.1"
+    "gh-pages": "^2.0.1",
+    "vuepress": "^0.14.4"
   }
 }

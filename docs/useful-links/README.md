@@ -69,6 +69,7 @@
 - [Tip#15 Delay execution with \_.debounce](https://medium.com/vuejs-tips/tip-15-delay-execution-with-debounce-6a93b759bb06)
 - [Handling API calls in Vue](https://medium.com/@imanhodjaev/handling-api-calls-in-vue-cf39747656ba)
 - [Slide - Vue & REST API Patterns](https://speakerdeck.com/imanhodjaev/vue-and-rest-api-patterns)
+- [Type Vue without TypeScript](https://medium.com/@znck/type-vue-without-typescript-b2b49210f0b)
 
 ### Router
 

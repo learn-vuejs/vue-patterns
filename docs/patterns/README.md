@@ -725,6 +725,7 @@ export default Mouse;
 - [Official - Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
 - [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
 - [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
+- [Using React-Style Callback Props With Vue: Pros and Cons](https://medium.com/js-dojo/using-react-style-callback-props-with-vue-pros-and-cons-e0ee7455695b)
 
 ## Passing Props & Listeners
 

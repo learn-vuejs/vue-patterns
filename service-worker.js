@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "61419c74a47447119dd0d95bc4c14d9c"
+    "revision": "b3fbed93eef3bd7dc6d1e087eb980bc0"
   },
   {
     "url": "assets/css/0.styles.55dc9c98.css",
@@ -116,8 +116,8 @@ self.__precacheManifest = [
     "revision": "b20ea851a91da325b77b2e2660719d9c"
   },
   {
-    "url": "assets/js/app.611a8c17.js",
-    "revision": "13d29d89ec4b9fd2d0f9ae0207f7a6fd"
+    "url": "assets/js/app.2e60ad90.js",
+    "revision": "0e8127a23ad7c0dbaab2f2f982f271d4"
   },
   {
     "url": "icons/android-icon-144x144.png",
@@ -217,7 +217,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "d0f371318e7eaf6a7e75a12adbaaa5d2"
+    "revision": "d75270a0e68177b9e5cc53215297fd7f"
   },
   {
     "url": "learn-vue-logo.png",
@@ -225,39 +225,39 @@ self.__precacheManifest = [
   },
   {
     "url": "patterns/index.html",
-    "revision": "384ff428cb93d88e2f0dda01953def15"
+    "revision": "0b99730dc07a77ef8f25022998d840cb"
   },
   {
     "url": "ru/index.html",
-    "revision": "0f6dbf7144f25fa209af97032a907ceb"
+    "revision": "d3c9c5feb7a8a594ac085c611f16eba6"
   },
   {
     "url": "ru/patterns/index.html",
-    "revision": "bd105b9819167e93c0f03e9f2319eb90"
+    "revision": "22b94bdb489e0b716ea23527ca179485"
   },
   {
     "url": "ru/sponsors/index.html",
-    "revision": "fcc8a40509732e34dd6a62f25c881fec"
+    "revision": "0b793b037709c565f3cb6ba58b6a7317"
   },
   {
     "url": "ru/translations/index.html",
-    "revision": "f0ff9486a74b9c0a1cd627d6cef3c75e"
+    "revision": "cf67d24a3c19c0b813dbcf59763e4ab3"
   },
   {
     "url": "ru/useful-links/index.html",
-    "revision": "42111ae892be5fe7798edf0a7ac4ba3c"
+    "revision": "bd84b56f41f116f22063a96f69f7a7f1"
   },
   {
     "url": "sponsors/index.html",
-    "revision": "62bce8c6b76f1b494d5ce994aa695984"
+    "revision": "bfe1c45dfa23b8a13c3b33d0983f283e"
   },
   {
     "url": "translations/index.html",
-    "revision": "ee4a52d920b66c93baed9e920a3c0c11"
+    "revision": "ac19f24a0c0731d8e9c9699cb4cf6af0"
   },
   {
     "url": "useful-links/index.html",
-    "revision": "2b08ea1ded8a7ec0a2035b46475c0161"
+    "revision": "53d9ffcbf5aad5d38471647c1191b0d6"
   },
   {
     "url": "vue-patterns-hero.png",

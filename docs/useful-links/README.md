@@ -47,6 +47,11 @@
 
 - [Renderless Calendar component](https://codesandbox.io/s/v65lx0xvy5)
 
+### Architecture
+
+- [Making a large scale app with vue.js (part 1): modularize your store!](https://medium.com/@stephane.souron/making-a-large-scale-app-with-vue-js-part-1-modularize-your-store-bf9066436502)
+- [Making a large scale app with vue.js (part 2): a little bit of Object Oriented Programming.](https://medium.com/@stephane.souron/making-a-large-scale-app-with-vue-js-part-2-a-little-bit-of-object-oriented-programming-6822de5ef19d)
+
 ### Folder Structure
 
 - [How you can improve your workflow using the JavaScript console](https://medium.freecodecamp.org/how-you-can-improve-your-workflow-using-the-javascript-console-bdd7823a9472)

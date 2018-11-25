@@ -90,7 +90,7 @@ Vue.component('my-btn', {
 ```vue
 <template>
   <button class="btn-primary" @click.prevent="handleClick">
-    <slot></slot>(clicked - {{count}})
+    <slot></slot>(clicked - {{ count }})
   </button>
 </template>
 
@@ -134,7 +134,7 @@ Child components can only emit event to direct parent, so that the parent compon
 
 ```vue
 <template>
-  <button @click="$emit('click')">{{text}}</button>
+  <button @click="$emit('click');">{{ text }}</button>
 </template>
 
 <script>
@@ -218,7 +218,9 @@ export default {
 `v-show`
 
 ```vue
-<h1 v-show="true">Always rendered, but it should be visible only if `v-show` conditions is true</h1>
+<h1 v-show="true">
+  Always rendered, but it should be visible only if `v-show` conditions is true
+</h1>
 ```
 
 If you want to conditionally render more than one element,
@@ -372,9 +374,7 @@ export default {
 With the above code example, rendered component will be destroyed if a different component is rendered in `<component>`. If you want components to keep their instances without being destroyed within `<component>` tag, you can wrap the `<component>` tag in a `<keep-alive>` tag like so:
 
 ```vue
-<keep-alive>
-  <component :is="currentTabComponent"></component>
-</keep-alive>
+<keep-alive> <component :is="currentTabComponent"></component> </keep-alive>
 ```
 
 #### References
@@ -393,9 +393,7 @@ With the above code example, rendered component will be destroyed if a different
 
 ```vue
 <template>
-  <div class="component-b">
-    <component-a></component-a>
-  </div>
+  <div class="component-b"><component-a></component-a></div>
 </template>
 
 <script>
@@ -420,7 +418,7 @@ When you want to extend a single vue component
 ```vue
 <template>
   <button class="button-primary" @click.prevent="handleClick">
-    {{buttonText}}
+    {{ buttonText }}
   </button>
 </template>
 
@@ -470,8 +468,13 @@ export default {
 
 ```vue
 <template>
-  <div v-if="shown" class="alert alert-success" :class="'alert-' + type" role="alert">
-    {{text}}
+  <div
+    v-if="shown"
+    class="alert alert-success"
+    :class="'alert-' + type"
+    role="alert"
+  >
+    {{ text }}
     <i class="pull-right glyphicon glyphicon-remove" @click="hide"></i>
   </div>
 </template>
@@ -495,9 +498,7 @@ export default {
 
 ```vue
 <template>
-  <button class="btn btn-primary">
-    <slot></slot>
-  </button>
+  <button class="btn btn-primary"><slot></slot></button>
 </template>
 
 <script>
@@ -509,10 +510,7 @@ export default {
 
 ```vue
 <template>
-  <v-btn>
-    <span class="fa fa-user"></span>
-    Login
-  </v-btn>
+  <v-btn> <span class="fa fa-user"></span> Login </v-btn>
 </template>
 
 <script>
@@ -539,15 +537,9 @@ BaseLayout.vue
 
 ```vue
 <div class="container">
-  <header>
-    <slot name="header"></slot>
-  </header>
-  <main>
-    <slot></slot>
-  </main>
-  <footer>
-    <slot name="footer"></slot>
-  </footer>
+  <header><slot name="header"></slot></header>
+  <main><slot></slot></main>
+  <footer><slot name="footer"></slot></footer>
 </div>
 ```
 
@@ -578,15 +570,10 @@ App.vue
 ```vue
 <template>
   <ul>
-    <li
-      v-for="todo in todos"
-      v-bind:key="todo.id"
-    >
+    <li v-for="todo in todos" v-bind:key="todo.id">
       <!-- We have a slot for each todo, passing it the -->
-      <!-- `todo` object as a slot prop.                -->
-      <slot v-bind:todo="todo">
-        {{ todo.text }}
-      </slot>
+      <!-- `todo` object as a slot prop. -->
+      <slot v-bind:todo="todo"> {{ todo.text }} </slot>
     </li>
   </ul>
 </template>
@@ -607,10 +594,9 @@ export default {
 ```vue
 <template>
   <todo-list v-bind:todos="todos">
-      <template slot-scope="{ todo }">
-        <span v-if="todo.isComplete">✓</span>
-        {{ todo.text }}
-      </template>
+    <template slot-scope="{ todo }">
+      <span v-if="todo.isComplete">✓</span> {{ todo.text }}
+    </template>
   </todo-list>
 </template>
 
@@ -653,9 +639,7 @@ with `SFC`
 
 ```vue
 <template>
-  <div id="app">
-    <Mouse :render="__render"/>
-  </div>
+  <div id="app"><Mouse :render="__render" /></div>
 </template>
 
 <script>
@@ -795,14 +779,20 @@ You can also use [vue-property-decorator](https://github.com/kaorun343/vue-prope
 
 ```vue
 <theme-provider>
-  <theme-button secondary>Themed Button</theme-button>
+  <p class="demo">
+    <button class="btn">Normal Button</button>
+    <theme-button secondary>Themed Button</theme-button>
+  </p>
 </theme-provider>
 ```
 
 #### Working Example:
 
 <ThemeProvider>
-  <ThemeButton secondary>Themed Button</ThemeButton>
+  <p class="demo">
+    <button class="btn">Normal Button</button>
+    <ThemeButton secondary>Themed Button</ThemeButton>
+  </p>
 </ThemeProvider>
 
 ## Handling Errors
@@ -818,9 +808,7 @@ You can also use [vue-property-decorator](https://github.com/kaorun343/vue-prope
 <<< @/docs/.vuepress/components/ThrowError.vue
 
 ```vue
-<error-boundary>
-  <throw-error></throw-error>
-</error-boundary>
+<error-boundary> <throw-error></throw-error> </error-boundary>
 ```
 
 #### Working Example:

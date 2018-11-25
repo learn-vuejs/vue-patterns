@@ -1,9 +1,7 @@
 <template>
-  <p class="demo">
-    <button class="btn" :style="{ color: '#fff', backgroundColor: (primary && theme.primaryColor) || (secondary && theme.secondaryColor)  }">
-      <slot></slot>
-    </button>
-  </p>
+  <button class="btn" :style="{ color: '#fff', backgroundColor: (primary && theme.primaryColor) || (secondary && theme.secondaryColor)  }">
+    <slot></slot>
+  </button>
 </template>
 
 <script>

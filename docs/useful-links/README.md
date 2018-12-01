@@ -32,6 +32,7 @@
 - [5 Vuex Plugins For Your Next VueJS Project](https://medium.com/js-dojo/5-vuex-plugins-for-your-next-vuejs-project-df9902a70de2)
 - [Writing Vuex modules in neat Typescript classes](https://medium.com/coding-blocks/writing-vuex-modules-in-neat-typescript-classes-9bf7b505e7b5)
 - [Managing multiple central stores with Vuex](https://blog.logrocket.com/managing-multiple-central-stores-with-vuex-74cc44646043)
+- [Vuex Explained Visually](https://medium.com/vue-mastery/vuex-explained-visually-f17c8c76d6c4)
 
 ### Mobx
 

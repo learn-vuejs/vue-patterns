@@ -174,3 +174,4 @@
 - [7 Frontend Architecture Lessons From Nuxt.js](https://zendev.com/2018/09/17/frontend-architecture-lessons-from-nuxt-js.html)
 - [What’s the deal with functional components in Vue.js?](https://itnext.io/whats-the-deal-with-functional-components-in-vue-js-513a31eb72b0)
 - [Vue API calls in a smart way](https://blog.snap.hr/01/11/2018/vue-api-calls-smart-way/)
+- [How to create a Vue.js app using Single-File Components, without the CLI.](https://medium.freecodecamp.org/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f)

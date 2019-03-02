@@ -17,6 +17,7 @@
 - [Vue.js App Performance Optimization: part 1 — Introduction to performance optimization and lazy loading.](https://itnext.io/vue-js-app-performance-optimization-part-1-introduction-to-performance-optimization-and-lazy-29e4ff101019)
 - [Vue.js App Performance Optimization: part 2— Lazy loading routes and vendor bundle anti-pattern.](https://itnext.io/vue-js-app-performance-optimization-part-2-lazy-loading-routes-and-vendor-bundle-anti-pattern-4a62236e09f9)
 - [Vue.js App Performance Optimization: part 3— Lazy loading Vuex modules](https://itnext.io/vue-js-app-performance-optimization-part-3-lazy-loading-vuex-modules-ed67cf555976)
+- [How to Drastically Reduce Estimated Input Latency and Time to Interactive of SSR Vue.js Applications](https://markus.oberlehner.net/blog/how-to-drastically-reduce-estimated-input-latency-and-time-to-interactive-of-ssr-vue-applications/)
 
 ### State Management
 
@@ -91,6 +92,7 @@
 - [Implementing a Simple Middleware with Vue Router](https://markus.oberlehner.net/blog/implementing-a-simple-middleware-with-vue-router/)
 - [Vue Router — The Missing Manual](https://blog.webf.zone/vue-router-the-missing-manual-ce51c21430b0)
 - [The lesser known amazing things VueRouter can do](https://medium.com/@NAPOLEON039/the-lesser-known-amazing-things-vuerouter-can-do-3fbb2c191c00)
+- [Storing and Using the Last Known Route in Vue](https://css-tricks.com/storing-and-using-the-last-known-route-in-vue/)
 
 ### Anti Patterns
 
@@ -181,3 +183,5 @@
 - [What’s the deal with functional components in Vue.js?](https://itnext.io/whats-the-deal-with-functional-components-in-vue-js-513a31eb72b0)
 - [Vue API calls in a smart way](https://blog.snap.hr/01/11/2018/vue-api-calls-smart-way/)
 - [How to create a Vue.js app using Single-File Components, without the CLI.](https://medium.freecodecamp.org/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f)
+- [A Vue pattern for idiomatic, performant component registration you might not know about](https://itnext.io/vue-a-pattern-for-idiomatic-performant-component-registration-you-might-not-know-about-9f3c091846f5)
+

@@ -18,6 +18,7 @@
 - [Vue.js App Performance Optimization: part 2— Lazy loading routes and vendor bundle anti-pattern.](https://itnext.io/vue-js-app-performance-optimization-part-2-lazy-loading-routes-and-vendor-bundle-anti-pattern-4a62236e09f9)
 - [Vue.js App Performance Optimization: part 3— Lazy loading Vuex modules](https://itnext.io/vue-js-app-performance-optimization-part-3-lazy-loading-vuex-modules-ed67cf555976)
 - [How to Drastically Reduce Estimated Input Latency and Time to Interactive of SSR Vue.js Applications](https://markus.oberlehner.net/blog/how-to-drastically-reduce-estimated-input-latency-and-time-to-interactive-of-ssr-vue-applications/)
+- [Lazy Loading images with Vue.js directives and IntersectionObserver](https://itnext.io/lazy-loading-images-with-vue-js-directives-and-intersectionobserver-d0eb390cad9)
 
 ### State Management
 
@@ -69,6 +70,7 @@
 - [Vue.js Application Structure and CSS Architecture](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/)
 - [Structuring Vue Components](https://vueschool.io/articles/vuejs-tutorials/structuring-vue-components/)
 - [Structuring a Vue project — Authentication](https://medium.com/@zitko/structuring-a-vue-project-authentication-87032e5bfe16)
+- [Structuring a Vue project — Authentication](https://medium.com/@zitko/structuring-a-vue-project-authentication-87032e5bfe16)
 
 ### Tips & Tricks
 
@@ -85,6 +87,9 @@
 - [Handling API calls in Vue](https://medium.com/@imanhodjaev/handling-api-calls-in-vue-cf39747656ba)
 - [Slide - Vue & REST API Patterns](https://speakerdeck.com/imanhodjaev/vue-and-rest-api-patterns)
 - [Type Vue without TypeScript](https://medium.com/@znck/type-vue-without-typescript-b2b49210f0b)
+- [Tracing or Debugging Vue.js Reactivity: The computed tree](https://medium.com/dailyjs/tracing-or-debugging-vue-js-reactivity-the-computed-tree-9da0ba1df5f9)
+- [Fallback for Blocked Iframes: A (Crude) Solution with Vue.js](https://medium.com/js-dojo/fallback-for-blocked-iframes-a-crude-solution-with-vue-js-4d734e33bcb2)
+- [Simplify Your Vue Components with Computed Setters](https://medium.com/@Taha_Shashtari/simplify-your-components-with-computed-setters-2f687f193fb0)
 
 ### Router
 
@@ -94,6 +99,8 @@
 - [Vue Router — The Missing Manual](https://blog.webf.zone/vue-router-the-missing-manual-ce51c21430b0)
 - [The lesser known amazing things VueRouter can do](https://medium.com/@NAPOLEON039/the-lesser-known-amazing-things-vuerouter-can-do-3fbb2c191c00)
 - [Storing and Using the Last Known Route in Vue](https://css-tricks.com/storing-and-using-the-last-known-route-in-vue/)
+- [Vue Route Component Hooks](https://itnext.io/vue-custom-route-hooks-3f50cc30bb87)
+- [The lesser known amazing things VueRouter can do](https://medium.com/@NAPOLEON039/the-lesser-known-amazing-things-vuerouter-can-do-3fbb2c191c00)
 
 ### Anti Patterns
 
@@ -137,6 +144,14 @@
 
 - [Testing Vuex Actions Correctly with Jest](https://medium.com/js-dojo/testing-vuex-actions-correctly-with-jest-444c277be4fe)
 - [How to Use Mock Data in Vue Apps](https://blog.usejournal.com/how-to-use-mock-data-in-vue-apps-6ec56eca1a78)
+- [Mocking global objects in vue test utils](https://itnext.io/mocking-global-objects-in-vue-test-utils-a8822df013a8)
+- [Testing real world VueJs apps](https://itnext.io/testing-real-world-vuejs-apps-d3e44118f8ce)
+- [Unit Testing Vue-Router](https://medium.com/js-dojo/unit-testing-vue-router-1d091241312)
+- [Working an application in Vue.js with TDD — An extensive guide for people who have time — part 1](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-1-3be791dafa2b)
+- [Working an application in Vue.js with TDD — An extensive guide for people who have time — part 2](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-2-12ec77b15d96)
+- [Working an application in Vue.js with TDD — An extensive guide for people who have time — part 3](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-3-7a68ad3f5fb1)
+- [Working an application in Vue.js with TDD — An extensive guide for people who have time — part 4](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-4-700a4269e368)
+- [Working an application in Vue.js with TDD — An extensive guide for people who have time — part 5](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-5-8cf1dd0cc9bc)
 
 ---
 
@@ -186,4 +201,5 @@
 - [Vue API calls in a smart way](https://blog.snap.hr/01/11/2018/vue-api-calls-smart-way/)
 - [How to create a Vue.js app using Single-File Components, without the CLI.](https://medium.freecodecamp.org/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f)
 - [A Vue pattern for idiomatic, performant component registration you might not know about](https://itnext.io/vue-a-pattern-for-idiomatic-performant-component-registration-you-might-not-know-about-9f3c091846f5)
+- [Reacting to Promises from event listeners in Vue.js](https://medium.com/@dobromir_hristov/reacting-to-promises-from-event-listeners-in-vue-js-8959b6d03f52)
 

@@ -50,6 +50,7 @@
 - [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
 - [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
 - [Building “Renderless” Vue Components](https://css-tricks.com/building-renderless-vue-components/)
+- [Renderless or Bust! Why Renderless Component Libraries will Make Web Dev Easier and More Inclusive](https://vuejsdevelopers.com/2019/02/11/renderless-component-libraries/)
 
 #### Examples
 
@@ -135,6 +136,7 @@
 ### Test
 
 - [Testing Vuex Actions Correctly with Jest](https://medium.com/js-dojo/testing-vuex-actions-correctly-with-jest-444c277be4fe)
+- [How to Use Mock Data in Vue Apps](https://blog.usejournal.com/how-to-use-mock-data-in-vue-apps-6ec56eca1a78)
 
 ---
 

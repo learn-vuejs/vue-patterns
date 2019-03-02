@@ -12,6 +12,12 @@
 - [Simplify Your Components with Computed Setters](https://tahazsh.com/vuebyte-computed-setters)
 - [Learn how to refactor Vue.js Single File Components with a real-world example](https://medium.com/@kevin_peters/learn-how-to-refactor-vue-js-single-file-components-on-a-real-world-example-501b3952ae49)
 
+### Performance
+
+- [Vue.js App Performance Optimization: part 1 — Introduction to performance optimization and lazy loading.](https://itnext.io/vue-js-app-performance-optimization-part-1-introduction-to-performance-optimization-and-lazy-29e4ff101019)
+- [Vue.js App Performance Optimization: part 2— Lazy loading routes and vendor bundle anti-pattern.](https://itnext.io/vue-js-app-performance-optimization-part-2-lazy-loading-routes-and-vendor-bundle-anti-pattern-4a62236e09f9)
+- [Vue.js App Performance Optimization: part 3— Lazy loading Vuex modules](https://itnext.io/vue-js-app-performance-optimization-part-3-lazy-loading-vuex-modules-ed67cf555976)
+
 ### State Management
 
 - [Managing State in Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)

@@ -70,7 +70,6 @@
 - [Vue.js Application Structure and CSS Architecture](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/)
 - [Structuring Vue Components](https://vueschool.io/articles/vuejs-tutorials/structuring-vue-components/)
 - [Structuring a Vue project — Authentication](https://medium.com/@zitko/structuring-a-vue-project-authentication-87032e5bfe16)
-- [Structuring a Vue project — Authentication](https://medium.com/@zitko/structuring-a-vue-project-authentication-87032e5bfe16)
 
 ### Tips & Tricks
 

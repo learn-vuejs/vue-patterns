@@ -41,6 +41,7 @@
 - [Writing Vuex modules in neat Typescript classes](https://medium.com/coding-blocks/writing-vuex-modules-in-neat-typescript-classes-9bf7b505e7b5)
 - [Managing multiple central stores with Vuex](https://blog.logrocket.com/managing-multiple-central-stores-with-vuex-74cc44646043)
 - [Vuex Explained Visually](https://medium.com/vue-mastery/vuex-explained-visually-f17c8c76d6c4)
+- [Quick Intro to Vuex ORM](https://www.monterail.com/blog/is-vuejs-enterprise-ready)
 
 ### Mobx
 
@@ -61,6 +62,7 @@
 
 - [Making a large scale app with vue.js (part 1): modularize your store!](https://medium.com/@stephane.souron/making-a-large-scale-app-with-vue-js-part-1-modularize-your-store-bf9066436502)
 - [Making a large scale app with vue.js (part 2): a little bit of Object Oriented Programming.](https://medium.com/@stephane.souron/making-a-large-scale-app-with-vue-js-part-2-a-little-bit-of-object-oriented-programming-6822de5ef19d)
+- [Is Vue.js Enterprise-Ready?—Large Scale Apps Use Cases](https://www.monterail.com/blog/is-vuejs-enterprise-ready)
 
 ### Folder Structure
 
@@ -89,6 +91,9 @@
 - [Tracing or Debugging Vue.js Reactivity: The computed tree](https://medium.com/dailyjs/tracing-or-debugging-vue-js-reactivity-the-computed-tree-9da0ba1df5f9)
 - [Fallback for Blocked Iframes: A (Crude) Solution with Vue.js](https://medium.com/js-dojo/fallback-for-blocked-iframes-a-crude-solution-with-vue-js-4d734e33bcb2)
 - [Simplify Your Vue Components with Computed Setters](https://medium.com/@Taha_Shashtari/simplify-your-components-with-computed-setters-2f687f193fb0)
+- [Build Decoupled Vue.js Applications with Hooks](https://markus.oberlehner.net/blog/build-decoupled-vue-applications-with-hooks/)
+- [How to Unlock the Full Potential of Prop Types in Vue](https://michaelnthiessen.com/unlock-full-potential-prop-types/)
+- [One more example of abstract component in Vue.js](https://medium.com/js-dojo/one-more-example-of-abstract-component-in-vue-js-6e80293f7a38)
 
 ### Router
 
@@ -151,6 +156,7 @@
 - [Working an application in Vue.js with TDD — An extensive guide for people who have time — part 3](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-3-7a68ad3f5fb1)
 - [Working an application in Vue.js with TDD — An extensive guide for people who have time — part 4](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-4-700a4269e368)
 - [Working an application in Vue.js with TDD — An extensive guide for people who have time — part 5](https://medium.com/magnetis-backstage/working-an-application-in-vue-js-with-tdd-an-extensive-guide-for-people-who-have-time-part-5-8cf1dd0cc9bc)
+- [How to Use Mock Data in Vue Apps](https://blog.usejournal.com/how-to-use-mock-data-in-vue-apps-6ec56eca1a78)
 
 ---
 

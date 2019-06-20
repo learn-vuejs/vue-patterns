@@ -14,6 +14,6 @@
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "vuepress": "^0.14.9"
+    "vuepress": "^1.0.1"
   }
 }

@@ -495,11 +495,20 @@ export default {
 - [Official - mixins](https://vuejs.org/v2/guide/mixins.html)
 - [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
 
+
+> 2.6.0+
+
+> If you use Vue version above 2.6.0, Vue introduces new unified slot api, which is `v-slot`.
+> It replaces the slot and slot-scope attributes, which are deprecated, but have not been removed and are still documented here.
+> You can refer to deprecated API [here](https://vuejs.org/v2/guide/components-slots.html#Deprecated-Syntax).
+
 ### Slots (Default)
 
 ```vue
 <template>
-  <button class="btn btn-primary"><slot></slot></button>
+  <button class="btn btn-primary">
+    <slot></slot>
+  </button>
 </template>
 
 <script>
@@ -511,7 +520,9 @@ export default {
 
 ```vue
 <template>
-  <v-btn> <span class="fa fa-user"></span> Login </v-btn>
+  <v-btn>
+    <span class="fa fa-user"></span> Login
+  </v-btn>
 </template>
 
 <script>
@@ -538,9 +549,15 @@ BaseLayout.vue
 
 ```vue
 <div class="container">
-  <header><slot name="header"></slot></header>
-  <main><slot></slot></main>
-  <footer><slot name="footer"></slot></footer>
+  <header>
+    <slot name="header"></slot>
+  </header>
+  <main>
+    <slot></slot>
+  </main>
+  <footer>
+    <slot name="footer"></slot>
+  </footer>
 </div>
 ```
 
@@ -548,18 +565,21 @@ App.vue
 
 ```vue
 <base-layout>
-  <template slot="header">
+  <template v-slot:header>
     <h1>Here might be a page title</h1>
   </template>
 
   <p>A paragraph for the main content.</p>
   <p>And another one.</p>
 
-  <template slot="footer">
+  <template v-slot:footer>
     <p>Here's some contact info</p>
   </template>
 </base-layout>
 ```
+
+Vue provides shorthand syntax for named slots.
+You can replace [`v-slot:` with `#`](https://vuejs.org/v2/guide/components-slots.html#Named-Slots-Shorthand).
 
 #### References
 
@@ -595,29 +615,30 @@ export default {
 ```vue
 <template>
   <todo-list v-bind:todos="todos">
-    <template slot-scope="{ todo }">
-      <span v-if="todo.isComplete">✓</span> {{ todo.text }}
+    <template v-slot:default="{ todo }">
+      <span v-if="todo.isComplete">✓</span>
+      {{ todo.text }}
     </template>
   </todo-list>
 </template>
 
 <script>
-import TodoList from './TodoList';
+import TodoList from "./TodoList";
 
 export default {
   components: {
-    TodoList,
+    TodoList
   },
   data() {
     return {
       todos: [
-        { todo: 'todo 1', isComplete: true },
-        { todo: 'todo 2', isComplete: false },
-        { todo: 'todo 3', isComplete: false },
-        { todo: 'todo 4', isComplete: true },
-      ];
+        { text: "todo 1", isComplete: true },
+        { text: "todo 2", isComplete: false },
+        { text: "todo 3", isComplete: false },
+        { text: "todo 4", isComplete: true }
+      ]
     };
-  },
+  }
 };
 </script>
 ```

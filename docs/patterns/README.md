@@ -386,7 +386,7 @@ With the above code example, rendered component will be destroyed if a different
 
 ## Functional Component
 
-A functional component is a speacial SFC, it is basically a component that is **stateless** (meaning no script tag). It only accepts `props` in order to display data.
+A functional component is a special SFC, it is basically a component that is **stateless** (meaning no script tag). It only accepts `props` in order to display data.
 
 In order to make a SFC a functional one you add the the `functional` attrubute to the `<template>` tag like this `<template functional>`
 
@@ -413,6 +413,15 @@ export default {
 }
 </script>
 ```
+
+The benefits of using a **Functional Component** over a **Stateful Component**:
+
+- Faster rendering
+- Lighter memory usage
+
+#### References
+
+- [Official - Functional Components](https://vuejs.org/v2/guide/render-function.html#Functional-Components)
 
 ## Composition
 

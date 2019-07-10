@@ -384,6 +384,36 @@ With the above code example, rendered component will be destroyed if a different
 - [Official - Dynamic & Async Components](https://vuejs.org/v2/guide/components-dynamic-async.html)
 - [Dynamic Component Templates with Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
 
+## Functional Component
+
+A functional component is a speacial SFC, it is basically a component that is **stateless** (meaning no script tag). It only accepts `props` in order to display data.
+
+In order to make a SFC a functional one you add the the `functional` attrubute to the `<template>` tag like this `<template functional>`
+
+**fp-component.vue**
+```vue
+<template functional>
+  <h1>{{ props.title }}</h1>
+  <p>{{ props.description }}</p>
+</template>
+```
+**index.vue**
+```vue
+<template>
+  <fb-component v-bind="{ title: 'FP Component', description: 'Only takes props' }" />
+</template>
+
+<script>
+import FPComponent from './fp-component';
+
+export default {
+  components: {
+    FPComponent
+  }
+}
+</script>
+```
+
 ## Composition
 
 #### Library

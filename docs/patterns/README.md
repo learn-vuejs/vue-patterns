@@ -804,6 +804,42 @@ From parent component, you can do like this:
 - [Do we need Higher Order Components in Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
 - [Higher-Order Components in Vue.js](https://medium.com/tldr-tech/higher-order-components-in-vue-js-38b500c6d49f)
 
+## Provider / Consumer
+
+The Provider / Consumer pattern is very simple, it aims at seperating stateful logic from the presentation. We need two components to create this pattern.
+
+**Provider.vue**
+
+```html
+<template>
+  <div>
+    <slot v-bind="{ state, actions }" />
+  </div>
+</template>
+
+<script>
+export default {
+  computed: {
+    state() {
+      return {
+        label: 'button',
+      };
+    },
+    actions() {
+      return {
+        click: this.click,
+      };
+    },
+  },
+  methods: {
+    click() {
+      console.log('Clicked');
+    },
+  },
+}
+</script>
+```
+
 ## Dependency injection
 
 Vue supports provide / inject mechanism to provide `object` into all its descendants, regardless of how deep the component hierarchy is, as long as they are in the same parent chain. Notice that `provide` and `inject` bindings are **not** reactive, unless you pass down an observed object.

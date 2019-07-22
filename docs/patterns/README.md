@@ -840,6 +840,8 @@ export default {
 </script>
 ```
 
+`Provider.vue` is responsible for containing all the stateful logic, we are successfully separting it from the presentation
+
 **Consumer.vue**
 
 ```html
@@ -850,6 +852,8 @@ export default {
   </div>
 </template>
 ```
+
+`Consumer.vue` is responsible for containing the presentation, note that we are using a [Functional Component](#functional-component)
 
 **App.vue**
 
@@ -872,6 +876,8 @@ export default {
 };
 </script>
 ```
+
+This pattern provides a neat way of allowing us to compose clean and decoupled components
 
 ## Dependency injection
 

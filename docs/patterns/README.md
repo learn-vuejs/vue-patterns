@@ -851,6 +851,28 @@ export default {
 </template>
 ```
 
+**App.vue**
+
+```html
+<template>
+  <provider v-slot="{ state, actions }">
+    <consumer v-bind="{ state, actions }" />
+  </provider>
+</template>
+
+<script>
+import Provider from './Provider.vue';
+import Consumer from './Consumer.vue';
+
+export default {
+  components: {
+    Provider,
+    Consumer,
+  },
+};
+</script>
+```
+
 ## Dependency injection
 
 Vue supports provide / inject mechanism to provide `object` into all its descendants, regardless of how deep the component hierarchy is, as long as they are in the same parent chain. Notice that `provide` and `inject` bindings are **not** reactive, unless you pass down an observed object.

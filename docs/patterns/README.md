@@ -853,7 +853,7 @@ export default {
 </template>
 ```
 
-`Consumer.vue` is responsible for containing the presentation, note that we are using a [Functional Component](#functional-component)
+`Consumer.vue` is responsible for containing the presentation, note that we are using a [Functional Component](#functional-component).
 
 **App.vue**
 
@@ -877,7 +877,7 @@ export default {
 </script>
 ```
 
-This pattern provides a neat way of allowing us to compose clean and decoupled components
+This pattern provides a neat way of allowing us to compose clean and decoupled components. Check out the example on [CodeSandbox](https://codesandbox.io/embed/vue-template-qp83z)
 
 ## Dependency injection
 

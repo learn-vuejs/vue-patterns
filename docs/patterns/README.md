@@ -840,7 +840,7 @@ export default {
 </script>
 ```
 
-`Provider.vue` is responsible for containing all the stateful logic, we are successfully separting it from the presentation
+`Provider.vue` is responsible for containing all the stateful logic, we are successfully separating it from the presentation. We are making use of the `Slots API` as a data provider.
 
 **Consumer.vue**
 

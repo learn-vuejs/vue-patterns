@@ -423,6 +423,43 @@ The benefits of using a **Functional Component** over a **Stateful Component**:
 
 - [Official - Functional Components](https://vuejs.org/v2/guide/render-function.html#Functional-Components)
 
+## Renderless Component
+
+A renderless component is basically a component that does not render any HTML to the DOM but insides provides reusable JavaScript logic abstracted into a SFC.
+
+A renderless component makes use of the **Slots API** in order to achieve what we want.
+
+<small><strong>Renderless.vue</strong></small>
+```html 
+<script>
+export default {
+  render() {
+    return this.$scopedSlots.default({ name: 'John' });
+  }
+};
+</script>
+```
+The only job of **Renderless.vue** is to provide the prop `name`
+
+<small><strong>App.vue</strong></small>
+```html
+<template>
+  <renderless v-slot="{ name }">
+    <p>{{ name }}</p>
+  </renderless>
+</template>
+
+<script>
+import Renderless from './Renderless.vue';
+
+export default {
+  components: {
+    Renderless,
+  }
+};
+</script>
+```
+
 ## Composition
 
 #### Library
@@ -806,7 +843,7 @@ From parent component, you can do like this:
 
 ## Provider / Consumer
 
-The Provider / Consumer pattern is very simple, it aims at seperating stateful logic from the presentation. We need two components to create this pattern.
+The Provider / Consumer pattern is very simple, it aims at seperating stateful logic from the presentation. We need two components to create this pattern a *Renderless Component* and a *Functional Component*
 
 **Provider.vue**
 

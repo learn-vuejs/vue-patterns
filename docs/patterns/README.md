@@ -811,12 +811,6 @@ The Provider / Consumer pattern is very simple, it aims at seperating stateful l
 **Provider.vue**
 
 ```html
-<template>
-  <div>
-    <slot v-bind="{ state, actions }" />
-  </div>
-</template>
-
 <script>
 export default {
   computed: {
@@ -836,7 +830,13 @@ export default {
       console.log('Clicked');
     },
   },
-}
+  render() {
+    return this.scopedSlots.default({ 
+      state: this.state,
+      actions: this.actions,
+    });
+  },
+};
 </script>
 ```
 

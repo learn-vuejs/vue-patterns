@@ -419,6 +419,69 @@ The benefits of using a **Functional Component** over a **Stateful Component**:
 - Faster rendering
 - Lighter memory usage
 
+## Renderless Component
+
+A renderless component is basically a component that does not render any HTML to the DOM but insides provides reusable JavaScript logic abstracted into a SFC.
+
+A renderless component makes use of the **Slots API** in order to achieve what we want.
+
+<small><strong>Renderless.vue</strong></small>
+```html 
+<script>
+export default {
+  render() {
+    return this.$scopedSlots.default({ name: 'John' });
+  }
+};
+</script>
+```
+The only job of **Renderless.vue** is to provide the prop `name`
+
+<small><strong>App.vue</strong></small>
+```html
+<template>
+  <renderless v-slot="{ name }">
+    <p>{{ name }}</p>
+  </renderless>
+</template>
+
+<script>
+import Renderless from './Renderless.vue';
+
+export default {
+  components: {
+    Renderless,
+  }
+};
+</script>
+```
+
+The neat thing about using a Renderless Component is that we can seperate our logic from our markup
+
+## Composition
+
+#### Library
+
+- [Proppy - Functional props composition for components](https://proppyjs.com/)
+
+### Basic Composition
+
+```vue
+<template>
+  <div class="component-b"><component-a></component-a></div>
+</template>
+
+<script>
+import ComponentA from './ComponentA';
+
+export default {
+  components: {
+    ComponentA,
+  },
+};
+</script>
+```
+
 #### References
 
 - [Official - Functional Components](https://vuejs.org/v2/guide/render-function.html#Functional-Components)

@@ -189,7 +189,7 @@ export default {
 - [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
 - [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)
 - [Vue.js Event Bus + Promises](https://medium.com/@jesusgalvan/vue-js-event-bus-promises-f83e73a81d72)
-- [Modifying component data with event emitters in Vue.js](Modifying component data with event emitters in Vue.js)
+- [Modifying component data with event emitters in Vue.js](https://blog.logrocket.com/modifying-component-data-with-event-emitters-in-vue-js/)
 
 ## Component Conditional Rendering
 

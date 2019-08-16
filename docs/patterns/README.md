@@ -400,7 +400,7 @@ In order to make a SFC a functional one you add the the `functional` attrubute t
 **index.vue**
 ```vue
 <template>
-  <fb-component v-bind="{ title: 'FP Component', description: 'Only takes props' }" />
+  <fp-component v-bind="{ title: 'FP Component', description: 'Only takes props' }" />
 </template>
 
 <script>

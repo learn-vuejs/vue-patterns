@@ -207,4 +207,5 @@
 - [How to create a Vue.js app using Single-File Components, without the CLI.](https://medium.freecodecamp.org/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f)
 - [A Vue pattern for idiomatic, performant component registration you might not know about](https://itnext.io/vue-a-pattern-for-idiomatic-performant-component-registration-you-might-not-know-about-9f3c091846f5)
 - [Reacting to Promises from event listeners in Vue.js](https://medium.com/@dobromir_hristov/reacting-to-promises-from-event-listeners-in-vue-js-8959b6d03f52)
+- [Vue.js Single File Component Factory](https://markus.oberlehner.net/blog/vue-single-file-component-factory/)
 

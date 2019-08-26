@@ -53,6 +53,7 @@
 - [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
 - [Building “Renderless” Vue Components](https://css-tricks.com/building-renderless-vue-components/)
 - [Renderless or Bust! Why Renderless Component Libraries will Make Web Dev Easier and More Inclusive](https://vuejsdevelopers.com/2019/02/11/renderless-component-libraries/)
+- [Vue.js Pattern for Async Requests: Using Renderless Components](https://dev.to/codinglukas/vue-js-pattern-for-async-requests-using-renderless-components-3gd)
 
 #### Examples
 

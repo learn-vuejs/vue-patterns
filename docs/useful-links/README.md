@@ -64,6 +64,7 @@
 - [Making a large scale app with vue.js (part 1): modularize your store!](https://medium.com/@stephane.souron/making-a-large-scale-app-with-vue-js-part-1-modularize-your-store-bf9066436502)
 - [Making a large scale app with vue.js (part 2): a little bit of Object Oriented Programming.](https://medium.com/@stephane.souron/making-a-large-scale-app-with-vue-js-part-2-a-little-bit-of-object-oriented-programming-6822de5ef19d)
 - [Is Vue.js Enterprise-Ready?—Large Scale Apps Use Cases](https://www.monterail.com/blog/is-vuejs-enterprise-ready)
+- [How to avoid SOLID principles violations in Vue. JS application](https://medium.com/@manuustenko/https-medium-com-manuustenko-how-to-avoid-solid-principles-violations-in-vue-js-application-1121a0df6197)
 
 ### Folder Structure
 

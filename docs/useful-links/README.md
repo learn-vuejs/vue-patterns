@@ -96,6 +96,7 @@
 - [Build Decoupled Vue.js Applications with Hooks](https://markus.oberlehner.net/blog/build-decoupled-vue-applications-with-hooks/)
 - [How to Unlock the Full Potential of Prop Types in Vue](https://michaelnthiessen.com/unlock-full-potential-prop-types/)
 - [One more example of abstract component in Vue.js](https://medium.com/js-dojo/one-more-example-of-abstract-component-in-vue-js-6e80293f7a38)
+- [A few handy Vue.js tricks](https://medium.com/@marko.zunic/a-few-handy-vue-js-tricks-832703cff426)
 
 ### Router
 

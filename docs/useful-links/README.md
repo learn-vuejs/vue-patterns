@@ -211,4 +211,5 @@
 - [A Vue pattern for idiomatic, performant component registration you might not know about](https://itnext.io/vue-a-pattern-for-idiomatic-performant-component-registration-you-might-not-know-about-9f3c091846f5)
 - [Reacting to Promises from event listeners in Vue.js](https://medium.com/@dobromir_hristov/reacting-to-promises-from-event-listeners-in-vue-js-8959b6d03f52)
 - [Vue.js Single File Component Factory](https://markus.oberlehner.net/blog/vue-single-file-component-factory/)
+- [Composing Components in Vue.js](https://dulisz.com/blog/composing-components-in-vue-js/)
 

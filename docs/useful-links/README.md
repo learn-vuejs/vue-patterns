@@ -14,9 +14,9 @@
 
 ### Performance
 
-- [Vue.js App Performance Optimization: part 1 — Introduction to performance optimization and lazy loading.](https://itnext.io/vue-js-app-performance-optimization-part-1-introduction-to-performance-optimization-and-lazy-29e4ff101019)
-- [Vue.js App Performance Optimization: part 2— Lazy loading routes and vendor bundle anti-pattern.](https://itnext.io/vue-js-app-performance-optimization-part-2-lazy-loading-routes-and-vendor-bundle-anti-pattern-4a62236e09f9)
-- [Vue.js App Performance Optimization: part 3— Lazy loading Vuex modules](https://itnext.io/vue-js-app-performance-optimization-part-3-lazy-loading-vuex-modules-ed67cf555976)
+- [Vue.js App Performance Optimization: part 1 — Lazy loading and code splitting in Vue.js](https://vueschool.io/articles/vuejs-tutorials/lazy-loading-and-code-splitting-in-vue-js/)
+- [Vue.js App Performance Optimization: part 2 — Lazy loading of vue-router routes and common gotchas](https://vueschool.io/articles/vuejs-tutorials/vue-js-router-performance/)
+- [Vue.js App Performance Optimization: part 3 — Lazy loading of vue-router routes and common gotchas](https://vueschool.io/articles/vuejs-tutorials/lazy-loading-individual-vue-components-and-prefetching/)
 - [How to Drastically Reduce Estimated Input Latency and Time to Interactive of SSR Vue.js Applications](https://markus.oberlehner.net/blog/how-to-drastically-reduce-estimated-input-latency-and-time-to-interactive-of-ssr-vue-applications/)
 - [Lazy Loading images with Vue.js directives and IntersectionObserver](https://itnext.io/lazy-loading-images-with-vue-js-directives-and-intersectionobserver-d0eb390cad9)
 

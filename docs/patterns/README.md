@@ -485,34 +485,6 @@ export default {
 
 #### References
 
-- [Official - Functional Components](https://vuejs.org/v2/guide/render-function.html#Functional-Components)
-
-## Composition
-
-#### Library
-
-- [Proppy - Functional props composition for components](https://proppyjs.com/)
-
-### Basic Composition
-
-```vue
-<template>
-  <div class="component-b"><component-a></component-a></div>
-</template>
-
-<script>
-import ComponentA from './ComponentA';
-
-export default {
-  components: {
-    ComponentA,
-  },
-};
-</script>
-```
-
-#### References
-
 - [Official - Composing with Components](https://vuejs.org/v2/guide/#Composing-with-Components)
 
 ### Extends

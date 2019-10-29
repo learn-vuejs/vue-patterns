@@ -127,10 +127,10 @@ export default MyBtn extends Vue {
 
 ### Props and Events
 
-Basically, vue component follows one-way data flow, that is props down ([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) and event up.
+Basically, vue components follow one-way data flow, that is props down ([See official guide](https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow)) and events up.
 Props are read-only data, so it's impossible to change props from child components.
-When props change, child components will be rerendered automatically (`props` are reactive data source).
-Child components can only emit event to direct parent, so that the parent component may change `data`, mapped to the child component's `props`.
+When props change, child components will be rerendered automatically (`props` are a reactive data source).
+Child components can only emit events to their direct parent, so that the parent component may change `data`, mapped to the child component's `props`.
 
 ```vue
 <template>
@@ -227,7 +227,7 @@ export default {
 
 If you want to conditionally render more than one element,
 you can use directives(`v-if` / `v-else` / `v-else-if` /`v-show`) on a `<template>` element.
-Notice that `<template>` element is not actually rendered into DOM. It is an invisible wrapper.
+Notice that the `<template>` element is not actually rendered into the DOM. It is an invisible wrapper.
 
 ```vue
 <template v-if="true">
@@ -239,7 +239,7 @@ Notice that `<template>` element is not actually rendered into DOM. It is an inv
 
 ### Render Function or JSX
 
-If you use render function or JSX in your vue application, you can apply all the techniques such as `if else` and `switch case` statement and `ternary` and `logical` operator.
+If you use render functions or JSX in your vue application, you can apply all the techniques, such as the `if else` and `switch case` statements and `ternary` and `logical` operators.
 
 `if else` statement
 
@@ -373,7 +373,7 @@ export default {
 <component :is="currentTabComponent"></component>
 ```
 
-With the above code example, rendered component will be destroyed if a different component is rendered in `<component>`. If you want components to keep their instances without being destroyed within `<component>` tag, you can wrap the `<component>` tag in a `<keep-alive>` tag like so:
+With the above code example, the rendered component will be destroyed if a different component is rendered in `<component>`. If you want components to keep their instances without being destroyed within the `<component>` tag, you can wrap the `<component>` tag in a `<keep-alive>` tag like so:
 
 ```vue
 <keep-alive> <component :is="currentTabComponent"></component> </keep-alive>
@@ -389,7 +389,7 @@ With the above code example, rendered component will be destroyed if a different
 
 A functional component is a special SFC, it is basically a component that is **stateless** (meaning no script tag). It only accepts `props` in order to display data.
 
-In order to make a SFC a functional one you add the the `functional` attrubute to the `<template>` tag like this `<template functional>`
+In order to make a SFC a functional one you add the the `functional` attribute to the `<template>` tag like this: `<template functional>`
 
 **fp-component.vue**
 ```vue
@@ -422,7 +422,7 @@ The benefits of using a **Functional Component** over a **Stateful Component**:
 
 ## Renderless Component
 
-A renderless component is basically a component that does not render any HTML to the DOM but insides provides reusable JavaScript logic abstracted into a SFC.
+A renderless component is basically a component that does not render any HTML to the DOM but inside provides reusable JavaScript logic abstracted into a SFC.
 
 A renderless component makes use of the **Slots API** in order to achieve what we want.
 
@@ -457,7 +457,7 @@ export default {
 </script>
 ```
 
-The neat thing about using a Renderless Component is that we can seperate our logic from our markup
+The neat thing about using a Renderless Component is that we can seperate our logic from our markup.
 
 ## Composition
 
@@ -759,7 +759,7 @@ export default {
 
 ### Render Props
 
-In most cases, you can use scoped slots instead of render props. But, it might be useful in some case.
+In most cases, you can use scoped slots instead of render props. But, it might be useful in some cases.
 
 with `SFC`
 
@@ -834,7 +834,6 @@ export default Mouse;
 
 - [Official - Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
 - [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
-- [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
 - [Using React-Style Callback Props With Vue: Pros and Cons](https://medium.com/js-dojo/using-react-style-callback-props-with-vue-pros-and-cons-e0ee7455695b)
 
 ## Passing Props & Listeners
@@ -846,7 +845,7 @@ You can bind `$attrs` and `$listeners` in the child component and set [`inheritA
 
 <<< @/docs/.vuepress/components/PassingProps.vue
 
-From parent component, you can do like this:
+From the parent component, you can do this:
 
 #### PassedProps.vue
 
@@ -870,7 +869,7 @@ From parent component, you can do like this:
 
 ## Provider / Consumer
 
-The Provider / Consumer pattern is very simple, it aims at seperating stateful logic from the presentation. We need two components to create this pattern.
+The Provider / Consumer pattern is very simple, it aims at separating stateful logic from the presentation. We need two components to create this pattern.
 
 **Provider.vue**
 
@@ -909,7 +908,7 @@ export default {
 **Consumer.vue**
 
 ```html
-<template>
+<template functional>
   <div>
     <p>{{ props.state.label }}</p>
     <button @click="props.actions.click">CLICK</button>
@@ -955,7 +954,7 @@ Vue supports provide / inject mechanism to provide `object` into all its descend
 </parent-component>
 ```
 
-With above example component hierarchy, in order to derive data from `parent-component`, you should pass down data(object) as `props` to `child-component` and `grand-child-component`. However, if `parent-component` `provide` data(object), `grand-child-component` can just define `inject` provided object from `parent-component`.
+With the above example component hierarchy, in order to derive data from `parent-component`, you should pass down data(object) as `props` to `child-component` and `grand-child-component`. However, if `parent-component` `provide` data(object), `grand-child-component` can just define `inject` provided object from `parent-component`.
 
 #### References:
 

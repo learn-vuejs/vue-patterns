@@ -909,7 +909,7 @@ export default {
 **Consumer.vue**
 
 ```html
-<template>
+<template functional>
   <div>
     <p>{{ props.state.label }}</p>
     <button @click="props.actions.click">CLICK</button>

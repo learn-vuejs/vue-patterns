@@ -107,7 +107,6 @@
 - [The lesser known amazing things VueRouter can do](https://medium.com/@NAPOLEON039/the-lesser-known-amazing-things-vuerouter-can-do-3fbb2c191c00)
 - [Storing and Using the Last Known Route in Vue](https://css-tricks.com/storing-and-using-the-last-known-route-in-vue/)
 - [Vue Route Component Hooks](https://itnext.io/vue-custom-route-hooks-3f50cc30bb87)
-- [The lesser known amazing things VueRouter can do](https://medium.com/@NAPOLEON039/the-lesser-known-amazing-things-vuerouter-can-do-3fbb2c191c00)
 
 ### Anti Patterns
 
@@ -140,8 +139,11 @@
 - [Vue + TypeScript: A Match Made in Your Code Editor](https://css-tricks.com/vue-typescript-a-match-made-in-your-code-editor/)
 - [Writing Class-Based Components with Vue.js and TypeScript](https://alligator.io/vuejs/typescript-class-components/)
 - [Writing Vuex modules in neat Typescript classes](https://medium.com/coding-blocks/writing-vuex-modules-in-neat-typescript-classes-9bf7b505e7b5)
-
-### Flowtype
+- [Vue.js + Typescript best practices #1: How to create a modal service in Vue.js that is handling dialogs as a Promise to gain reusability of a modal components](https://medium.com/js-dojo/how-to-create-a-modal-service-in-vue-js-43b6b2e7057)
+- [Vue.js + Typescript best practices #2: Using fully typed Vuex mutations with vuex-typescript](https://medium.com/js-dojo/using-fully-typed-vuex-mutations-with-vuex-typescript-7597f56eceec)
+- [Vue.js + Typescript best practices #3: Create a custom hook component like mounted or created](https://medium.com/js-dojo/create-a-custom-component-life-circle-hook-for-vue-js-with-typescript-b624559bceac)
+- [Vue.js + Typescript best practices #4: create better $emit()](https://medium.com/js-dojo/vue-js-typescript-best-practices-create-better-emit-b98712819411)
+- [Vue.js + Typescript best practices #5: Class-based fetching with Axios using DTO architecture](https://medium.com/js-dojo/vue-js-typescript-best-practices-5-class-based-fetching-with-axios-using-dto-architecture-a2bf80102162)
 
 ### GraphQL
 
@@ -212,4 +214,4 @@
 - [Reacting to Promises from event listeners in Vue.js](https://medium.com/@dobromir_hristov/reacting-to-promises-from-event-listeners-in-vue-js-8959b6d03f52)
 - [Vue.js Single File Component Factory](https://markus.oberlehner.net/blog/vue-single-file-component-factory/)
 - [Composing Components in Vue.js](https://dulisz.com/blog/composing-components-in-vue-js/)
-
+- 

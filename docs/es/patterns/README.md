@@ -372,23 +372,23 @@ export default {
 <component :is="currentTabComponent"></component>
 ```
 
-Con el ejemplo de código de arriba, el componente renderizado será destruido si un componente diferente es asignado en la propiedad `is`. Si quieres que los componentes mantengan sus instancias y su estado sin ser destruido, puedes envolver la etiqueta `<component>` en otra etiqueta `<keep-alive>` de la siguiente manera:
+Con el ejemplo de código de arriba, el componente renderizado será destruido si un componente diferente es asignado en la propiedad `is`. Si deseas que los componentes mantengan sus instancias y su estado sin ser destruido, puedes envolver la etiqueta `<component>` en otra etiqueta `<keep-alive>` de la siguiente manera:
 
 ```vue
 <keep-alive> <component :is="currentTabComponent"></component> </keep-alive>
 ```
 
-#### References
+#### Referencias
 
 - [🇪🇸 Documentación - Componentes Dinámicos](https://es.vuejs.org/v2/guide/components.html#Componentes-dinamicos)
 - [🇪🇸 Documentación - Componentes Dinámicos & Asíncronos](https://es.vuejs.org/v2/guide/components-dynamic-async.html)
 - [🇺🇸 Plantillas de Componentes Dinámicos con Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
 
-## Functional Component
+## Componente Funcional
 
-A functional component is a special SFC, it is basically a component that is **stateless** (meaning no script tag). It only accepts `props` in order to display data.
+Un componente funcional es un SFC especial, es básicamente un componente **sin estado** (es decir, sin etiqueta de script). Solamente acepta `props` para mostrar datos.
 
-In order to make a SFC a functional one you add the the `functional` attribute to the `<template>` tag like this: `<template functional>`
+Para poder hacer un SFC un componente funcional, necesitas agregar el atributo `functional` a la etiqueta de `<template>` de la siguiente manera `<template functional>`
 
 **fp-component.vue**
 ```vue
@@ -414,16 +414,16 @@ export default {
 </script>
 ```
 
-The benefits of using a **Functional Component** over a **Stateful Component**:
+Beneficios de usar un **Componente Funcional** sobre un **Componente con Estado**:
 
-- Faster rendering
-- Lighter memory usage
+- Renderizado más rápido
+- Menor uso de memoria
 
-## Renderless Component
+## Componente sin renderizado
 
-A renderless component is basically a component that does not render any HTML to the DOM but inside provides reusable JavaScript logic abstracted into a SFC.
+Un componente sin renderizado es básicamente un componente que no renderiza ningún HTML en el DOM pero proporciona lógica JavaScript reutilizable abstraída en un SFC.
 
-A renderless component makes use of the **Slots API** in order to achieve what we want.
+Un componente sin renderizado utiliza la **API de Slots** para lograr lo que queremos.
 
 <small><strong>Renderless.vue</strong></small>
 ```html 
@@ -435,7 +435,7 @@ export default {
 };
 </script>
 ```
-The only job of **Renderless.vue** is to provide the prop `name`
+El único trabajo de **Renderless.vue** es proporcionar la prop `name`
 
 <small><strong>App.vue</strong></small>
 ```html
@@ -456,15 +456,15 @@ export default {
 </script>
 ```
 
-The neat thing about using a Renderless Component is that we can seperate our logic from our markup.
+Lo bueno de utilizar Componentes sin renderizado es que nos permite separar nuestra lógica del HTML.
 
-## Composition
+## Composición
 
-#### Library
+#### Librería
 
-- [Proppy - Functional props composition for components](https://proppyjs.com/)
+- [🇺🇸 Proppy - Composición de props funcionales para componentes](https://proppyjs.com/)
 
-### Basic Composition
+### Composición básica
 
 ```vue
 <template>
@@ -482,13 +482,13 @@ export default {
 </script>
 ```
 
-#### References
+#### Referencias
 
-- [Official - Composing with Components](https://vuejs.org/v2/guide/#Composing-with-Components)
+- [🇪🇸 Documentación - Composición con Componentes](https://es.vuejs.org/v2/guide/index.html#Composicion-con-Componentes)
 
 ### Extends
 
-When you want to extend a single vue component
+Cuando quieres extender un solo componente de vue
 
 ```vue
 <template>
@@ -509,8 +509,8 @@ export default {
 
 #### References:
 
-- [Official - extends](https://vuejs.org/v2/api/#extends)
-- [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
+- [🇪🇸 Documentación - extends](https://es.vuejs.org/v2/api/#extends)
+- [🇺🇸 Extendiendo Componentes VueJS](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
 
 ### Mixins
 
@@ -564,19 +564,19 @@ export default {
 </script>
 ```
 
-#### References:
+#### Referencias:
 
-- [Official - mixins](https://vuejs.org/v2/guide/mixins.html)
-- [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
+- [🇪🇸 Documentación - mixins](https://es.vuejs.org/v2/guide/mixins.html)
+- [🇺🇸 Uso práctico de Componentes y Mixins en Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
 
 
 > 2.6.0+
 
-> If you use Vue version above 2.6.0, Vue introduces new unified slot api, which is `v-slot`.
-> It replaces the slot and slot-scope attributes, which are deprecated, but have not been removed and are still documented here.
-> You can refer to deprecated API [here](https://vuejs.org/v2/guide/components-slots.html#Deprecated-Syntax).
+> Si usas Vue en la versión 2.6.0 o mayor, Vue introdujo una nueva y unificada api para slots, que es `v-slot`.
+> Reemplaza los atributos slot y slot-scope, que son obsoletos, pero no han sido removidos y se encuentran todavía documentados aquí.
+> Puedes hacer referencia la API obsoleta [aquí](https://es.vuejs.org/v2/guide/components-slots.html#Slots-con-Scope).
 
-### Slots (Default)
+### Slots (Por defecto)
 
 ```vue
 <template>
@@ -612,12 +612,12 @@ export default {
 
 #### References:
 
-- [Official - Slot Content](https://vuejs.org/v2/guide/components-slots.html#Slot-Content)
-- [Understanding Component Slots with Vue.js](https://alligator.io/vuejs/component-slots/)
-- [Composing Custom Elements With Slots And Named Slots](https://alligator.io/web-components/composing-slots-named-slots/)
-- [Writing Abstract Components with Vue.js](https://alligator.io/vuejs/vue-abstract-components/)
+- [🇪🇸 Documentación - Contenido del slot](https://es.vuejs.org/v2/guide/components-slots.html#Slots-con-Scope)
+- [🇺🇸 Entendiendo los Slots en componentes con Vue.js](https://alligator.io/vuejs/component-slots/)
+- [🇺🇸 Componiendo Elementos Personalizados con Slots y Slots nombrados](https://alligator.io/web-components/composing-slots-named-slots/)
+- [🇺🇸 Escribiendo Components Abstractos con Vue.js](https://alligator.io/vuejs/vue-abstract-components/)
 
-### Named Slots
+### Slots Nombrados
 
 BaseLayout.vue
 
@@ -652,15 +652,15 @@ App.vue
 </base-layout>
 ```
 
-Vue provides shorthand syntax for named slots.
-You can replace [`v-slot:` with `#`](https://vuejs.org/v2/guide/components-slots.html#Named-Slots-Shorthand).
+Vue proporciona una sintaxis abreviada para slots nombrados.
+Puedes remplazar  [`v-slot:` con `#`](https://vuejs.org/v2/guide/components-slots.html#Named-Slots-Shorthand)
 
-#### References
+#### Referencias
 
-- [Official - Named Slots](https://vuejs.org/v2/guide/components-slots.html#Named-Slots)
-- [Vue.js Component Composition with Slots](https://medium.com/@fdietz/vue-js-component-composition-with-slots-eda311579218)
+- [🇪🇸 Documentación - Slots Nombrados](https://es.vuejs.org/v2/guide/components-slots.html#Slots-Nombrados)
+- [🇺🇸 Vue.js Composición de Componentes con Slots](https://medium.com/@fdietz/vue-js-component-composition-with-slots-eda311579218)
 
-### Scoped Slots
+### Slots con Scope
 
 ```vue
 <template>
@@ -717,22 +717,22 @@ export default {
 </script>
 ```
 
-#### References:
+#### Referencias:
 
-- [Official - Scoped Slots](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots)
-- [Getting Your Head Around Vue.js Scoped Slots](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
-- [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
-- [Scoped Component Slots in Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
-- [The Trick to Understanding Scoped Slots in Vue.js](https://adamwathan.me/the-trick-to-understanding-scoped-slots-in-vuejs/)
-- [The Power of Scoped Slots in Vue](https://pineco.de/power-scoped-slots-vue/)
-- [Building a list keyboard control component with Vue.js and scoped slots](https://medium.com/@tkwebdev/building-a-list-keyboard-control-component-with-vue-js-and-scoped-slots-c74db4fcf84f)
-- [How I finally got my head around Scoped Slots in Vue](https://medium.com/@ross_65916/how-i-finally-got-my-head-around-scoped-slots-in-vue-c37238d4d4cc)
+- [🇪🇸 Documentación - Slots con Scope](https://es.vuejs.org/v2/guide/components-slots.html#Slots-con-Scope)
+- [🇺🇸 Comprende de pies a cabeza los Slots con Scope en Vue.js](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
+- [🇺🇸 Entendiendo Slots con Scope en Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
+- [🇺🇸 Componentes y Slots con Scope en Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
+- [🇺🇸 El Truco para entender Slots con Scope en Vue.js](https://adamwathan.me/the-trick-to-understanding-scoped-slots-in-vuejs/)
+- [🇺🇸 El poder de Slots con Scope en Vue](https://pineco.de/power-scoped-slots-vue/)
+- [🇺🇸 Construye un Componente lista con Vue.js y Slots con Scope](https://medium.com/@tkwebdev/building-a-list-keyboard-control-component-with-vue-js-and-scoped-slots-c74db4fcf84f)
+- [🇺🇸 Cómo finalmente comprendí los Slots con Scope en Vue](https://medium.com/@ross_65916/how-i-finally-got-my-head-around-scoped-slots-in-vue-c37238d4d4cc)
 
-### Render Props
+### Props de Renderizado
 
-In most cases, you can use scoped slots instead of render props. But, it might be useful in some cases.
+En la mayoría de los casos, puedes usar slots con scope en vez de props de renderizado. Pero, puede llegar a ser util en algunas ocasiones.
 
-with `SFC`
+con `SFC`
 
 ```vue
 <template>
@@ -766,7 +766,7 @@ export default {
 </style>
 ```
 
-with `JSX`
+con `JSX`
 
 ```js
 const Mouse = {
@@ -801,11 +801,11 @@ const Mouse = {
 export default Mouse;
 ```
 
-#### References:
+#### Referencias:
 
-- [Official - Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
-- [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
-- [Using React-Style Callback Props With Vue: Pros and Cons](https://medium.com/js-dojo/using-react-style-callback-props-with-vue-pros-and-cons-e0ee7455695b)
+- [🇪🇸 Documentación - Funciones de renderizado y JSX](https://es.vuejs.org/v2/guide/render-function.html)
+- [🇺🇸 Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
+- [🇺🇸 Using React-Style Callback Props With Vue: Pros and Cons](https://medium.com/js-dojo/using-react-style-callback-props-with-vue-pros-and-cons-e0ee7455695b)
 
 ## Passing Props & Listeners
 

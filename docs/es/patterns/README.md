@@ -804,43 +804,42 @@ export default Mouse;
 #### Referencias:
 
 - [🇪🇸 Documentación - Funciones de renderizado y JSX](https://es.vuejs.org/v2/guide/render-function.html)
-- [🇺🇸 Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
-- [🇺🇸 Using React-Style Callback Props With Vue: Pros and Cons](https://medium.com/js-dojo/using-react-style-callback-props-with-vue-pros-and-cons-e0ee7455695b)
+- [🇺🇸 Aprovechando Props de Renderizado en Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
+- [🇺🇸 Utilizando Callback Props estilo React con Vue: Pros y Contras](https://medium.com/js-dojo/using-react-style-callback-props-with-vue-pros-and-cons-e0ee7455695b)
 
-## Passing Props & Listeners
+## Pasando Props y Listeners
 
-Sometimes, you may want to pass props and listeners to a child component without having to declare all props for the child component.
-You can bind `$attrs` and `$listeners` in the child component and set [`inheritAttrs` to `false`](https://vuejs.org/v2/api/#inheritAttrs) (otherwise both, `div` and `child-component` will receive the attributes)
+En ciertas ocasiones, es posible que quieras pasar props y listeners a un componente hijo sin tener que declarar todas las props del componente hijo.
+Puedes ligar `$attrs` y `$listeners` en el componente hijo y establecer [`inheritAttrs` como `false`](https://es.vuejs.org/v2/api/index.html#inheritAttrs) (de lo contrario, `div` y child-component` recibiran los atributos)
 
 #### PassingProps.vue
 
 <<< @/docs/.vuepress/components/PassingProps.vue
 
-From the parent component, you can do this:
+Desde el componente padre, puedes hacer esto:
 
 #### PassedProps.vue
 
 <<< @/docs/.vuepress/components/PassedProps.vue
 
-#### Working Example:
+#### Ejemplo:
 
 <PassedProps></PassedProps>
 
-#### References:
+#### Referencias:
 
-- [Transparent Wrapper Components in Vue](https://zendev.com/2018/05/31/transparent-wrapper-components-in-vue.html)
+- [🇺🇸 Componentes contenedores Transparentes en Vue](https://zendev.com/2018/05/31/transparent-wrapper-components-in-vue.html)
 
-## Higher Order Component (a.k.a. HOC)
+## Componentes de orden superior (alias HOC)
 
-#### References:
+#### Referencias:
 
-- [Higher Order Components in Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
-- [Do we need Higher Order Components in Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
-- [Higher-Order Components in Vue.js](https://medium.com/tldr-tech/higher-order-components-in-vue-js-38b500c6d49f)
+- [🇺🇸 Componentes de orden superior en Vue.js](https://medium.com/bethink-pl/higher-order-components-in-vue-js-a79951ac9176)
+- [🇺🇸 ¿Son necesarios los Componentes de orden superior en Vue.js?](https://medium.com/bethink-pl/do-we-need-higher-order-components-in-vue-js-87c0aa608f48)
+- [🇺🇸 Componentes de orden superior en Vue.js](https://medium.com/tldr-tech/higher-order-components-in-vue-js-38b500c6d49f)
 
-## Provider / Consumer
-
-The Provider / Consumer pattern is very simple, it aims at separating stateful logic from the presentation. We need two components to create this pattern.
+## Proveedor / Consumidor
+El patrón Proveedor / Consumidor es muy sencillo, su objetivo es separar la lógica de la presentación. Necesitamos dos componentes para crear este patrón.
 
 **Provider.vue**
 
@@ -874,7 +873,7 @@ export default {
 </script>
 ```
 
-`Provider.vue` is responsible for containing all the stateful logic, we are successfully separating it from the presentation. We are making use of the `Slots API` as a data provider.
+`Provider.vue` es responsable de contener la lógica de estado, estamos separándola de la presentación. Podemos hacer uso de la `API de Slots` como proveedor de la información.
 
 **Consumer.vue**
 
@@ -887,7 +886,7 @@ export default {
 </template>
 ```
 
-`Consumer.vue` is responsible for containing the presentation, note that we are using a [Functional Component](#functional-component).
+`Consumer.vue` es responsable de contener la presentación, toma en cuenta que estamos utilizando un [Componente Funcional](#functional-component).
 
 **App.vue**
 
@@ -911,11 +910,11 @@ export default {
 </script>
 ```
 
-This pattern provides a neat way of allowing us to compose clean and decoupled components. Check out the example on [CodeSandbox](https://codesandbox.io/embed/vue-template-qp83z)
+Este patrón proporciona una buena manera que nos permite componer componentes limpios y desacoplados. Puedes ver los ejemplos en [CodeSandbox](https://codesandbox.io/embed/vue-template-qp83z)
 
-## Dependency injection
+## Inyección de Dependencia
 
-Vue supports provide / inject mechanism to provide `object` into all its descendants, regardless of how deep the component hierarchy is, as long as they are in the same parent chain. Notice that `provide` and `inject` bindings are **not** reactive, unless you pass down an observed object.
+Vue tiene un mecanismo para proveer / inyectar un `objeto` a todos sus descendientes, sin importar el nivel de profundidad de la jerarquía del componente, siempre y cuando se encuentre dentro de la misma cadena del padre. Vale mencionar que las ligaduras `provide` e `inject` **no** son reactivas, a menos que pasen un objeto observado.
 
 ```vue
 <parent-component>
@@ -925,19 +924,19 @@ Vue supports provide / inject mechanism to provide `object` into all its descend
 </parent-component>
 ```
 
-With the above example component hierarchy, in order to derive data from `parent-component`, you should pass down data(object) as `props` to `child-component` and `grand-child-component`. However, if `parent-component` `provide` data(object), `grand-child-component` can just define `inject` provided object from `parent-component`.
+En el ejemplo de la jerarquía de componentes de arriba, para poder derivar información desde `parent-component`, necesitas pasar el data(object) como `props` a `child-component` y a `grand-child-component`. Sin embargo, si `parent-component` utiliza `provide` con el data(object), el componente `grand-child-component` puede definir `inject` para inyectar el objeto que proviene de `parent-component`.
 
-#### References:
+#### Referencias:
 
-- [Official API](https://vuejs.org/v2/api/#provide-inject)
-- [Official Guide](https://vuejs.org/v2/guide/components-edge-cases.html#Dependency-Injection)
-- [Component Communication](https://alligator.io/vuejs/component-communication/#provide--inject)
-- [Dependency Injection in Vue.js App with TypeScript](https://blog.kloud.com.au/2017/03/22/dependency-injection-in-vuejs-app-with-typescript/)
+- [🇪🇸 Documentación - Provide / Inject](https://es.vuejs.org/v2/api/index.html#provide-inject)
+- [🇪🇸 Documentación- Inyección de dependencia](https://es.vuejs.org/v2/guide/components-edge-cases.html#Inyeccion-de-dependencia)
+- [🇺🇸 Comunicación de Componentes](https://alligator.io/vuejs/component-communication/#provide--inject)
+- [🇺🇸 Inyección de dependencia en una aplicación Vue.js App con TypeScript](https://blog.kloud.com.au/2017/03/22/dependency-injection-in-vuejs-app-with-typescript/)
 
 ### Provide / Inject
 
 ::: tip
-You can also use [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator)'s `@Provide`, `@Inject`
+Puedes usar también `@Provide`, `@Inject` de [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator)
 :::
 
 #### ThemeProvider.vue
@@ -957,7 +956,7 @@ You can also use [vue-property-decorator](https://github.com/kaorun343/vue-prope
 </theme-provider>
 ```
 
-#### Working Example:
+#### Ejemplo:
 
 <ThemeProvider>
   <p class="demo">
@@ -966,9 +965,9 @@ You can also use [vue-property-decorator](https://github.com/kaorun343/vue-prope
   </p>
 </ThemeProvider>
 
-## Handling Errors
+## Manejando errores
 
-### `errorCaptured` Hook
+### Hook `errorCaptured`
 
 #### ErrorBoundary.vue
 
@@ -982,23 +981,23 @@ You can also use [vue-property-decorator](https://github.com/kaorun343/vue-prope
 <error-boundary> <throw-error></throw-error> </error-boundary>
 ```
 
-#### Working Example:
+#### Ejemplo:
 
 <ErrorBoundary>
   <ThrowError></ThrowError>
 </ErrorBoundary>
 
-#### References
+#### Referencias
 
-- [Handling Errors in Vue with Error Boundaries](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
-- [Example 1](https://jsfiddle.net/Linusborg/z84wspcg/)
+- [🇺🇸 Manejando errores en Vue con Límites de Error](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
+- [Ejemplo 1](https://jsfiddle.net/Linusborg/z84wspcg/)
 
-## Productivity Tips
+## Trucos de productividad
 
-watch on create
+watch al crear un componente
 
 ```js
-// don't
+// no hagas esto
 created() {
   this.fetchUserList();
 },
@@ -1008,7 +1007,7 @@ watch: {
 ```
 
 ```js
-// do
+// mejor haz esto
 watch: {
   searchText: {
     handler: 'fetchUserList',

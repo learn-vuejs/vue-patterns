@@ -1,83 +1,83 @@
-### Style Guide
+### Guía de Estilo
 
-- [Official - Style Guide](https://vuejs.org/v2/style-guide/)
-- [Vue.js Component Style Guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
+- [🇪🇸 Documentación - Guía de Estilo](https://vuejs.org/v2/style-guide/)
+- [🇺🇸 Guía de Estilo de componentes Vue.js](https://github.com/pablohpsilva/vuejs-component-style-guide)
 
-### Refactoring
+### Refactorización
 
-- [Refactoring Vue: Cleaning Up a List of Posts With Better Component Splitting and More ES6](https://mattstauffer.com/blog/refactoring-vue-cleaning-up-a-list-of-posts-with-better-component-splitting-and-more-es6/?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
-- [Clean up your Vue modules with ES6 Arrow Functions](https://gist.github.com/JacobBennett/7b32b4914311c0ac0f28a1fdc411b9a7)
-- [Examples of Vue’s Clean Code](https://webdesign.tutsplus.com/tutorials/examples-of-vues-clean-code--cms-29619)
-- [Optimizing Performance with Computed Properties](https://codingexplained.com/coding/front-end/vue-js/optimizing-performance-computed-properties)
-- [Simplify Your Components with Computed Setters](https://tahazsh.com/vuebyte-computed-setters)
-- [Learn how to refactor Vue.js Single File Components with a real-world example](https://medium.com/@kevin_peters/learn-how-to-refactor-vue-js-single-file-components-on-a-real-world-example-501b3952ae49)
+- [🇺🇸 Refactorizando Vue: Limpiando una Lista de Artículos con mejor Separación de Componentes y más ES6](https://mattstauffer.com/blog/refactoring-vue-cleaning-up-a-list-of-posts-with-better-component-splitting-and-more-es6/?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=Vue.js%20Feed)
+- [🇺🇸 Limpia tus módulos de Vue con Funciones Flecha de ES6](https://gist.github.com/JacobBennett/7b32b4914311c0ac0f28a1fdc411b9a7)
+- [🇺🇸 Ejemplos de código limpio de Vue](https://webdesign.tutsplus.com/tutorials/examples-of-vues-clean-code--cms-29619)
+- [🇺🇸 Optimizar Rendimiento con propiedades computadas](https://codingexplained.com/coding/front-end/vue-js/optimizing-performance-computed-properties)
+- [🇺🇸 Simplifica tus componentes con Setters computados](https://tahazsh.com/vuebyte-computed-setters)
+- [🇺🇸 Aprende como refactorizar Componentes de un solo archivo de Vue.js con un ejemplo del mundo real](https://medium.com/@kevin_peters/learn-how-to-refactor-vue-js-single-file-components-on-a-real-world-example-501b3952ae49)
 
-### Performance
+### Rendimiento
 
-- [Vue.js App Performance Optimization: part 1 — Lazy loading and code splitting in Vue.js](https://vueschool.io/articles/vuejs-tutorials/lazy-loading-and-code-splitting-in-vue-js/)
-- [Vue.js App Performance Optimization: part 2 — Lazy loading of vue-router routes and common gotchas](https://vueschool.io/articles/vuejs-tutorials/vue-js-router-performance/)
-- [Vue.js App Performance Optimization: part 3 — Lazy loading of vue-router routes and common gotchas](https://vueschool.io/articles/vuejs-tutorials/lazy-loading-individual-vue-components-and-prefetching/)
-- [How to Drastically Reduce Estimated Input Latency and Time to Interactive of SSR Vue.js Applications](https://markus.oberlehner.net/blog/how-to-drastically-reduce-estimated-input-latency-and-time-to-interactive-of-ssr-vue-applications/)
-- [Lazy Loading images with Vue.js directives and IntersectionObserver](https://itnext.io/lazy-loading-images-with-vue-js-directives-and-intersectionobserver-d0eb390cad9)
+- [🇺🇸 Optimización de una aplicación de Vue.js: parte 1 — Carga diferida y división de código en Vue.js](https://vueschool.io/articles/vuejs-tutorials/lazy-loading-and-code-splitting-in-vue-js/)
+- [🇺🇸 Optimización de una aplicación de Vue.js: parte 2 — Carga diferida de rutas del vue-router y trampas comunes](https://vueschool.io/articles/vuejs-tutorials/vue-js-router-performance/)
+- [🇺🇸 Optimización de una aplicación de Vue.js: parte 3 — Carga diferida de rutas del vue-router y trampas comunes](https://vueschool.io/articles/vuejs-tutorials/lazy-loading-individual-vue-components-and-prefetching/)
+- [🇺🇸 Cómo reducir drásticamente la Latencia de entrada estimada y el Tiempo para ser interactivo de Aplicaciones de Vue.js Renderizadas del lado del servidor o SSR](https://markus.oberlehner.net/blog/how-to-drastically-reduce-estimated-input-latency-and-time-to-interactive-of-ssr-vue-applications/)
+- [🇺🇸 Carga diferida de imágenes con directivas de Vue.js y el Observador de Intersección](https://itnext.io/lazy-loading-images-with-vue-js-directives-and-intersectionobserver-d0eb390cad9)
 
-### State Management
+### Manejo del estado
 
-- [Managing State in Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
+- [🇺🇸 Manejando el estado en Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
 
 ### Vuex
 
-- [Decouple Vuex modules with the Mediator pattern](https://itnext.io/decouple-vuex-actions-with-the-mediator-pattern-58a8879de1b4)
-- [Vuex getters are great, but don’t overuse them](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)
-- [Reusable Vuex Mutation Functions](https://itnext.io/reusable-vuex-mutation-functions-9b4920aa737b)
-- [A pattern to handle ajax requests in Vuex](https://medium.com/@lachlanmiller_52885/a-pattern-to-handle-ajax-requests-in-vuex-2d69bc2f8984)
-- [[vuex Mutations] Single Changes vs. Single Responsibility](https://forum.vuejs.org/t/vuex-mutations-single-changes-vs-single-responsibility/16396)
-- [Components and How They Interact in Vue and Vuex](https://dzone.com/articles/how-do-components-interact-in-vue-and-what-is-vuex)
-- [Why VueX Is The Perfect Interface Between Frontend and API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
-- [Composing actions with Vuex](https://codeburst.io/composing-actions-with-vuex-b63466264a37)
-- [How to Build Complex, Large-Scale Vue.js Apps With Vuex](https://code.tutsplus.com/tutorials/how-to-build-complex-large-scale-vuejs-applications-with-vuex--cms-30952)
-- [Should I Store This Data in Vuex?](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/)
-- [Anyway, this is how to use v-model with Vuex. Computed setter in action.](https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976)
-- [5 Vuex Plugins For Your Next VueJS Project](https://medium.com/js-dojo/5-vuex-plugins-for-your-next-vuejs-project-df9902a70de2)
-- [Writing Vuex modules in neat Typescript classes](https://medium.com/coding-blocks/writing-vuex-modules-in-neat-typescript-classes-9bf7b505e7b5)
-- [Managing multiple central stores with Vuex](https://blog.logrocket.com/managing-multiple-central-stores-with-vuex-74cc44646043)
-- [Vuex Explained Visually](https://medium.com/vue-mastery/vuex-explained-visually-f17c8c76d6c4)
-- [Quick Intro to Vuex ORM](https://www.monterail.com/blog/is-vuejs-enterprise-ready)
+- [🇺🇸 Desacopla módulos de Vuex con el patrón de Mediador](https://itnext.io/decouple-vuex-actions-with-the-mediator-pattern-58a8879de1b4)
+- [🇺🇸 Los getters de Vuex son geniales, pero no los uses de más](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)
+- [🇺🇸 Funciones reutilizables de Mutaciones de Vuex](https://itnext.io/reusable-vuex-mutation-functions-9b4920aa737b)
+- [🇺🇸 Un patrón para manejar peticiones ajax en Vuex](https://medium.com/@lachlanmiller_52885/a-pattern-to-handle-ajax-requests-in-vuex-2d69bc2f8984)
+- [🇺🇸 [Mutaciones de Vuex] Cambio sencillo contra Responsabilidad sencilla](https://forum.vuejs.org/t/vuex-mutations-single-changes-vs-single-responsibility/16396)
+- [🇺🇸 Componentes y como interactúan en Vue y Vuex](https://dzone.com/articles/how-do-components-interact-in-vue-and-what-is-vuex)
+- [🇺🇸 Por qué Vuex es la interfaz perfecta entre Frontend y API](https://codeburst.io/why-vuex-is-the-perfect-interface-between-frontend-and-api-271d92161709)
+- [🇺🇸 Componiendo acciones con Vuex](https://codeburst.io/composing-actions-with-vuex-b63466264a37)
+- [🇺🇸 Como construir Aplicaciones de Vue.js complejas y a gran escala con Vuex](https://code.tutsplus.com/tutorials/how-to-build-complex-large-scale-vuejs-applications-with-vuex--cms-30952)
+- [🇺🇸 ¿Debería almacenar esta información en Vuex?](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/)
+- [🇺🇸 Pues, así es como se usa v-model con Vuex. Setter computado en acción.](https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976)
+- [🇺🇸 5 Plugins de Vuex para tu siguiente proyecto de Vue.js](https://medium.com/js-dojo/5-vuex-plugins-for-your-next-vuejs-project-df9902a70de2)
+- [🇺🇸 Escribir módulos de Vuex en ordenadas clases de Typescript](https://medium.com/coding-blocks/writing-vuex-modules-in-neat-typescript-classes-9bf7b505e7b5)
+- [🇺🇸 Manejando multiples almacenamientos centrales con Vuex](https://blog.logrocket.com/managing-multiple-central-stores-with-vuex-74cc44646043)
+- [🇺🇸 Vuex explicado visualmente](https://medium.com/vue-mastery/vuex-explained-visually-f17c8c76d6c4)
+- [🇺🇸 Introducción rápida al ORM de Vuex](https://www.monterail.com/blog/is-vuejs-enterprise-ready)
 
 ### Mobx
 
-- [Build A View-Framework-Free Data Layer Based on MobX — Integration With Vue (1)](https://itnext.io/build-a-view-framework-free-data-layer-based-on-mobx-integration-with-vue-1-8b524b86c7b8)
+- [🇺🇸 Construye un Entorno de trabajo libre de vistas con capas de información basado en MobX integrado con Vue (1)](https://itnext.io/build-a-view-framework-free-data-layer-based-on-mobx-integration-with-vue-1-8b524b86c7b8)
 
-### Renderless Component
+### Componentes sin Renderizado
 
-- [Renderless Components in Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
-- [Building Renderless Components to Handle CRUD Operations in Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
-- [Building “Renderless” Vue Components](https://css-tricks.com/building-renderless-vue-components/)
-- [Renderless or Bust! Why Renderless Component Libraries will Make Web Dev Easier and More Inclusive](https://vuejsdevelopers.com/2019/02/11/renderless-component-libraries/)
-- [Vue.js Pattern for Async Requests: Using Renderless Components](https://dev.to/codinglukas/vue-js-pattern-for-async-requests-using-renderless-components-3gd)
+- [🇺🇸 Componentes sin Renderizado en Vue.js](https://adamwathan.me/renderless-components-in-vuejs/)
+- [🇺🇸 Construye Componentes sin Renderizado para manejar operaciones CRUD en Vue.js](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/)
+- [🇺🇸 Construye componentes de Vue "sin Renderizado"](https://css-tricks.com/building-renderless-vue-components/)
+- [🇺🇸 Por qué las librerías de componentes sin Renderizado harán el desarrollo web más fácil y más inclusivo](https://vuejsdevelopers.com/2019/02/11/renderless-component-libraries/)
+- [🇺🇸 Patrón de Vue.js para peticiones asíncronas: Usando Componentes sin Renderizado](https://dev.to/codinglukas/vue-js-pattern-for-async-requests-using-renderless-components-3gd)
 
-#### Examples
+#### Ejemplos
 
-- [Renderless Calendar component](https://codesandbox.io/s/v65lx0xvy5)
+- [Componente de calendario sin Renderizado](https://codesandbox.io/s/v65lx0xvy5)
 
-### Architecture
+### Arquitectura
 
-- [Making a large scale app with vue.js (part 1): modularize your store!](https://medium.com/@stephane.souron/making-a-large-scale-app-with-vue-js-part-1-modularize-your-store-bf9066436502)
-- [Making a large scale app with vue.js (part 2): a little bit of Object Oriented Programming.](https://medium.com/@stephane.souron/making-a-large-scale-app-with-vue-js-part-2-a-little-bit-of-object-oriented-programming-6822de5ef19d)
-- [Is Vue.js Enterprise-Ready?—Large Scale Apps Use Cases](https://www.monterail.com/blog/is-vuejs-enterprise-ready)
-- [How to avoid SOLID principles violations in Vue. JS application](https://medium.com/@manuustenko/https-medium-com-manuustenko-how-to-avoid-solid-principles-violations-in-vue-js-application-1121a0df6197)
+- [🇺🇸 Crea una aplicación a gran escala con Vue.js (parte 1): modulariza tu almacenamiento!](https://medium.com/@stephane.souron/making-a-large-scale-app-with-vue-js-part-1-modularize-your-store-bf9066436502)
+- [🇺🇸 Crea una aplicación a gran escala con Vue.js (parte 2): un poco de Programación Orientada a Objetos.](https://medium.com/@stephane.souron/making-a-large-scale-app-with-vue-js-part-2-a-little-bit-of-object-oriented-programming-6822de5ef19d)
+- [🇺🇸 ¿Vue.js esta listo para aplicaciones empresariales? — Casos de uso de aplicaciones a gran escala](https://www.monterail.com/blog/is-vuejs-enterprise-ready)
+- [🇺🇸 Cómo evitar violaciones a los principios SOLID en aplicaciones de Vue.js](https://medium.com/@manuustenko/https-medium-com-manuustenko-how-to-avoid-solid-principles-violations-in-vue-js-application-1121a0df6197)
 
-### Folder Structure
+### Estructura de carpetas
 
-- [How you can improve your workflow using the JavaScript console](https://medium.freecodecamp.org/how-you-can-improve-your-workflow-using-the-javascript-console-bdd7823a9472)
-- [How to Structure a Vue.js Project](https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb)
-- [Large-scale Vuex application structures](https://medium.com/3yourmind/large-scale-vuex-application-structures-651e44863e2f)
-- [Vue.js Application Structure and CSS Architecture](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/)
-- [Structuring Vue Components](https://vueschool.io/articles/vuejs-tutorials/structuring-vue-components/)
-- [Structuring a Vue project — Authentication](https://medium.com/@zitko/structuring-a-vue-project-authentication-87032e5bfe16)
+- [🇺🇸 Cómo puedes mejorar tu flujo de trabajo usando la consola de JavaScript](https://medium.freecodecamp.org/how-you-can-improve-your-workflow-using-the-javascript-console-bdd7823a9472)
+- [🇺🇸 Cómo estructurar un projecto de Vue.js](https://itnext.io/how-to-structure-a-vue-js-project-29e4ddc1aeeb)
+- [🇺🇸 Estructura de una aplicación a gran escala con Vuex](https://medium.com/3yourmind/large-scale-vuex-application-structures-651e44863e2f)
+- [🇺🇸 Estructura de una aplicación Vue.js y arquitectura de CSS](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/)
+- [🇺🇸 Estructurando Componentes de Vue](https://vueschool.io/articles/vuejs-tutorials/structuring-vue-components/)
+- [🇺🇸 Estructurando un proyecto de Vue con Autenticación](https://medium.com/@zitko/structuring-a-vue-project-authentication-87032e5bfe16)
 
-### Tips & Tricks
+### Consejos y Trucos
 
-- [How To Build Vue Components Like A Pro 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)
+- [🇺🇸 Cómo construir componentes de Vue como un profesional 😎](https://blog.bitsrc.io/how-to-build-vue-components-like-a-pro-fd89fd4d524d)
 - [Four tips for working with Vue.js](https://itnext.io/four-tips-for-working-with-vue-js-b362d97de852)
 - [Tips from a Lowly VueJS Developer](https://medium.com/@denny.headrick/tips-from-a-lowly-vuejs-developer-381b6956aece)
 - [Throttling and Debouncing Events with Vue.js and lodash](https://alligator.io/vuejs/lodash-throttle-debounce/)

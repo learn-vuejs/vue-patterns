@@ -11,6 +11,11 @@ module.exports = {
       lang: 'ru',
       title: 'Паттерны Vue',
       description: 'Полезные паттерны, методы, советы и рекомендации, а также тщательно подобранный список ссылок по Vue'
+    },
+    '/es/': {
+      lang: 'es',
+      title: 'Patrones de Vue',
+      description: 'Patrones útiles de Vue, técnicas, consejos, trucos y enlaces seleccionados.'
     }
   },
   serviceWorker: true,
@@ -188,6 +193,35 @@ module.exports = {
           ['/ru/useful-links/', 'Полезные ссылки'],
           ['/ru/sponsors/', 'Книга Fullstack Vue'],
           ['/ru/translations/', 'Переводы'],
+        ],
+      },
+      '/es/': {
+        label: 'Español',
+        selectText: 'Idiomas',
+        lastUpdated: 'Última actualización',
+        editLinkText: 'Modificar esta página en GitHub',
+        nav: [
+          { text: 'Inicio', link: '/es/' },
+          { text: 'Docs', link: '/es/patterns/' },
+          {
+            text: 'Traducciones',
+            items: [
+              {
+                text: '简体中文',
+                link: 'https://github.com/ZYSzys/vue-patterns-cn',
+              },
+              {
+                text: '繁體中文',
+                link: 'https://github.com/yoyoys/vue-patterns-cht',
+              },
+            ],
+          },
+        ],
+        sidebar: [
+          ['/es/patterns/', 'Patrones'],
+          ['/es/useful-links/', 'Enlaces útiles'],
+          ['/es/sponsors/', 'Libro Fullstack Vue'],
+          ['/es/translations/', 'Traducciones'],
         ],
       },
     },

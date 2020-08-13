@@ -20,11 +20,11 @@ branches:
 deploy:
   provider: pages
   skip_cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
   email: simsim0709@gmail.com
   name: Ilkwon Sim
-  local-dir: docs/.vuepress/dist
+  local_dir: docs/.vuepress/dist
   repo: learn-vuejs/vue-patterns
   on:
     branch: master

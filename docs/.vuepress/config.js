@@ -18,7 +18,6 @@ module.exports = {
       description: 'Patrones útiles de Vue, técnicas, consejos, trucos y enlaces seleccionados.'
     }
   },
-  serviceWorker: true,
   head: [
     [
       'link',
@@ -133,6 +132,21 @@ module.exports = {
       'script',
       { defer: true, async: true, src: 'https://buttons.github.io/buttons.js' },
     ],
+  ],
+  plugins: [
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true
+      }
+    ],
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-175336794-1'
+      }
+    ]
   ],
   themeConfig: {
     displayAllHeaders: true,

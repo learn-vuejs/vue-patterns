@@ -15,7 +15,7 @@
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.5.3",
     "@vuepress/plugin-pwa": "^1.5.3",
-    "gh-pages": "^2.0.1",
-    "vuepress": "^1.0.1"
+    "gh-pages": "^3.1.0",
+    "vuepress": "^1.5.3"
   }
 }

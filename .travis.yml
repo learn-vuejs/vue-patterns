@@ -22,8 +22,6 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
-  email: simsim0709@gmail.com
-  name: Ilkwon Sim
   local_dir: docs/.vuepress/dist
   repo: learn-vuejs/vue-patterns
   on:

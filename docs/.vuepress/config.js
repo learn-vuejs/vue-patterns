@@ -138,6 +138,7 @@ module.exports = {
     displayAllHeaders: true,
     lastUpdated: 'Last Updated',
     repo: 'learn-vuejs/vue-patterns',
+    docsDir: 'docs',
     editLinks: true,
     locales: {
       '/': {

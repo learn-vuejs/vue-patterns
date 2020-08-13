@@ -13,6 +13,8 @@
     "docs:deploy": "gh-pages -d docs/.vuepress/dist"
   },
   "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.5.3",
+    "@vuepress/plugin-pwa": "^1.5.3",
     "gh-pages": "^2.0.1",
     "vuepress": "^1.0.1"
   }

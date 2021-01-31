@@ -215,3 +215,4 @@
 - [Vue.js Single File Component Factory](https://markus.oberlehner.net/blog/vue-single-file-component-factory/)
 - [Composing Components in Vue.js](https://dulisz.com/blog/composing-components-in-vue-js/)
 - [What to do when Vue hydration fails](https://blog.lichter.io/posts/vue-hydration-error/)
+- [7 Vue Patterns That You Should Be Using More Often](https://fadamakis.medium.com/7-vue-patterns-that-you-should-be-using-more-often-b13cde4d2ae6)

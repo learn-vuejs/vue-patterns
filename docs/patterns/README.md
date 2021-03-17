@@ -389,6 +389,8 @@ With the above code example, the rendered component will be destroyed if a diffe
 
 A functional component is a special SFC, it is basically a component that is **stateless** (meaning no script tag). It only accepts `props` in order to display data.
 
+Note that in Vue 3, the `functional` attribute is deprecated and that using stateful components is the recommended method.
+
 In order to make a SFC a functional one you add the the `functional` attribute to the `<template>` tag like this: `<template functional>`
 
 **fp-component.vue**

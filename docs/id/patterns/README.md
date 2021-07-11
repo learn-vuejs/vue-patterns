@@ -173,12 +173,12 @@ export default {
 #### Referensi:
 
 - [Panduan Resmi - Props](https://vuejs.org/v2/guide/components-props.html)
-- [Vue.js Pola Komunakasi Komponen](https://alligator.io/vuejs/component-communication/)
+- [Vue.js Pola Komunikasi Komponen](https://alligator.io/vuejs/component-communication/)
 - [Membuat Kustom Input Dengan Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
-- [Komunikasi Komponen Saudara Pada Vue](https://vegibit.com/vue-sibling-component-communication/)
-- [Managing State in Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
-- [Vue.js Komunikasi bagian 2: induk-anak komponen](https://gambo.io/vue-js-communication-part-2-parent-child-components/)
-- [Pola Desain untuk Komunikasi antar komponen Vue.js](https://code.tutsplus.com/tutorials/design-patterns-for-communication-between-vuejs-component--cms-32354)
+- [Komunikasi Komponen Terdekat Pada Vue](https://vegibit.com/vue-sibling-component-communication/)
+- [Manangani State Di Dalam Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
+- [Vue.js Komunikasi Bagian 2: Induk-Anak Komponen](https://gambo.io/vue-js-communication-part-2-parent-child-components/)
+- [Pola Desain Untuk Komunikasi Antar Komponen Vue.js](https://code.tutsplus.com/tutorials/design-patterns-for-communication-between-vuejs-component--cms-32354)
 
 ## Menangani Events Pada Komponen
 
@@ -191,7 +191,7 @@ export default {
 - [Vue.js Event Bus + Promises](https://medium.com/@jesusgalvan/vue-js-event-bus-promises-f83e73a81d72)
 - [Memodifikasi Data Komponen Dengan Event Emitters Di Dalam Vue.js](https://blog.logrocket.com/modifying-component-data-with-event-emitters-in-vue-js/)
 
-## Rendering komponen bersyarat
+## Rendering komponen kondisional
 
 ### Directive (`v-if` / `v-else` / `v-else-if` / `v-show`)
 
@@ -201,7 +201,7 @@ export default {
 <h1 v-if="true">Render only if v-if condition is true</h1>
 ```
 
-`v-if` and `v-else`
+`v-if` dan `v-else`
 
 ```vue
 <h1 v-if="true">Render only if v-if condition is true</h1>
@@ -225,8 +225,8 @@ export default {
 </h1>
 ```
 
-Jika kamu ingin persyaratan di render lebih dari satu elemen, kamu dapat menggunakan Directive(`v-if` / `v-else` / `v-else-if` /`v-show`) pada sebuah `<template>` elemen.
-Perlu dicatat, `<template>` elemen sebenarya tidak di rendem pada DOM. Itu adalah pembukus yang tidak kelihatan.
+Jika kamu ingin kondisinonal di render lebih dari satu elemen, kamu dapat menggunakan Directive(`v-if` / `v-else` / `v-else-if` /`v-show`) pada sebuah `<template>` elemen.
+Perlu dicatat, `<template>` elemen sebenarya tidak di rendem pada DOM. Dia adalah pembukus yang tidak kelihatan.
 
 ```vue
 <template v-if="true">
@@ -238,9 +238,9 @@ Perlu dicatat, `<template>` elemen sebenarya tidak di rendem pada DOM. Itu adala
 
 ### Fungsi Render atau JSX
 
-Jika kamu menggunakan fungsi render atau JSX di aplikasi vue mu, kamu dapat menggunakan semua teknik seperti `if else` dan `switch case` statemen dan `ternary` dan `logical` operator.
+Jika kamu menggunakan fungsi render atau JSX di aplikasi vue mu, kamu dapat menggunakan semua teknik seperti pernyataan `if else` , pernyataan `switch case`, pernyataan `ternary` dan operator `logical`.
 
-`if else` statement
+Pernyataan `if else`
 
 ```jsx
 export default {
@@ -259,7 +259,7 @@ export default {
 };
 ```
 
-`switch case` statement
+Pernyataan `switch case`
 
 ```jsx
 import Info from "./Info";
@@ -317,7 +317,7 @@ export default {
 };
 ```
 
-`ternary` operator
+Operator `ternary`
 
 ```jsx
 export default {
@@ -340,7 +340,7 @@ export default {
 };
 ```
 
-`logical` operator
+Operator `logical`
 
 ```jsx
 export default {
@@ -357,7 +357,7 @@ export default {
 
 #### Referensi
 
-- [Panduan Resmi - Rendering Bersyarat](https://vuejs.org/v2/guide/conditional.html)
+- [Panduan Resmi - Rendering Kondisional](https://vuejs.org/v2/guide/conditional.html)
 - [Perbedaan Antara v-if Dan v-show [Disertai Video Pada Akhir]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
 
 ## Dinamik Komponen
@@ -372,7 +372,7 @@ export default {
 <component :is="currentTabComponent"></component>
 ```
 
-Dengan contoh kode diatas, komponen terender akan hilangkan jika sebuah komponen yang berbeda sedang dirender di `<component>`. Jika kamu ingin komponent menjaga instan-nya tanpa menghancurkan mereka di dalam `<component>` tag, kamu dapat membungkus `<component>` tag di dalam sebuah `<keep-alive>` tag seperti itu:
+Dengan contoh kode diatas, komponen terender akan hilangkan jika sebuah komponen yang berbeda sedang dirender di `<component>`. Jika kamu ingin komponen menjaga instan-nya tanpa menghancurkan mereka di dalam `<component>` tag, kamu dapat membungkus `<component>` tag di dalam sebuah `<keep-alive>` tag seperti berikut:
 
 ```vue
 <keep-alive> <component :is="currentTabComponent"></component> </keep-alive>
@@ -381,12 +381,12 @@ Dengan contoh kode diatas, komponen terender akan hilangkan jika sebuah komponen
 #### Referensi
 
 - [Panduan Resmi - Dinamik Komponen](https://vuejs.org/v2/guide/components.html#Dynamic-Components)
-- [Panduan Resmi - Dinamic & Async Komponen](https://vuejs.org/v2/guide/components-dynamic-async.html)
+- [Panduan Resmi - Dinamik & Async Komponen](https://vuejs.org/v2/guide/components-dynamic-async.html)
 - [Dinamik komponen templat Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
 
 ## Fungsional Komponen
 
-Sebuah fungsional komponen adalah sebuah SFC komponen khusus, pada dasarnya adalah sebuah komponen yang **stateless** (artinya tanpa script tag). Dia hanya menerima `props` untuk menampikan data.
+Sebuah fungsional komponen adalah sebuah SFC komponen khusus, pada dasarnya adalah sebuah komponen yang **stateless** (artinya tanpa script tag). Dia hanya menerima `props` untuk menampilkan data.
 
 Untuk membuat sebuah fungsional SFC kamu dapat menambahkan `functional` atribut pada `<template>` tag seperti ini: `<template functional>`
 
@@ -419,16 +419,16 @@ export default {
 </script>
 ```
 
-Manfaat dari menggunakan sebuah **Fungsional Komponen** ketimbang sebuah **Stateful Komponent**:
+Manfaat dari menggunakan sebuah **Fungsional Komponen** ketimbang sebuah **Stateful Komponen**:
 
 - Lebih cepat di render
 - Penggunaan memori lebih kecil
 
 ## Komponen Tanpa Render
 
-Komponen tanpa render pada dasarnya adalah komponen yang tidak melakukan render HTML apapun pada DOM tetapi di dalam menyediakan logik abstrak JavaScript yang dapat digunakan kembali pada sebuah SFC.
+Komponen tanpa render pada dasarnya adalah komponen yang tidak melakukan render HTML apapun pada DOM tetapi di dalam menyediakan logic abstrak JavaScript yang dapat digunakan kembali pada sebuah SFC.
 
-Sebuah komponent tanpa render memanfaatkan **Slots API** untuk mencapai apa yang kita inginkan.
+Sebuah komponen tanpa render memanfaatkan **Slots API** untuk mencapai apa yang kita inginkan.
 
 <small><strong>Renderless.vue</strong></small>
 
@@ -464,11 +464,11 @@ Tugas dari **Renderless.vue** hanya menyediakan prop `name`
 </script>
 ```
 
-Hal yang menarik tentang menggunakan Komponen tanpa Render adalah bahwa kita dapat memisahkan logika dari markup.
+Hal yang menarik tentang menggunakan komponen tanpa render adalah bahwa kita dapat memisahkan logika dari markup.
 
 ## Komposisi
 
-#### Pustaka
+#### Referensi
 
 - [Proppy - Komposisi Fungsional Props untuk Komponen](https://proppyjs.com/)
 
@@ -494,9 +494,9 @@ export default {
 
 - [Panduan Resmi - Komposisi Dengan Komponen](https://vuejs.org/v2/guide/#Composing-with-Components)
 
-### Extend
+### Extends
 
-Saat kamu ingin memperluas satu komponen
+Saat kamu ingin memperluas sebuah komponen
 
 ```vue
 <template>
@@ -517,10 +517,10 @@ export default {
 
 #### Referensi:
 
-- [Panduan Resmi - Memperluas](https://vuejs.org/v2/api/#extends)
+- [Panduan Resmi - Extends](https://vuejs.org/v2/api/#extends)
 - [Memperluas Komponen VueJS](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
 
-### Campuran
+### Mixins
 
 ```js
 // closableMixin.js
@@ -574,14 +574,14 @@ export default {
 
 #### Referensi:
 
-- [Panduan Resmi - Campuran](https://vuejs.org/v2/guide/mixins.html)
-- [Latihan menggunakan Komponen dan Campuran di Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
+- [Panduan Resmi - Mixins](https://vuejs.org/v2/guide/mixins.html)
+- [Latihan menggunakan Komponen Dan Mixins Di Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
 
 > 2.6.0+
 
 > Jika kamu menggunakan Vue versi 2.6.0 keatas, Vue memperkenalkan slot api terpadu baru, yaitu `v-slot`.
-> Dia mengganti slot dan slot-scope atribut, yang telah usang,tetapi belum dihilangkan dan masih terdokumentasi disini.
-> Kamu dapat melihat Api api yang telah usang [Disini](https://vuejs.org/v2/guide/components-slots.html#Deprecated-Syntax).
+> Dia mengganti slot dan slot-scope atribut, yang telah usang, tetapi belum dihilangkan dan masih terdokumentasi disini.
+> Kamu dapat melihat Api yang telah usang [Disini](https://vuejs.org/v2/guide/components-slots.html#Deprecated-Syntax).
 
 ### Slots (Default)
 
@@ -619,8 +619,8 @@ export default {
 
 - [Panduan Resmi - Konten Slot](https://vuejs.org/v2/guide/components-slots.html#Slot-Content)
 - [Pemahaman Slot Komponen Dengan Vue.js](https://alligator.io/vuejs/component-slots/)
-- [Campuran Kustom Elemen Dengan Slots Dan Penamaan Slots](https://alligator.io/web-components/composing-slots-named-slots/)
-- [Membuar Komponen Abstrak Dengan Vue.js](https://alligator.io/vuejs/vue-abstract-components/)
+- [Mixins Kustom Elemen Dengan Slots Dan Penamaan Slots](https://alligator.io/web-components/composing-slots-named-slots/)
+- [Membuat Komponen Abstrak Dengan Vue.js](https://alligator.io/vuejs/vue-abstract-components/)
 
 ### Penamaan Slots
 
@@ -658,12 +658,12 @@ App.vue
 ```
 
 Vue menyediakan penyerhanaan sintak untuk penamaan slots.
-Kamu dapat mengganti [`v-slot:` with `#`](https://vuejs.org/v2/guide/components-slots.html#Named-Slots-Shorthand).
+Kamu dapat mengganti [`v-slot:` dengan `#`](https://vuejs.org/v2/guide/components-slots.html#Named-Slots-Shorthand).
 
 #### Referensi
 
 - [Panduan Resmi - Penamaan Slots](https://vuejs.org/v2/guide/components-slots.html#Named-Slots)
-- [Komposisi Komponent Vue.js Dengan Slots](https://medium.com/@fdietz/vue-js-component-composition-with-slots-eda311579218)
+- [Komposisi Komponen Vue.js Dengan Slots](https://medium.com/@fdietz/vue-js-component-composition-with-slots-eda311579218)
 
 ### Lingkup Slots
 
@@ -728,16 +728,16 @@ export default {
 - [Tempatkan Pikiran Anda sekitar Lingkupan Slot Vue.js](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
 - [Memahami Lingkup Slot pada Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
 - [Lingkup Slot Komponen Di Dalam Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
-- [Trik Untuk Memahami Linkup Slot Di Dalam Vue.js](https://adamwathan.me/the-trick-to-understanding-scoped-slots-in-vuejs/)
+- [Trik Untuk Memahami Lingkup Slot Di Dalam Vue.js](https://adamwathan.me/the-trick-to-understanding-scoped-slots-in-vuejs/)
 - [Kekuatan Lingkupan Slots Di Dalam Vue](https://pineco.de/power-scoped-slots-vue/)
 - [Membuat Daftar Komponen Kontrol Keyboard Dengan Vue.js Dan Lingkup Slot](https://medium.com/@tkwebdev/building-a-list-keyboard-control-component-with-vue-js-and-scoped-slots-c74db4fcf84f)
 - [Bagaimana Akhirnya Saya Menempatkan Pikiran Sekitar Lingkup Slots DI Dalam Vue](https://medium.com/@ross_65916/how-i-finally-got-my-head-around-scoped-slots-in-vue-c37238d4d4cc)
 
 ### Render Props
 
-Dalam kebanyakan kasus, kamu dapat menggunakan lingkup slot menggantikan render props. Tetapi, mungkin berguna dalam beberapa kasus.
+Dalam kebanyakan kasus, kamu dapat menggunakan lingkupan slot menggantikan render props. Tetapi, mungkin berguna dalam beberapa kasus.
 
-with `SFC`
+Dengan `SFC`
 
 ```vue
 <template>
@@ -771,7 +771,7 @@ export default {
 </style>
 ```
 
-with `JSX`
+dengan `JSX`
 
 ```js
 const Mouse = {
@@ -812,22 +812,22 @@ export default Mouse;
 - [Memanfaatkan Render Props Di Dalam Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
 - [Menggunakan React-Style Callback Props Dengan Vue: Pro dan Kontra](https://medium.com/js-dojo/using-react-style-callback-props-with-vue-pros-and-cons-e0ee7455695b)
 
-## Meneruskan Props & Listeners
+## Mewariskan Props & Listeners
 
-Terkadang, Kamu ingin melewatkan props dan listener ke komponen anak tanpa harus mendeklasikan semua props untuk komponen anak.
-Kamu dapat menggunakan `$attrs` dan `$listeners` di dalam komponen dan menempatkan [`inheritAttrs` to `false`](https://vuejs.org/v2/api/#inheritAttrs) (jika tidak keduanya, `div` dan `child-component` akan menerima atributnya)
+Terkadang, Kamu ingin mewariskan props dan listener ke komponen anak tanpa harus mendeklasikan semua props untuk komponen anak.
+Kamu dapat menggunakan `$attrs` dan `$listeners` di dalam komponen dan menempatkan [`inheritAttrs` ke `false`](https://vuejs.org/v2/api/#inheritAttrs) (jika tidak keduanya, `div` dan `child-component` akan menerima atributnya)
 
 #### PassingProps.vue
 
 <<< @/docs/.vuepress/components/PassingProps.vue
 
-From the parent component, you can do this:
+Dari induk komponen, kamu dapat melakukan ini:
 
 #### PassedProps.vue
 
 <<< @/docs/.vuepress/components/PassedProps.vue
 
-#### Working Example:
+#### Contoh Kerja:
 
 <PassedProps></PassedProps>
 
@@ -916,11 +916,11 @@ Pola Provider / Consumer sangat sederhana, ini bertujuan untuk memisahkan logika
 </script>
 ```
 
-Pola ini menyediakan cara yang rapi untuk memungkinkan kita menyusun komponen yang bersih dan terpisah. Lihat contoh di[CodeSandbox](https://codesandbox.io/embed/vue-template-qp83z)
+Pola ini menyediakan cara yang rapi untuk memungkinkan kita menyusun komponen yang bersih dan terpisah. Lihat contoh di [CodeSandbox](https://codesandbox.io/embed/vue-template-qp83z)
 
 ## Dependency injection
 
-Vue mendukung provide / inject mekanisme untuk menyediak `object` kepada semua tururannya, terlepas dari bagaimana dalamnya hirarki komponennya, selama mereka masih berada di rantai induk yang sama. Perlu dicatat bahawa ikatan `provide` dan `inject` **tidak** reaktiv, kecuali kamu mewariskan object yang diamati.
+Vue mendukung mekanisme provide / inject untuk menyediakan `object` kepada semua turunannya, terlepas dari bagaimana dalam hirarki komponennya, selama mereka masih berada di rantai induk yang sama. Perlu dicatat bahawa ikatan `provide` dan `inject` **tidak** reaktiv, kecuali kamu mewariskan object yang diamati.
 
 ```vue
 <parent-component>
@@ -930,16 +930,14 @@ Vue mendukung provide / inject mekanisme untuk menyediak `object` kepada semua t
 </parent-component>
 ```
 
-Dengan contoh hirarki komponen diatas, untuk mendapatkan data dari `parent-component`, kamu harus mewariskan data (object) sebagai `props` ke `child-component` dan `grand-child-component`. Bagaimanapun, jika `parent-component` `provide` data (object),`grand-child-component` hanya dapat men
-
-With the above example component hierarchy, in order to derive data from `parent-component`, you should pass down data(object) as `props` to `child-component` and `grand-child-component`. However, if `parent-component` `provide` data(object), `grand-child-component` hanya bisa mendefinisikan `inject` object yang tersedia dari `parent-component`.
+Dengan contoh hirarki komponen diatas, untuk mendapatkan data dari `parent-component`, kamu harus mewariskan data (object) sebagai `props` ke `child-component` dan `grand-child-component`. Bagaimanapun, jika `parent-component` `provide` data (object),`grand-child-component` hanya dapat mendefinisikan `inject` object yang tersedia dari `parent-component`.
 
 #### Referensi:
 
 - [Panduan Resmi API](https://vuejs.org/v2/api/#provide-inject)
 - [Panduan Resmi](https://vuejs.org/v2/guide/components-edge-cases.html#Dependency-Injection)
 - [Komunikasi Komponen](https://alligator.io/vuejs/component-communication/#provide--inject)
-- [Dependency Injection DI Dalam Vue.js App Dengan TypeScript](https://blog.kloud.com.au/2017/03/22/dependency-injection-in-vuejs-app-with-typescript/)
+- [Dependency Injection Di Dalam Vue.js App Dengan TypeScript](https://blog.kloud.com.au/2017/03/22/dependency-injection-in-vuejs-app-with-typescript/)
 
 ### Provide / Inject
 
@@ -964,7 +962,7 @@ Kamu dapat menggunakan [vue-property-decorator](https://github.com/kaorun343/vue
 </theme-provider>
 ```
 
-#### Working Example:
+#### Contoh Kerja:
 
 <ThemeProvider>
   <p class="demo">
@@ -997,12 +995,12 @@ Kamu dapat menggunakan [vue-property-decorator](https://github.com/kaorun343/vue
 
 #### Referensi
 
-- [Mengatasi Error Dalam Vue Dengan Bata Kesalahan](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
+- [Mengatasi Error Dalam Vue Dengan Batas Kesalahan](https://medium.com/@dillonchanis/handling-errors-in-vue-with-error-boundaries-91f6ead0093b)
 - [Contoh 1](https://jsfiddle.net/Linusborg/z84wspcg/)
 
 ## Tips Produktivitas
 
-watch on create
+mengamati saat pembuatan
 
 ```js
 // don't

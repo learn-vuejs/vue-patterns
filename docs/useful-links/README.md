@@ -41,7 +41,7 @@
 - [Writing Vuex modules in neat Typescript classes](https://medium.com/coding-blocks/writing-vuex-modules-in-neat-typescript-classes-9bf7b505e7b5)
 - [Managing multiple central stores with Vuex](https://blog.logrocket.com/managing-multiple-central-stores-with-vuex-74cc44646043)
 - [Vuex Explained Visually](https://medium.com/vue-mastery/vuex-explained-visually-f17c8c76d6c4)
-- [Quick Intro to Vuex ORM](https://www.monterail.com/blog/is-vuejs-enterprise-ready)
+- [Quick Intro to Vuex ORM](https://vuejsdevelopers.com/2019/04/29/vuex-orm-quick-intro)
 
 ### Mobx
 
